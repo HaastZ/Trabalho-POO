@@ -12,3 +12,4 @@ C:\Users\Vinícius\Desktop\Trabalho\TrabalhoPOO\obj\Debug\net8.0\refint\Trabalho
 C:\Users\Vinícius\Desktop\Trabalho\TrabalhoPOO\obj\Debug\net8.0\TrabalhoPOO.pdb
 C:\Users\Vinícius\Desktop\Trabalho\TrabalhoPOO\obj\Debug\net8.0\TrabalhoPOO.genruntimeconfig.cache
 C:\Users\Vinícius\Desktop\Trabalho\TrabalhoPOO\obj\Debug\net8.0\ref\TrabalhoPOO.dll
+C:\Users\Vinícius\Desktop\Trabalho\TrabalhoPOO\obj\Debug\net8.0\TrabalhoPOO.sourcelink.json

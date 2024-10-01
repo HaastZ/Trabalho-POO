@@ -66,5 +66,4 @@ public class Voo
     {
         return this.moeda;
     }
-
 }

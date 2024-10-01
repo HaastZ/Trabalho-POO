@@ -6,7 +6,7 @@ public class Aeroporto
     private string estado;
     private string pais;
 
-    public Aeroporto(string nome, string sigla, string cidade, string estado, string pais) 
+    public Aeroporto(string nome, string sigla, string cidade, string estado, string pais)
     {
         this.nome = nome;
         this.sigla = sigla;
@@ -15,27 +15,27 @@ public class Aeroporto
         this.pais = pais;
     }
 
-    public string getNome() 
+    public string getNome()
     {
         return this.nome;
     }
 
-    public string getSigla() 
+    public string getSigla()
     {
         return this.sigla;
     }
 
-    public string getCidade() 
+    public string getCidade()
     {
         return this.cidade;
     }
 
-    public string getEstado() 
+    public string getEstado()
     {
         return this.estado;
     }
 
-    public string getPais() 
+    public string getPais()
     {
         return this.pais;
     }
