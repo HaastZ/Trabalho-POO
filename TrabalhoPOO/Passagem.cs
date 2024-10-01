@@ -6,7 +6,7 @@ public class Passagem
     private int numeroBagagens;
     private Moeda moeda;
     private double valorTotal;
-    private static double TAXAFIXA = 10;
+    private static double TAXAFIXA = 0.10;
     public Passagem(List<Voo> voos, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
     {
         this.voos = voos;
@@ -17,9 +17,11 @@ public class Passagem
         this.valorTotal = valorTotal;
     }
 
-    public List<Voo> CalcularRemuneracao() 
+    public double CalcularRemuneracao() 
     {
-        return null;
+        double remuneracao;
+        remuneracao = this.valorTotal * Passagem.TAXAFIXA / 100;
+        return remuneracao;
     }
 
     public List<Voo> getVoos() 
