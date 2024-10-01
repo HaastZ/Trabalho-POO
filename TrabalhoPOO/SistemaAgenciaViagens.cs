@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace TrabalhoPOO
 {
@@ -103,6 +103,46 @@ namespace TrabalhoPOO
                 else if (v.getAeroportoOrigem() == destino && v.getAeroportoDestino() == origem && v.getDataHoraVoo() == dataVolta) resp.Add(v);
             }
             return resp;
+        }
+        public List<Voo> BuscarVoosComConexao(Aeroporto origem, Aeroporto destino, DateTime data)
+        {
+            List<Voo> voosComConexao = new List<Voo>();
+
+            foreach (Voo vooOrigem in voos)
+            {
+                if (vooOrigem.getAeroportoOrigem() == origem && vooOrigem.getDataHoraVoo() == data)
+                {
+                    foreach (Voo vooConexao in voos)
+                    {
+                        if (vooConexao.getAeroportoOrigem() == vooOrigem.getAeroportoDestino() &&
+                            vooConexao.getAeroportoDestino() == destino)
+                        {
+                            voosComConexao.Add(vooConexao);
+                        }
+                    }
+                }
+            }
+
+            return voosComConexao;
+        }
+         public Passagem EmitirPassagem(List<Voo> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
+        {
+            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens);
+            passagens.Add(novaPassagem);
+            return novaPassagem;
+        }
+         public List<Passagem> BuscarPassagem(Passageiro passageiro)
+        {
+            List<Passagem> passagensDoPassageiro = new List<Passagem>();
+
+            foreach (Passagem passagem in passagens)
+            {
+                if (passagem.Passageiro == passageiro)
+                {
+                    passagensDoPassageiro.Add(passagem);
+                }
+            }
+            return passagensDoPassageiro;
         }
     }
 }
