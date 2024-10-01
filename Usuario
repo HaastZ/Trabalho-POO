@@ -1,0 +1,14 @@
+public class Usuario
+{
+  public string Login { get; private set; }
+  public string Senha { get; private set; }
+  public Funcionario Funcionario { get; private set; }
+
+  // construtor
+  public Usuario(Funcionario funcionario, string login, string senha)
+  {
+  Funcionario = funcionario;
+  Login = login;
+  Senha = senha;
+  }
+}
