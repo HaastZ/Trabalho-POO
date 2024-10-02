@@ -82,6 +82,9 @@ namespace TrabalhoPOO
         {
             foreach (Usuario user in usuarios)
             {
+
+                if (user.getLogin() == login && user.getSenha() == senha) { return user; }
+
                 if (user.getLogin() == login && user.getSenha() == senha) { return user; }
             }
             return null;
@@ -137,6 +140,9 @@ namespace TrabalhoPOO
 
             foreach (Passagem passagem in passagens)
             {
+
+                if (passagem.GetPassageiro() == passageiro)
+
                 if (passagem.GetPassageiro() == passageiro)
                 {
                     passagensDoPassageiro.Add(passagem);

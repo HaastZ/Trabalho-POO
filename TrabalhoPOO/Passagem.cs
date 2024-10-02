@@ -17,6 +17,14 @@ public class Passagem
         this.valorTotal = valorTotal;
     }
 
+    public Passagem(List<Voo> voos, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
+    {
+        this.voos = voos;
+        this.tipoTarifa = tipoTarifa;
+        this.passageiro = passageiro;
+        this.numeroBagagens = numeroBagagens;
+    }
+
     public double CalcularRemuneracao() 
     {
         double remuneracao;
