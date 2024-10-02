@@ -84,8 +84,6 @@ namespace TrabalhoPOO
             {
 
                 if (user.getLogin() == login && user.getSenha() == senha) { return user; }
-
-                if (user.getLogin() == login && user.getSenha() == senha) { return user; }
             }
             return null;
         }
