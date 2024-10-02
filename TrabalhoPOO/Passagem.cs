@@ -34,7 +34,7 @@ public class Passagem
         return this.tipoTarifa;
     }
 
-    public Passageiro GetPassgeiro() 
+    public Passageiro GetPassageiro() 
     {
         return this.passageiro;
     }
