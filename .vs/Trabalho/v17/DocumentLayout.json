@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tarsis\\source\\repos\\Trabalho-POO\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\source\\repos\\trabalho-poo\\trabalhopoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\source\\repos\\trabalho-poo\\trabalhopoo\\sistemaagenciaviagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\sistemaagenciaviagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\source\\repos\\trabalho-poo\\trabalhopoo\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,19 +22,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\Tarsis\\source\\repos\\Trabalho-POO\\TrabalhoPOO\\Funcionario.cs",
+              "RelativeDocumentMoniker": "TrabalhoPOO\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\Tarsis\\source\\repos\\Trabalho-POO\\TrabalhoPOO\\Funcionario.cs",
+              "RelativeToolTip": "TrabalhoPOO\\Funcionario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T21:52:31.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tarsis\\source\\repos\\Trabalho-POO\\TrabalhoPOO\\Program.cs",
+              "RelativeDocumentMoniker": "TrabalhoPOO\\Program.cs",
+              "ToolTip": "C:\\Users\\Tarsis\\source\\repos\\Trabalho-POO\\TrabalhoPOO\\Program.cs",
+              "RelativeToolTip": "TrabalhoPOO\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T21:42:41.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SistemaAgenciaViagens.cs",
+              "DocumentMoniker": "C:\\Users\\Tarsis\\source\\repos\\Trabalho-POO\\TrabalhoPOO\\SistemaAgenciaViagens.cs",
+              "RelativeDocumentMoniker": "TrabalhoPOO\\SistemaAgenciaViagens.cs",
+              "ToolTip": "C:\\Users\\Tarsis\\source\\repos\\Trabalho-POO\\TrabalhoPOO\\SistemaAgenciaViagens.cs",
+              "RelativeToolTip": "TrabalhoPOO\\SistemaAgenciaViagens.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAuwFcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T21:41:31.515Z",
+              "EditorCaption": ""
             }
           ]
         }

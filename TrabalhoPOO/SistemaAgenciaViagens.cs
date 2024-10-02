@@ -14,6 +14,15 @@ namespace TrabalhoPOO
         private List<Voo> voos;
         private List<Passagem> passagens;
         // Métodos getters e setters para as listas
+        public SistemaAgenciaViagens()
+        {
+            this.funcionarios = new List<Funcionario>();
+            this.usuarios= new List<Usuario>();
+            this.companhiasAereas = new List<CompanhiaAerea>();
+            this.aeroportos = new List<Aeroporto>();
+            this.voos = new List<Voo>();
+            this.passagens = new List<Passagem>();
+        }
         public void CadastrarFuncionario(Funcionario funcionario)
         {
             funcionarios.Add(funcionario);
@@ -21,6 +30,20 @@ namespace TrabalhoPOO
         public List<Funcionario> GetFuncionarios()
         {
             return funcionarios;
+        }
+
+        public Funcionario BuscarFuncionario(string nome)
+        {
+            Funcionario temp = null;
+            foreach (Funcionario f in funcionarios)
+            {
+                if (f.getNome() == nome)
+                {
+                    temp = f;
+                    return temp;
+                }
+            }
+            return temp;
         }
 
         public void CadastrarUsuario(Usuario usuario)
@@ -61,6 +84,8 @@ namespace TrabalhoPOO
         {
             return voos;
         }
+
+        //Eu gosto assim, amostradinho, vou logo fazer sua passagem
         public void CadastrarPassagem(Passagem passagem)
         {
             passagens.Add(passagem);
