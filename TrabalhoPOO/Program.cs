@@ -9,10 +9,11 @@ do
     Console.WriteLine("1)Cadastrar Funcionário");
     Console.WriteLine("2)Cadastrar Usuário");
     Console.WriteLine("3)Cadastrar Companhia Aérea");
-    Console.WriteLine("4)Cadastrar Voo");
-    Console.WriteLine("5)Cadastrar Passagem");
-    Console.WriteLine("6)Buscar voos por data de ida e volta");
-    Console.WriteLine("7)Buscar voos com conexão");
+    Console.WriteLine("4)Cadastrar Aeroporto");
+    Console.WriteLine("5)Cadastrar Voo");
+    Console.WriteLine("6)Cadastrar Passagem");
+    Console.WriteLine("7)Buscar voos por data de ida e volta");
+    Console.WriteLine("8)Buscar voos com conexão");
     Console.WriteLine("0)Sair");
     opt = int.Parse(Console.ReadLine());
     switch (opt)
@@ -57,7 +58,19 @@ do
             CompanhiaAerea comptemp = new CompanhiaAerea(nome, codigo, razao, cnpj, valorPrimeirabagagem, valorBagagemAdicional);
             system.CadastrarCompanhia(comptemp);
             break;
-
-
+        case 4:
+            Console.WriteLine("Digite o nome do Aeroporto");
+            nome = Console.ReadLine();
+            Console.WriteLine("Digite a sigla do Aeroporto:");
+            string sigla = Console.ReadLine();
+            Console.WriteLine("Digite a cidade do Aeroporto");
+            string cidade = Console.ReadLine();
+            Console.WriteLine("Digite o estado do Aeroporto");
+            string estado = Console.ReadLine();
+            Console.WriteLine("Digite o país do Aeroporto");
+            string pais = Console.ReadLine();
+            Aeroporto aerotemp = new Aeroporto(nome, sigla, cidade, estado, pais);
+            system.CadastrarAeroporto(aerotemp);
+            break;
     }
 } while (opt != 0);

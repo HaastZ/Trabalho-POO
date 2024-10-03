@@ -151,6 +151,15 @@ namespace TrabalhoPOO
 
             return voosComConexao;
         }
+
+        public Voo BuscaVooPorCodigo(string codigo)
+        {
+            foreach(Voo v in voos)
+            {
+                if (v.getCodigoVoo() == codigo) return v;
+            }
+            return null;
+        }
          public Passagem EmitirPassagem(List<Voo> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
         {
             Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens);
