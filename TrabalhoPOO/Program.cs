@@ -16,6 +16,14 @@ do
     Console.WriteLine("8)Buscar voos com conexão");
     Console.WriteLine("0)Sair");
     opt = int.Parse(Console.ReadLine());
+
+    // Verifica se a entrada é válida
+    if (!int.TryParse(Console.ReadLine(), out opt))
+    {
+        Console.WriteLine("Entrada inválida. Por favor, digite um número.");
+        continue; // Volta ao menu
+    }
+
     switch (opt)
     {
         case 1:
