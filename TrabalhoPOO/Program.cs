@@ -7,7 +7,7 @@ do
 {
     Console.WriteLine("-------MENU-------");
     Console.WriteLine("1)Cadastrar Funcionário");
-    Console.WriteLine("2)Cadastrar Usuário");
+    Console.WriteLine("2)Cadastrar Usuário do funcionário");
     Console.WriteLine("3)Cadastrar Companhia Aérea");
     Console.WriteLine("4)Cadastrar Aeroporto");
     Console.WriteLine("5)Cadastrar Voo");
@@ -103,7 +103,7 @@ do
             comptemp = null;
             do
             {
-                Console.WriteLine("Digite o codigo da companha aérea");
+                Console.WriteLine("Digite o codigo da companhia aérea");
                 string codigocompanhia = Console.ReadLine();
                 comptemp = system.BuscaCompanhiaPorCodigo(codigocompanhia);
                 if (comptemp == null) Console.WriteLine("Companhia não consta no cadastro");
