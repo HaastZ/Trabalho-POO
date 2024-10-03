@@ -5,20 +5,16 @@ public class Voo
     private DateTime dataHoraVoo;
     private string codigoVoo;
     private CompanhiaAerea companhiaAerea;
-    private TipoTarifa valorTarifaBasica;
-    private TipoTarifa valorTarifaExecutiva;
-    private TipoTarifa valorTarifaPremium;
+    private TipoTarifa tipoTarifa;
     private Moeda moeda;
-    public Voo(Aeroporto origem, Aeroporto destino, DateTime dataHoraVoo, string codigoVoo, CompanhiaAerea companhiaAerea, TipoTarifa basica, TipoTarifa executiva, TipoTarifa premium, Moeda moeda) 
+    public Voo(Aeroporto origem, Aeroporto destino, DateTime dataHoraVoo, string codigoVoo, CompanhiaAerea companhiaAerea, TipoTarifa tipoTarifa, Moeda moeda) 
     {
         this.aeroportoOrigem = origem;
         this.aeroportoDestino = destino;
         this.dataHoraVoo = dataHoraVoo;
         this.codigoVoo = codigoVoo;
         this.companhiaAerea = companhiaAerea;
-        this.valorTarifaBasica = basica;
-        this.valorTarifaExecutiva = executiva;
-        this.valorTarifaPremium = premium;
+        this.tipoTarifa = tipoTarifa;
         this.moeda = moeda;
     }
 
@@ -47,19 +43,9 @@ public class Voo
         return this.companhiaAerea;
     }
 
-    public TipoTarifa getTarifaBasica() 
+    public TipoTarifa GetTipoTarifa() 
     {
-        return this.valorTarifaBasica;
-    }
-
-    public TipoTarifa getTarifaExecutiva() 
-    {
-        return this.valorTarifaExecutiva;
-    }
-
-    public TipoTarifa getTarifaPremium() 
-    {
-        return this.valorTarifaPremium;
+        return this.tipoTarifa;
     }
 
     public Moeda getMoeda() 
