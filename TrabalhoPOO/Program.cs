@@ -2,62 +2,72 @@
 using TrabalhoPOO;
 
 SistemaAgenciaViagens system = new SistemaAgenciaViagens();
-int opt = 0;
-do
+Console.WriteLine("Cadastro de Funcionario");
+Funcionario Vinicius = new Funcionario("Vinicius", "123.123.123-123", "email@email.com");
+Funcionario Lucas = new Funcionario("Lucas", "123.123.123-123", "lucas@email.com");
+system.CadastrarFuncionario(Vinicius);
+system.CadastrarFuncionario(Lucas);
+Console.WriteLine("Funcionarios Cadastrados:");
+foreach(var funcionario in system.GetFuncionarios()) 
 {
-    Console.WriteLine("-------MENU-------");
-    Console.WriteLine("1)Cadastrar Funcionário");
-    Console.WriteLine("2)Cadastrar Usuário");
-    Console.WriteLine("3)Cadastrar Companhia Aérea");
-    Console.WriteLine("4)Cadastrar Voo");
-    Console.WriteLine("5)Cadastrar Passagem");
-    Console.WriteLine("6)Buscar voos por data de ida e volta");
-    Console.WriteLine("7)Buscar voos com conexão");
-    Console.WriteLine("0)Sair");
-    opt = int.Parse(Console.ReadLine());
-    switch (opt)
-    {
-        case 1:
-            Console.WriteLine("Digite o nome do funcionário:");
-            string nome = Console.ReadLine();
-            Console.WriteLine("Digite o cpf do funcionário:");
-            string cpf = Console.ReadLine();
-            Console.WriteLine("Digite o e-mail do funcionário");
-            string email = Console.ReadLine();
-            Funcionario funcionariotemp = new Funcionario(nome, cpf, email);
-            system.CadastrarFuncionario(funcionariotemp);
-            break;
-        case 2:
-            do
-            {
-                Console.WriteLine("Digite o nome do funcionário");
-                nome = Console.ReadLine();
-                funcionariotemp = system.BuscarFuncionario(nome);
-                if (funcionariotemp == null) Console.WriteLine("Funcionário não consta no cadastro");
-            } while (funcionariotemp == null);
-            Console.WriteLine("Digite o login");
-            string login = Console.ReadLine();
-            Console.WriteLine("Digite a senha");
-            string senha = Console.ReadLine();
-            Usuario user = new Usuario(funcionariotemp, login, senha);
-            break;
-        case 3:
-            Console.WriteLine("Digite o nome da companhia:");
-            nome = Console.ReadLine();
-            Console.WriteLine("Digite o codigo da companhia:");
-            string codigo = Console.ReadLine();
-            Console.WriteLine("Digite a razão social da companhia:");
-            string razao = Console.ReadLine();
-            Console.WriteLine("Digite o CNPJ da companhia:");
-            string cnpj = Console.ReadLine();
-            Console.WriteLine("Digite o valor da primeira bagagem:");
-            double valorPrimeirabagagem = double.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o valor da bagagem adicional:");
-            double valorBagagemAdicional = double.Parse(Console.ReadLine());
-            CompanhiaAerea comptemp = new CompanhiaAerea(nome, codigo, razao, cnpj, valorPrimeirabagagem, valorBagagemAdicional);
-            system.CadastrarCompanhia(comptemp);
-            break;
+    Console.WriteLine($"Nome: {funcionario.getNome()}, CPF: {funcionario.getCPF()}, Email: {funcionario.getEmail()}");
+}
+Console.WriteLine("");
+Console.WriteLine("Cadastro de Usuarios de funcionarios");
+Usuario vinicius = new Usuario(Vinicius, "vinicius.login", "senha123");
+Usuario lucas = new Usuario(Lucas, "lucas.login", "lucas123");
+system.CadastrarUsuario(vinicius);
+system.CadastrarUsuario(lucas);
+Console.WriteLine("Usuarios Cadastrados:");
+foreach(var usuario in system.GetUsuarios()) 
+{
+    Console.WriteLine($"Usuario de: {usuario.getFuncionario().getNome()}: Login: {usuario.getLogin()}, Senha: {usuario.getSenha()}");
+}
+Console.WriteLine("");
+Console.WriteLine("Cadastro de CompanhiaAerea");
+CompanhiaAerea companhia = new CompanhiaAerea("Companhia Aérea GOL", "GOL", "GOL Linhas Aéreas S/A", "00.000.000/0001-00", 50.0, 80.0);
+system.CadastrarCompanhia(companhia);
+Console.WriteLine("Companhias Cadastradas:");
+foreach(var companhias in system.GetCompanhias()) 
+{
+    Console.WriteLine($"Nome: {companhias.getNome()}, Codigo: {companhias.getCodigo()}, RazaoSocial: {companhias.getRazaoSocial()}, CNPJ: {companhias.getCnpj()}, valor da primeira bagagem: {companhias.getValorPrimeraBagagem()}, valor da bagagem adicional: {companhias.getValorBagagemAdicional()}");
+}
+Console.WriteLine("");
+Console.WriteLine("Cadastro de Aeroporto");
+Aeroporto aeroporto1 = new Aeroporto("Aeroporto Internacional de São Paulo", "GRU", "São Paulo", "SP", "Brasil");
+Aeroporto aeroporto2 = new Aeroporto("Aeroporto Internacional John F. Kennedy", "JFK", "Nova York", "NY", "Estados Unidos");
+system.CadastrarAeroporto(aeroporto1);
+system.CadastrarAeroporto(aeroporto2);
+Console.WriteLine("Aeroportos Cadastrados:");
+foreach(var aeroporto in system.GetAeroportos()) 
+{
+    Console.WriteLine($"Nome: {aeroporto.getNome()}");
+}
+Console.WriteLine("");
+Console.WriteLine("Cadastro de Voos");
+DateTime data = new DateTime(2024, 05, 07);
+TipoTarifa tarifa = new TipoTarifa(10, 20, 30);
+Moeda moeda = new Moeda("BRL", 1000);
+Voo voo = new Voo(aeroporto1, aeroporto2, data, "1234567", companhia, tarifa, moeda);
+system.CadastrarVoo(voo);
+Console.WriteLine("Voos cadastrados:");
+foreach(var voos in system.GetVoos()) 
+{
+    Console.WriteLine($"Aeroporto de origem: {voos.getAeroportoOrigem().getNome()}, Aeroporto de destino: {voos.getAeroportoDestino().getNome()}, Data de ida: {voos.getDataHoraVoo()}, Tipo da Tarifa: {voos.GetTipoTarifa().getTarifaBasica()}, moeda do voo: {voos.getMoeda().GetTipoMoeda()}");
+}
+Console.WriteLine("");
+Console.WriteLine("Cadastro de Passagens");
+TipoDocumento tipoDocumento = new TipoDocumento("MG-123-123-123", "123.123.123-123", "12345678");
+Passageiro passageiro = new Passageiro("Vinicius", "Almeida", tipoDocumento, "12345");
+Passagem passagem = new Passagem(system.GetVoos(), tarifa, passageiro, 4, moeda, 4000);
+system.CadastrarPassagem(passagem);
+Console.WriteLine("Passagens Cadastradas:");
+foreach(var pass in system.GetPassagens()) 
+{
+    Console.WriteLine($"Passagem de: {pass.GetPassageiro().getNome()}, Voos da passagem: {pass.getVoos()}, Tipo da tarifa: {pass.GetTipoTarifa().getTarifaBasica()}, Numero de bagagens: {pass.getNumeroBagagens()}, Moeda da passagem: {pass.GetMoeda().GetTipoMoeda()}, Valor total: {pass.getValorTotal()}");
+
+}
+Console.WriteLine("");
+Console.WriteLine("Buscando um voo por data de ida e data de volta");
 
 
-    }
-} while (opt != 0);
