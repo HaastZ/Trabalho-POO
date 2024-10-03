@@ -72,5 +72,48 @@ do
             Aeroporto aerotemp = new Aeroporto(nome, sigla, cidade, estado, pais);
             system.CadastrarAeroporto(aerotemp);
             break;
+        case 5:
+            Console.WriteLine("Digite o nome do Aeroporto de Origem");
+            nome = Console.ReadLine();
+            Aeroporto origem = system.BuscaAeroportoPorNome(nome);
+            Console.WriteLine("Digite o nome do Aeroporto de Destino");
+            nome = Console.ReadLine();
+            Aeroporto destino = system.BuscaAeroportoPorNome(nome);
+            Console.WriteLine("Digite o dia do voo");
+            int dia = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o mês do voo");
+            int mes = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o ano do voo");
+            int ano = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a hora do voo");
+            int hora = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite os minutos do voo");
+            int min = int.Parse(Console.ReadLine());
+            DateTime dataHoraVoo = new DateTime(ano, mes, dia, hora, min, 0);
+            Console.WriteLine("Digite o codigo do voo");
+            codigo = Console.ReadLine();
+            comptemp = null;
+            do
+            {
+                Console.WriteLine("Digite o codigo da companha aérea");
+                string codigocompanhia = Console.ReadLine();
+                comptemp = system.BuscaCompanhiaPorCodigo(codigocompanhia);
+                if (comptemp == null) Console.WriteLine("Companhia não consta no cadastro");
+            } while(comptemp == null);
+            Console.WriteLine("Digite o valor da tarifa básica");
+            double valorTarifaBasica = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o valor da tarifa executiva");
+            double valorTarifaExecutiva = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o valor da tarifa premium");
+            double valorTarifaPremium = double.Parse(Console.ReadLine());
+            TipoTarifa tarifatemp = new TipoTarifa(valorTarifaBasica, valorTarifaExecutiva,valorTarifaPremium);
+            Console.WriteLine("Digite o tipo de moeda (BRL ou USD)");
+            string tipomoeda = Console.ReadLine();
+            Console.WriteLine("Digite o valor total do voo");
+            double valor = double.Parse(Console.ReadLine());
+            Moeda moedatemp = new Moeda(tipomoeda, valor);
+            Voo vootemp = new Voo(origem, destino, dataHoraVoo, codigo, comptemp, tarifatemp, tarifatemp, tarifatemp, moedatemp);
+            system.CadastrarVoo(vootemp);
+            break;
     }
 } while (opt != 0);

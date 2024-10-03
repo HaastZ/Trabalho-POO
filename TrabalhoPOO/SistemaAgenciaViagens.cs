@@ -160,6 +160,23 @@ namespace TrabalhoPOO
             }
             return null;
         }
+        public Aeroporto BuscaAeroportoPorNome(string nome)
+        {
+            foreach (Aeroporto a in aeroportos)
+            {
+                if (a.getNome() == nome) return a;
+            }
+            return null;
+        }
+
+        public CompanhiaAerea BuscaCompanhiaPorCodigo(string codigo)
+        {
+            foreach(CompanhiaAerea c in companhiasAereas)
+            {
+                if(c.getCodigo() ==  codigo) return c;
+            }
+            return null;
+        }
          public Passagem EmitirPassagem(List<Voo> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
         {
             Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens);
