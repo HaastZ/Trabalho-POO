@@ -28,11 +28,11 @@ public class Moeda
         double valorConvertido = 0; //Variável que armazena o valor do voo após converção
         double taxaConversaoBRLParaUSD = 5.45; // Considerando a taxa de conversão de 1 USD = 5,45 BRL
 
-        if (tipoMoeda == "BRL")
+        if (this.tipoMoeda == "BRL")
         {
             valorConvertido = valor; // Se as moedas forem iguais, o valor é o mesmo
         }
-        else if (tipoMoeda == "USD")
+        else if (this.tipoMoeda == "USD")
         {
             valorConvertido = valor/taxaConversaoBRLParaUSD; // Converter de real para dólar
         }
