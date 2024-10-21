@@ -13,7 +13,7 @@ internal class Program
         Funcionario Lucas = new Funcionario("Lucas", "123.123.123-123", "lucas@email.com");
         Aeroporto aeroporto1 = new Aeroporto("Aeroporto Internacional de São Paulo", "GRU", "São Paulo", "SP", "Brasil");
         Aeroporto aeroporto2 = new Aeroporto("Aeroporto Internacional John F. Kennedy", "JFK", "Nova York", "NY", "Estados Unidos");
-        DateTime dataIda = new DateTime(2024, 05, 07);
+        DateTime dataIda = new DateTime(2024, 05, 07, 14, 30, 00);
         TipoTarifa tarifa = new TipoTarifa(10, 20, 30);
         Moeda moeda = new Moeda("BRL", 1000);
         CompanhiaAerea companhia = new CompanhiaAerea("Companhia Aérea GOL", "GOL", "GOL Linhas Aéreas S/A", "00.000.000/0001-00", 50.0, 80.0);
@@ -127,7 +127,22 @@ internal class Program
                         Console.WriteLine("\nPassagens Cadastradas:\n");
                         foreach (var pass in system.GetPassagens())
                         {
-                            Console.WriteLine($"Passagem de: {pass.GetPassageiro().getNome()}, Voos da passagem: {pass.getVoos()}, Tipo da tarifa: {pass.GetTipoTarifa().getTarifaBasica()}, Numero de bagagens: {pass.getNumeroBagagens()}, Moeda da passagem: {pass.GetMoeda().GetTipoMoeda()}, Valor total: {pass.getValorTotal()}");
+                            Console.Write($"Passagem de: {pass.GetPassageiro().getNome()}, Voos da passagem: ");
+                            var voos = pass.GetVooProgramado();
+                            if (voos != null && voos.Count > 0)
+                            {
+                                foreach (var Voo in voos)
+                                {
+                                    Console.Write($"{Voo.GetVoo()} ");
+                                }
+                            }
+                            else
+                            {
+                                Console.Write("Nenhum voo programado para esta passagem");
+                            }
+                            Console.WriteLine($", Tipo da tarifa: {pass.GetTipoTarifa().getTarifaBasica()}, " + $"Numero de bagagens: {pass.getNumeroBagagens()}, " +
+                            $"Moeda da passagem: {pass.GetMoeda().GetTipoMoeda()}, " +
+                            $"Valor total: {pass.getValorTotal()}");
                         }
                         break;
                     }
@@ -135,11 +150,11 @@ internal class Program
                 case 7:// Busca de Voos
                     {
                         Console.WriteLine("\nBuscando um voo por data de ida e data de volta\n");
-                        DateTime dataVolta = new DateTime(2024, 09, 10);
+                        DateTime dataVolta = new DateTime(2024, 09, 10, 20, 00, 00);
                         List<Voo> voosEncontrados = system.BuscarVoos(aeroporto1, aeroporto2, dataIda, dataVolta);
-                        foreach (var voos in voosEncontrados)
+                        foreach (var v in voosEncontrados)
                         {
-                            Console.WriteLine($"Voos encontrados: {voos.getAeroportoOrigem().getNome()} para {voos.getAeroportoDestino().getNome()}, Pela: {voos.getCompanhiaAerea().getNome()}");
+                            Console.WriteLine($"Voos encontrados: \n{v.getAeroportoOrigem().getNome()} para {v.getAeroportoDestino().getNome()} \nPela: {v.getCompanhiaAerea().getNome()}\ndata de ida: ${dataIda}, data de volta: ${dataVolta}");
                         }
                         break;
                     }
@@ -176,7 +191,15 @@ internal class Program
                         }
                         break;
                     }
-            } 
+                case 10:
+                    {
+                        Console.WriteLine("Cancelamento de Voos");
+                        system.Cancelar(vooProgramado);
+                        system.Cancelar(passagem);
+                        break;
+                    }
+
+            }
         }
         while (opt != 0);
     }
