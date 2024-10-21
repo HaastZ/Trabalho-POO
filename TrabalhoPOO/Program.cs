@@ -20,7 +20,9 @@ internal class Program
         Voo voo = new Voo(aeroporto1, aeroporto2, dataIda, "1234567", companhia, tarifa, moeda);
         TipoDocumento tipoDocumento = new TipoDocumento("MG-123-123-123", "123.123.123-123", "12345678");
         Passageiro passageiro = new Passageiro("Vinicius", "Almeida", tipoDocumento, "12345");
-        Passagem passagem = new Passagem(system.GetVoos(), tarifa, passageiro, 4, moeda, 4000);
+        Aeronave aeronave = new Aeronave();
+        VooProgramado vooProgramado = new VooProgramado(voo, dataIda, aeronave);
+        Passagem passagem = new Passagem(system.GetVoosProgramados(), tarifa, passageiro, 4, moeda, 4000);
 
         do
         {
@@ -34,6 +36,7 @@ internal class Program
             Console.WriteLine("7)Buscar Voos por Data de Ida e Volta");
             Console.WriteLine("8)Buscar Voos com Conexão");
             Console.WriteLine("9)Buscar Passagens dos Passageiros");
+            Console.WriteLine("10)Cancelar Voo");
             Console.WriteLine("0)Sair\n");
             opt = int.Parse(Console.ReadLine());
 

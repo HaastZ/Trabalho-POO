@@ -1,4 +1,4 @@
-public class Passagem
+public class Passagem : ICancelavel
 {
     private List<Voo> voos;
     private TipoTarifa tipoTarifa;
@@ -7,14 +7,17 @@ public class Passagem
     private Moeda moeda;
     private double valorTotal;
     private static double TAXAFIXA = 0.10;
-    public Passagem(List<Voo> voos, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
+    private List<VooProgramado> voosProgramados;
+    private bool statusPassagem;
+    public Passagem(List<VooProgramado> voosProgramados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
     {
-        this.voos = voos;
+        this.voosProgramados = voosProgramados;
         this.tipoTarifa = tipoTarifa;
         this.passageiro = passageiro;
         this.numeroBagagens = numeroBagagens;
         this.moeda = moeda;
         this.valorTotal = valorTotal;
+        this.statusPassagem = true;
     }
 
     public Passagem(List<Voo> voos, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
@@ -30,6 +33,29 @@ public class Passagem
         double remuneracao;
         remuneracao = this.valorTotal * Passagem.TAXAFIXA / 100;
         return remuneracao;
+    }
+
+    public void Cancelar() 
+    {
+        if(!statusPassagem) 
+        {
+            Console.WriteLine("A passagem já foi cancelada");
+        }
+        else 
+        {
+            statusPassagem = false;
+            Console.WriteLine($"Passagem de {passageiro.getNome()} foi cancelada");
+        }
+    }
+
+    public List<VooProgramado> GetVooProgramado() 
+    {
+        return this.voosProgramados;
+    }
+
+    public bool GetStatusPassagem() 
+    {
+        return this.statusPassagem;
     }
 
     public List<Voo> getVoos() 

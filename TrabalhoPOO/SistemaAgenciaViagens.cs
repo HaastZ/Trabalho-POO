@@ -13,6 +13,7 @@ namespace TrabalhoPOO
         private List<Aeroporto> aeroportos;
         private List<Voo> voos;
         private List<Passagem> passagens;
+        private List<VooProgramado> voosProgramados;
         // Métodos getters e setters para as listas
         public SistemaAgenciaViagens()
         {
@@ -22,6 +23,7 @@ namespace TrabalhoPOO
             this.aeroportos = new List<Aeroporto>();
             this.voos = new List<Voo>();
             this.passagens = new List<Passagem>();
+            this.voosProgramados = new List<VooProgramado>();
         }
         public void CadastrarFuncionario(Funcionario funcionario)
         {
@@ -83,6 +85,16 @@ namespace TrabalhoPOO
         public List<Voo> GetVoos()
         {
             return voos;
+        }
+
+        public void CadastrarVoosProgramados(VooProgramado voos) 
+        {
+            voosProgramados.Add(voos);
+        }
+
+        public List<VooProgramado> GetVoosProgramados() 
+        {
+            return voosProgramados;
         }
 
         //Eu gosto assim, amostradinho, vou logo fazer sua passagem
@@ -172,6 +184,34 @@ namespace TrabalhoPOO
                 }
             }
             return passagensDoPassageiro;
+        }
+
+        public void Cancelar(ICancelavel item)
+        {
+            item.Cancelar();
+        }
+
+        public void CancelarVoo(VooProgramado vooProgramado)
+        {
+            if (!voosProgramados.Contains(vooProgramado))
+            {
+                Console.WriteLine("Voo programado não encontrado.");
+                return;
+            }
+
+            Cancelar(vooProgramado);
+            CancelarPassagem(vooProgramado);
+        }
+
+        private void CancelarPassagem(VooProgramado vooProgramado)
+        {
+            foreach (var passagem in passagens)
+            {
+                if (passagem.GetVooProgramado().Contains(vooProgramado) && passagem.GetStatusPassagem())
+                {
+                    Cancelar(passagem);
+                }
+            }
         }
     }
 }
