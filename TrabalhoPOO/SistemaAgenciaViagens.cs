@@ -190,29 +190,5 @@ namespace TrabalhoPOO
         {
             item.Cancelar();
         }
-
-        public void CancelarVoo(VooProgramado vooProgramado)
-        {
-            if (!voosProgramados.Contains(vooProgramado))
-            {
-                Console.WriteLine("Voo programado não encontrado.");
-                return;
-            }
-
-            Cancelar(vooProgramado);
-            CancelarPassagem(vooProgramado);
-        }
-
-        private void CancelarPassagem(VooProgramado vooProgramado)
-        {
-            foreach (var passagem in passagens)
-            {
-                if (passagem.GetVooProgramado().Contains(vooProgramado) && passagem.GetStatusPassagem())
-                {
-                    Cancelar(passagem);
-                }
-            }
-        }
-        
     }
 }
