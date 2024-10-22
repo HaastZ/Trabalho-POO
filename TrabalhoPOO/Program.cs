@@ -152,6 +152,13 @@ internal class Program
                         Console.WriteLine("\nBuscando um voo por data de ida e data de volta\n");
                         DateTime dataVolta = new DateTime(2024, 09, 10, 20, 00, 00);
                         List<Voo> voosEncontrados = system.BuscarVoos(aeroporto1, aeroporto2, dataIda, dataVolta);
+                        
+                        if (voosEncontrados.Count == 0)
+                        {
+                            Console.WriteLine("Nenhum voo encontrado para as datas fornecidas.");
+                        }
+                        else
+                        {
                         foreach (var v in voosEncontrados)
                         {
                             Console.WriteLine($"Voos encontrados: \n{v.getAeroportoOrigem().getNome()} para {v.getAeroportoDestino().getNome()} \nPela: {v.getCompanhiaAerea().getNome()}\ndata de ida: ${dataIda}, data de volta: ${dataVolta}");
@@ -181,6 +188,13 @@ internal class Program
                     {
                         Console.WriteLine("\nBuscando passagens dos passageiros\n");
                         List<Passagem> passagensDoPassageiro = system.BuscarPassagem(passageiro);
+                        
+                        if (passagensDoPassageiro.Count == 0)
+                        {
+                            Console.WriteLine("Nenhuma passagem encontrada para o este passageiro.");
+                        }
+                        else
+                        {
                         foreach (var passagensPassageiro in passagensDoPassageiro)
                         {
                             Console.WriteLine($"Passageiro: {passagensPassageiro.GetPassageiro().getNome()};");
@@ -190,7 +204,9 @@ internal class Program
                             }
                         }
                         break;
+                        }
                     }
+        
                 case 10:
                     {
                         Console.WriteLine("Cancelamento de Voo e Passagens");
