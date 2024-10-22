@@ -193,12 +193,15 @@ internal class Program
                     }
                 case 10:
                     {
-                        Console.WriteLine("Cancelamento de Voos");
+                        Console.WriteLine("Cancelamento de Voo e Passagens");
+                        Console.WriteLine($"Status do voo: {vooProgramado.GetStatusVoo()} (false - cancelado, true - ativo)");
                         system.Cancelar(vooProgramado);
+                        Console.WriteLine($"Status do voo após cancelamento: {vooProgramado.GetStatusVoo()}");
+                        Console.WriteLine($"Status da passagem: {passagem.GetStatusPassagem()} (false - cancelada, true - ativa)");
                         system.Cancelar(passagem);
+                        Console.WriteLine($"Status da passagem após cancelamento: {passagem.GetStatusPassagem()}");
                         break;
                     }
-
             }
         }
         while (opt != 0);

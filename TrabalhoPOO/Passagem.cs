@@ -28,62 +28,66 @@ public class Passagem : ICancelavel
         this.numeroBagagens = numeroBagagens;
     }
 
-    public double CalcularRemuneracao() 
+    public double CalcularRemuneracao()
     {
         double remuneracao;
         remuneracao = this.valorTotal * Passagem.TAXAFIXA / 100;
         return remuneracao;
     }
 
-    public void Cancelar() 
+    public void Cancelar()
     {
-        if(!statusPassagem) 
+        if (!statusPassagem)
         {
             Console.WriteLine("A passagem já foi cancelada");
         }
-        else 
+        else
         {
-            statusPassagem = false;
-            Console.WriteLine($"Passagem de {passageiro.getNome()} foi cancelada");
+            this.statusPassagem = false;
+            foreach (var voo in this.voosProgramados)
+            {
+                voo.Cancelar();  // Cancela cada voo associado á passagem
+            }
+            Console.WriteLine($"Passagem e todos os voos associados do passageiro {passageiro.getNome()} foi cancelado.");
         }
     }
 
-    public List<VooProgramado> GetVooProgramado() 
+    public List<VooProgramado> GetVooProgramado()
     {
         return this.voosProgramados;
     }
 
-    public bool GetStatusPassagem() 
+    public bool GetStatusPassagem()
     {
         return this.statusPassagem;
     }
 
-    public List<Voo> getVoos() 
+    public List<Voo> getVoos()
     {
         return this.voos;
     }
 
-    public TipoTarifa GetTipoTarifa() 
+    public TipoTarifa GetTipoTarifa()
     {
         return this.tipoTarifa;
     }
 
-    public Passageiro GetPassageiro() 
+    public Passageiro GetPassageiro()
     {
         return this.passageiro;
     }
 
-    public int getNumeroBagagens() 
+    public int getNumeroBagagens()
     {
         return this.numeroBagagens;
     }
 
-    public Moeda GetMoeda() 
+    public Moeda GetMoeda()
     {
         return this.moeda;
     }
 
-    public double getValorTotal() 
+    public double getValorTotal()
     {
         return this.valorTotal;
     }

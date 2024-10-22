@@ -19,9 +19,14 @@ public class VooProgramado : ICancelavel
             Console.WriteLine("O voo programado já está cancelado");
         }
         else {
-            statusVoo = false;
+            this.statusVoo = false;
             Console.WriteLine($"Voo programado para {this.dataHoraPartida} foi cancelado");
         }
+    }
+
+    public bool GetStatusVoo() 
+    {
+        return this.statusVoo;
     }
 
     public Voo GetVoo() 
