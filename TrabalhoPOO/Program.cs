@@ -1,6 +1,5 @@
-﻿﻿// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 using TrabalhoPOO;
-
 internal class Program
 {
     private static void Main(string[] args)
@@ -17,7 +16,8 @@ internal class Program
         TipoTarifa tarifa = new TipoTarifa(10, 20, 30);
         Moeda moeda = new Moeda("BRL", 1000);
         CompanhiaAerea companhia = new CompanhiaAerea("Companhia Aérea GOL", "GOL", "GOL Linhas Aéreas S/A", "00.000.000/0001-00", 50.0, 80.0);
-        Voo voo = new Voo(aeroporto1, aeroporto2, dataIda, "1234567", companhia, tarifa, moeda);
+        List<string> frequenciaSemanal = ["segunda", "quarta", "sexta"];
+        Voo voo = new Voo(aeroporto1, aeroporto2, dataIda, "1234567", companhia, tarifa, moeda, frequenciaSemanal, "10:30", "10:00");
         TipoDocumento tipoDocumento = new TipoDocumento("MG-123-123-123", "123.123.123-123", "12345678");
         Passageiro passageiro = new Passageiro("Vinicius", "Almeida", tipoDocumento, "12345");
         Passagem passagem = new Passagem(system.GetVoos(), tarifa, passageiro, 4, moeda, 4000);
@@ -105,6 +105,7 @@ internal class Program
                     {
                         Console.WriteLine("\nCadastro de Voos");
                         system.CadastrarVoo(voo);
+                        if (voo.getFrequenciaSemanal() != null) system.InstanciaVoosPorDiaDaSemana(voo);
 
                         // Voos Cadastrados
                         Console.WriteLine("\nVoos cadastrados:\n");
@@ -174,7 +175,7 @@ internal class Program
                         }
                         break;
                     }
-            } 
+            }
         }
         while (opt != 0);
     }
