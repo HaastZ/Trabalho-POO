@@ -1,3 +1,5 @@
+using System;
+
 namespace TrabalhoPOO
 {
     internal class SistemaAgenciaViagens
@@ -15,7 +17,7 @@ namespace TrabalhoPOO
         public SistemaAgenciaViagens()
         {
             this.funcionarios = new List<Funcionario>();
-            this.usuarios = new List<Usuario>();
+            this.usuarios= new List<Usuario>();
             this.companhiasAereas = new List<CompanhiaAerea>();
             this.aeroportos = new List<Aeroporto>();
             this.voos = new List<Voo>();
@@ -118,7 +120,7 @@ namespace TrabalhoPOO
         /// <param name="dataSaida">Data de saída</param>
         /// <param name="dataVolta">Data da volta</param>
         /// <returns>Lista contendo todos os voos</returns>
-        public List<Voo> BuscarVoos(Aeroporto origem, Aeroporto destino, DateTime dataSaida, DateTime dataVolta)
+        public List<Voo> BuscarVoos(Aeroporto origem, Aeroporto destino, DateTime dataSaida, DateTime dataVolta )
         {
             List<Voo> resp = new List<Voo>();
             foreach (Voo v in voos)
@@ -152,7 +154,7 @@ namespace TrabalhoPOO
 
         public Voo BuscaVooPorCodigo(string codigo)
         {
-            foreach (Voo v in voos)
+            foreach(Voo v in voos)
             {
                 if (v.getCodigoVoo() == codigo) return v;
             }
@@ -169,19 +171,19 @@ namespace TrabalhoPOO
 
         public CompanhiaAerea BuscaCompanhiaPorCodigo(string codigo)
         {
-            foreach (CompanhiaAerea c in companhiasAereas)
+            foreach(CompanhiaAerea c in companhiasAereas)
             {
-                if (c.getCodigo() == codigo) return c;
+                if(c.getCodigo() ==  codigo) return c;
             }
             return null;
         }
-        public Passagem EmitirPassagem(List<Voo> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
+         public Passagem EmitirPassagem(List<Voo> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
         {
             Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens);
             passagens.Add(novaPassagem);
             return novaPassagem;
         }
-        public List<Passagem> BuscarPassagem(Passageiro passageiro)
+         public List<Passagem> BuscarPassagem(Passageiro passageiro)
         {
             List<Passagem> passagensDoPassageiro = new List<Passagem>();
 
@@ -190,113 +192,12 @@ namespace TrabalhoPOO
 
                 if (passagem.GetPassageiro() == passageiro)
 
-                    if (passagem.GetPassageiro() == passageiro)
-                    {
-                        passagensDoPassageiro.Add(passagem);
-                    }
-            }
-            return passagensDoPassageiro;
-        }
-
-        public void InstanciaVoosPorDiaDaSemana(Voo voo)
-        {
-            DateTime diaDeHoje = DateTime.Now;
-            for (int i = 0; i < voo.getFrequenciaSemanal().Count; i++)
-            {
-                switch (voo.getFrequenciaSemanal()[i])
+                if (passagem.GetPassageiro() == passageiro)
                 {
-                    case "segunda":
-                        for (int j = 1; j <= 30; j++)
-                        {
-                            if ((int)diaDeHoje.DayOfWeek == 1)
-                            {
-                                Voo temp = voo.Clonar();
-                                temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);
-                            }
-                            diaDeHoje = diaDeHoje.AddDays(1);
-                        }
-                        diaDeHoje = DateTime.Now;
-                        break;
-                    case "terça":
-                        for (int j = 1; j <= 30; j++)
-                        {
-                            if ((int)diaDeHoje.DayOfWeek == 2)
-                            {
-                                Voo temp = voo.Clonar();
-                                temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);
-                            }
-                            diaDeHoje = diaDeHoje.AddDays(1);
-                        }
-                        diaDeHoje = DateTime.Now;
-                        break;
-                    case "quarta":
-                        for (int j = 1; j <= 30; j++)
-                        {
-                            if ((int)diaDeHoje.DayOfWeek == 3)
-                            {
-                                Voo temp = voo.Clonar();
-                                temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);
-                            }
-                            diaDeHoje = diaDeHoje.AddDays(1);
-                        }
-                        diaDeHoje = DateTime.Now;
-                        break;
-                    case "quinta":
-                        for (int j = 1; j <= 30; j++)
-                        {
-                            if ((int)diaDeHoje.DayOfWeek == 4)
-                            {
-                                Voo temp = voo.Clonar();
-                                temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);
-                            }
-                            diaDeHoje = diaDeHoje.AddDays(1);
-                        }
-                        diaDeHoje = DateTime.Now;
-                        break;
-                    case "sexta":
-                        for (int j = 1; j <= 30; j++)
-                        {
-                            if ((int)diaDeHoje.DayOfWeek == 5)
-                            {
-                                Voo temp = voo.Clonar();
-                                temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);
-                            }
-                            diaDeHoje = diaDeHoje.AddDays(1);
-                        }
-                        diaDeHoje = DateTime.Now;
-                        break;
-                    case "sabado":
-                        for (int j = 1; j <= 30; j++)
-                        {
-                            if ((int)diaDeHoje.DayOfWeek == 6)
-                            {
-                                Voo temp = voo.Clonar();
-                                temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);
-                            }
-                            diaDeHoje = diaDeHoje.AddDays(1);
-                        }
-                        break;
-                    case "domingo":
-                        for (int j = 1; j <= 30; j++)
-                        {
-                            if ((int)diaDeHoje.DayOfWeek == 0)
-                            {
-                                Voo temp = voo.Clonar();
-                                temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);
-                            }
-                            diaDeHoje = diaDeHoje.AddDays(1);
-                        }
-                        diaDeHoje = DateTime.Now;
-                        break;
+                    passagensDoPassageiro.Add(passagem);
                 }
             }
+            return passagensDoPassageiro;
         }
     }
 }
