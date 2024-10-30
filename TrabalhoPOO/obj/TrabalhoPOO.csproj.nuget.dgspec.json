@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vinícius\\Desktop\\Trabalho\\TrabalhoPOO\\TrabalhoPOO.csproj": {}
+    "C:\\Users\\Vinícius\\OneDrive\\Desktop\\Trabalho\\TrabalhoPOO\\TrabalhoPOO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vinícius\\Desktop\\Trabalho\\TrabalhoPOO\\TrabalhoPOO.csproj": {
+    "C:\\Users\\Vinícius\\OneDrive\\Desktop\\Trabalho\\TrabalhoPOO\\TrabalhoPOO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vinícius\\Desktop\\Trabalho\\TrabalhoPOO\\TrabalhoPOO.csproj",
+        "projectUniqueName": "C:\\Users\\Vinícius\\OneDrive\\Desktop\\Trabalho\\TrabalhoPOO\\TrabalhoPOO.csproj",
         "projectName": "TrabalhoPOO",
-        "projectPath": "C:\\Users\\Vinícius\\Desktop\\Trabalho\\TrabalhoPOO\\TrabalhoPOO.csproj",
+        "projectPath": "C:\\Users\\Vinícius\\OneDrive\\Desktop\\Trabalho\\TrabalhoPOO\\TrabalhoPOO.csproj",
         "packagesPath": "C:\\Users\\Vinícius\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vinícius\\Desktop\\Trabalho\\TrabalhoPOO\\obj\\",
+        "outputPath": "C:\\Users\\Vinícius\\OneDrive\\Desktop\\Trabalho\\TrabalhoPOO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vinícius\\AppData\\Roaming\\NuGet\\NuGet.Config",
