@@ -26,5 +26,4 @@ public class Bilhete
 
             Console.WriteLine("-------------------------------------");
         }
-    }
 }
