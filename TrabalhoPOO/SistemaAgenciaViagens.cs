@@ -11,6 +11,7 @@ namespace TrabalhoPOO
         private List<Aeroporto> aeroportos;
         private List<Voo> voos;
         private List<Passagem> passagens;
+        private List<VooProgramado> voosProgramados;
         // Métodos getters e setters para as listas
         public SistemaAgenciaViagens()
         {
@@ -20,6 +21,7 @@ namespace TrabalhoPOO
             this.aeroportos = new List<Aeroporto>();
             this.voos = new List<Voo>();
             this.passagens = new List<Passagem>();
+            this.voosProgramados = new List<VooProgramado>();
         }
         public void CadastrarFuncionario(Funcionario funcionario)
         {
@@ -81,6 +83,16 @@ namespace TrabalhoPOO
         public List<Voo> GetVoos()
         {
             return voos;
+        }
+
+        public void CadastrarVoosProgramados(VooProgramado voos) 
+        {
+            voosProgramados.Add(voos);
+        }
+
+        public List<VooProgramado> GetVoosProgramados() 
+        {
+            return voosProgramados;
         }
 
         //Eu gosto assim, amostradinho, vou logo fazer sua passagem
@@ -297,6 +309,10 @@ namespace TrabalhoPOO
                         break;
                 }
             }
+        }
+        public void Cancelar(ICancelavel item)
+        {
+            item.Cancelar();
         }
     }
 }
