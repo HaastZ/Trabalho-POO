@@ -1,9 +1,6 @@
-namespace TrabalhoPOO
+public class Bilhete
 {
-    public class Bilhete
-    {
         private Passagem passagem;
-
         public Bilhete(Passagem passagem)
         {
             this.passagem = passagem;
