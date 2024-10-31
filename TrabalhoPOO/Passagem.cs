@@ -52,7 +52,7 @@ public class Passagem : ICancelavel
         }
     }
 
-    public List<VooProgramado> GetVooProgramado()
+    public List<VooProgramado> GetVoosProgramados()
     {
         return this.voosProgramados;
     }
