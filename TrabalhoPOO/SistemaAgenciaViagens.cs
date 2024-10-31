@@ -225,6 +225,8 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
                         }
@@ -238,6 +240,8 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
                         }
@@ -251,6 +255,8 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
                         }
@@ -264,6 +270,8 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
                         }
@@ -277,6 +285,8 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
                         }
@@ -290,6 +300,8 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp,temp.getDataHoraVoo(),new Aeronave());
+                                CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
                         }
@@ -302,6 +314,8 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
                         }

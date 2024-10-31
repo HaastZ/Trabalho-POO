@@ -22,11 +22,13 @@ internal class Program
         Passageiro passageiro = new Passageiro("Vinicius", "Almeida", tipoDocumento, "12345");
         Aeronave aeronave = new Aeronave();
         VooProgramado vooProgramado = new VooProgramado(voo, dataIda, aeronave);
+        system.InstanciaVoosPorDiaDaSemana(voo);
         Passagem passagem = new Passagem(system.GetVoosProgramados(), tarifa, passageiro, 4, moeda, 4000);
-        foreach(var a in system.GetVoosProgramados()) 
-        {
-            Console.WriteLine(a.GetVoo().getAeroportoOrigem());
-        }
+
+
+
+
+
         do
         {
             Console.WriteLine("\n-------MENU-------\n");
@@ -112,6 +114,7 @@ internal class Program
                     {
                         Console.WriteLine("\nCadastro de Voos");
                         system.CadastrarVoo(voo);
+
                         system.CadastrarVoosProgramados(vooProgramado);
                         if (voo.getFrequenciaSemanal() != null) system.InstanciaVoosPorDiaDaSemana(voo);
 
@@ -207,7 +210,7 @@ internal class Program
                     {
                         // Cria o bilhete para a passagem fornecida
                         Bilhete bilhete = new Bilhete(passagem);
-                        bilhete.ToString();
+                        Console.WriteLine(bilhete.ToString()); 
                         break;
                     }
               }
