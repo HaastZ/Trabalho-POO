@@ -25,7 +25,10 @@ internal class Program
         system.InstanciaVoosPorDiaDaSemana(voo);
         Passagem passagem = new Passagem(system.GetVoosProgramados(), tarifa, passageiro, 4, moeda, 4000);
 
-        Console.WriteLine(passagem.GetPassageiro());
+
+
+
+
         do
         {
             Console.WriteLine("\n-------MENU-------\n");
@@ -113,6 +116,9 @@ internal class Program
                         Console.WriteLine("\nCadastro de Voos");
                         system.CadastrarVoo(voo);
 
+                        system.CadastrarVoosProgramados(vooProgramado);
+                        if (voo.getFrequenciaSemanal() != null) system.InstanciaVoosPorDiaDaSemana(voo);
+
                         // Voos Cadastrados
                         Console.WriteLine("\nVoos cadastrados:\n");
                         foreach (var voos in system.GetVoos())
@@ -132,22 +138,14 @@ internal class Program
                         Console.WriteLine("\nPassagens Cadastradas:\n");
                         foreach (var pass in system.GetPassagens())
                         {
-                            Console.Write($"Passagem de: {pass.GetPassageiro().getNome()}, Voos da passagem: ");
-                            var voos = pass.GetVooProgramado();
-                            if (voos != null && voos.Count > 0)
+                            Console.Write($"Passagem do passageiro: {pass.GetPassageiro().getNome()}, \nVoos da passagem: ");
+                            foreach(var voos in pass.GetVoosProgramados()) 
                             {
-                                foreach (var Voo in voos)
-                                {
-                                    Console.Write($"{Voo.GetVoo()} ");
-                                }
+                                var v = vooProgramado.GetVoo();
+                                Console.WriteLine($"- Voo {v.getCodigoVoo()}: {v.getAeroportoOrigem().getNome()} para {v.getAeroportoDestino().getNome()}");
+                                Console.WriteLine($"- Data e Hora de Partida: {v.getDataHoraVoo()}");
+                                Console.WriteLine($"- Companhia Aérea: {v.getCompanhiaAerea().getNome()}");
                             }
-                            else
-                            {
-                                Console.Write("Nenhum voo programado para esta passagem");
-                            }
-                            Console.WriteLine($", Tipo da tarifa: {pass.GetTipoTarifa().getTarifaBasica()}, " + $"Numero de bagagens: {pass.getNumeroBagagens()}, " +
-                            $"Moeda da passagem: {pass.GetMoeda().GetTipoMoeda()}, " +
-                            $"Valor total: {pass.getValorTotal()}");
                         }
                         break;
                     }
