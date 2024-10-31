@@ -206,40 +206,15 @@ internal class Program
                         Console.WriteLine($"Status da passagem após cancelamento: {passagem.GetStatusPassagem()}");
                         break;
                     }
+                    
                 case 11: // Exibir Bilhete
                     {
-                    if (passagem != null && passagem.getVoos() != null && passagem.getVoos().Count > 0)
-                    {
-                        bool Valido = true;
-
-                        // Verificar se todos os voos têm origem e destino
-                        foreach (var Voo in passagem.getVoos())
-                        {
-                            if (voo.getAeroportoOrigem() == null || voo.getAeroportoDestino() == null)
-                            {
-                            Valido = false;
-                            break;
-                            }
-                        }
-
-                        if (Valido)
-                        {
-                            // Cria o bilhete para a passagem fornecida
-                            Bilhete bilhete = new Bilhete(passagem);
-                            bilhete.CriarBilhete();
-                        }
-                        else
-                        {
-                            Console.WriteLine("Não é possível exibir o bilhete, alguns voos não têm origem ou destino definidos.");
-                        }
-                        }
-                     else
-                     {
-                         Console.WriteLine("Nenhuma passagem existente no sistema ou sem voos associados.");
-                     }
-                    break;
-                    } 
-                }
+                        // Cria o bilhete para a passagem fornecida
+                        Bilhete bilhete = new Bilhete(passagem);
+                        bilhete.ToString();
+                        break;
+                    }
+              }
            }
         while (opt != 0);
     }
