@@ -10,10 +10,11 @@ public class Bilhete
         {
             var passageiro = passagem.GetPassageiro();
             var nome = passageiro.getNome();
+            var sobrenome = passageiro.getSobrenome();
             var cpf = passageiro.getNumeroDocumento();
 
-            Console.WriteLine("-------------------------------------");
-            Console.WriteLine( $"Nome: {nome}          CPF: {cpf}");
+            Console.WriteLine("-------------------------------------------------");
+            Console.WriteLine( $"Nome: {nome}{sobrenome}          CPF: {cpf}");
 
             foreach (var vooProgramado in passagem.GetVooProgramado())
             {
@@ -21,9 +22,9 @@ public class Bilhete
                 var destino = vooProgramado.GetDestino(); 
 
                 Console.WriteLine();
-                Console.WriteLine($"Origem: {origem}   Destino: {destino}");
+                Console.WriteLine( $"Origem: {origem}          Destino: {destino}");
             }
 
-            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("-------------------------------------------------");
         }
 }
