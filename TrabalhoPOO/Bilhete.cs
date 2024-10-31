@@ -8,11 +8,11 @@ public class Bilhete
 
     public override string ToString()
     {
-        if (passagem == null || passagem.GetPassageiro() == null || passagem.GetVooProgramado() == null || passagem.GetVooProgramado().Count == 0)
+        if (passagem == null || passagem.GetPassageiro() == null || passagem.GetVoosProgramados() == null || passagem.GetVoosProgramados().Count == 0)
         {
             return "Não é possível exibir o bilhete: dados incompletos.";
         }
-        foreach (var vooProg in passagem.GetVooProgramado())
+        foreach (var vooProg in passagem.GetVoosProgramados())
         {
             Voo voo = vooProg.GetVoo();
             if (voo.getAeroportoOrigem() == null || voo.getAeroportoDestino() == null)
@@ -25,7 +25,7 @@ public class Bilhete
         var bilhete = $"-----------------------------------------------------\n";
         bilhete += $"Nome: {passageiro.getNome()} {passageiro.getSobrenome()}     Tipo Documento: {passageiro.getNumeroDocumento()}\n\n";
 
-        foreach (var vooProg in passagem.GetVooProgramado())
+        foreach (var vooProg in passagem.GetVoosProgramados())
         {
             Voo voo = vooProg.GetVoo();
             bilhete += $"Origem: {voo.getAeroportoOrigem().getNome()}   ";

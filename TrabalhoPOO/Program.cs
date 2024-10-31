@@ -186,7 +186,6 @@ internal class Program
                     Console.WriteLine("Informe o nome do passageiro:");
                     string nomePassageiro = Console.ReadLine();
 
-                    // Buscar passageiro
                     Passageiro passageiroEncontrado = null;
                     if (passageiro.getNome() == nomePassageiro)
                     {
@@ -202,7 +201,7 @@ internal class Program
                             {
                                 Console.WriteLine($"Passagem de: {passagemEncontrada.GetPassageiro().getNome()}");
 
-                                var voos = passagemEncontrada.GetVooProgramado();
+                                var voos = passagemEncontrada.GetVoosProgramados();
                                 if (voos != null && voos.Count > 0)
                                 {
                                     foreach (var vooProg in voos)
@@ -269,7 +268,7 @@ internal class Program
 
                             Console.WriteLine("Voos na passagem:");
                             int index = 1;
-                            foreach (var vooProg in passagemSelecionada.GetVooProgramado())
+                            foreach (var vooProg in passagemSelecionada.GetVoosProgramados())
                             {
                                 Console.WriteLine($"{index}) Voo: {vooProg.GetVoo().getCodigoVoo()} Data: {vooProg.dataHoraPartida}");
                                 index++;
@@ -277,7 +276,8 @@ internal class Program
 
                             int vooIndex = 1;
                             Console.WriteLine($"Informe o número do voo para reservar assento: {vooIndex}");
-                            VooProgramado vooProgramadoSelecionado = passagemSelecionada.GetVooProgramado()[vooIndex - 1];
+                            VooProgramado vooProgramadoSelecionado = passagemSelecionada.GetVoosProgramados()[vooIndex - 1];
+
 
                             List<string> assentosDisponiveis = vooProgramadoSelecionado.GetAssentosDisponiveis();
                             Console.WriteLine("Assentos disponíveis:");
