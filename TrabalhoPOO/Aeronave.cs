@@ -1,8 +1,35 @@
 public class Aeronave
 {
-    public Aeronave() 
+    private int capacidadePassageiros;
+    private double capacidadeCarga;
+    private int numeroFileiras;
+    private int assentosPorFileira;
+
+    public Aeronave(int capacidadePassageiros, double capacidadeCarga, int numeroFileiras, int assentosPorFileira)
     {
-        // Eu criei essa classe sem nada apenas para conseguir instanciar um vooProgramado
-        Console.WriteLine("oi");
+        this.capacidadePassageiros = capacidadePassageiros;
+        this.capacidadeCarga = capacidadeCarga;
+        this.numeroFileiras = numeroFileiras;
+        this.assentosPorFileira = assentosPorFileira;
+    }
+
+    public int GetCapacidadePassageiros()
+    {
+        return capacidadePassageiros;
+    }
+
+    public double GetCapacidadeCarga()
+    {
+        return capacidadeCarga;
+    }
+
+    public int GetNumeroFileiras()
+    {
+        return numeroFileiras;
+    }
+
+    public int GetAssentosPorFileira()
+    {
+        return assentosPorFileira;
     }
 }
