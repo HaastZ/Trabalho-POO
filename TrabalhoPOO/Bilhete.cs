@@ -9,7 +9,7 @@ public class Bilhete
     public override string ToString()
     {
         if (passagem == null || passagem.GetPassageiro() == null || passagem.GetVoosProgramados() == null || passagem.GetVoosProgramados().Count == 0)
-        {
+        {   
             return "Não é possível exibir o bilhete: dados incompletos.";
         }
         foreach (var vooProg in passagem.GetVoosProgramados())

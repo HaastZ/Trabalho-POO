@@ -248,7 +248,7 @@ internal class Program
 
                     case 12:
                 {
-                    Console.WriteLine("Reservar Assento em Passagem");
+                    Console.WriteLine("Reservar Assento em Aeronave");
 
                     string nomePassageiro = "Vinicius";
                     Console.WriteLine($"Informe o nome do passageiro: {nomePassageiro}");
