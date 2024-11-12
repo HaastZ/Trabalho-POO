@@ -309,7 +309,7 @@ internal class Program
                     {
                         system.AscenderPassageiroVIP(passageiro1, companhia);
                         Console.WriteLine($"O passageiro {passageiro1.getNome()} {passageiro1.GetSobrenome()} tem {passageiro1.GetFranquiaPassagemGratuita()} franquia de passagem gratuita");
-                        
+                        Console.WriteLine($"As Franquias Adicionais com desconto do passageiro {passageiro1.getNome()} {passageiro1.GetSobrenome()} vão ficar R$ {system.CalcularDescontoPassageiroVIP(passageiro1, companhia)}");
                         Console.WriteLine("---Lista de Passageiros VIPs---");
                         foreach(var passVIP in system.GetPassageirosVIPs()) 
                         {

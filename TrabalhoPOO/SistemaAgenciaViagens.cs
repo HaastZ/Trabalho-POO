@@ -400,13 +400,14 @@ namespace TrabalhoPOO
             if(EhVIP(passageiro)) 
             {
                 desconto = companhia.getValorBagagemAdicional() / 2;
+                return desconto;
             }
             else 
             {
                 Console.WriteLine($"O passageiro {passageiro.getNome()} não é VIP, então não tem desconto");
-                
+                return desconto;
             }
-            return desconto;
+            
             
         }
     }
