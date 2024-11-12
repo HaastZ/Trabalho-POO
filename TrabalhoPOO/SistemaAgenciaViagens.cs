@@ -1,5 +1,3 @@
-using System;
-
 namespace TrabalhoPOO
 {
     internal class SistemaAgenciaViagens
@@ -19,7 +17,7 @@ namespace TrabalhoPOO
         public SistemaAgenciaViagens()
         {
             this.funcionarios = new List<Funcionario>();
-            this.usuarios= new List<Usuario>();
+            this.usuarios = new List<Usuario>();
             this.companhiasAereas = new List<CompanhiaAerea>();
             this.aeroportos = new List<Aeroporto>();
             this.voos = new List<Voo>();
@@ -110,6 +108,11 @@ namespace TrabalhoPOO
             return passagens;
         }
 
+        public List<Passageiro> GetPassageirosVIPs() 
+        {
+            return this.passageirosVIP;
+        }
+
         // Método de login
         /// <summary>
         /// Verifica se as credenciais de login batem com as de algum usuário
@@ -134,7 +137,7 @@ namespace TrabalhoPOO
         /// <param name="dataSaida">Data de saída</param>
         /// <param name="dataVolta">Data da volta</param>
         /// <returns>Lista contendo todos os voos</returns>
-        public List<Voo> BuscarVoos(Aeroporto origem, Aeroporto destino, DateTime dataSaida, DateTime dataVolta )
+        public List<Voo> BuscarVoos(Aeroporto origem, Aeroporto destino, DateTime dataSaida, DateTime dataVolta)
         {
             List<Voo> resp = new List<Voo>();
             foreach (Voo v in voos)
@@ -165,21 +168,174 @@ namespace TrabalhoPOO
 
             return voosComConexao;
         }
-         public Passagem EmitirPassagem(List<Voo> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
+
+        public Voo BuscaVooPorCodigo(string codigo)
         {
-            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens);
+            foreach (Voo v in voos)
+            {
+                if (v.getCodigoVoo() == codigo) return v;
+            }
+            return null;
+        }
+        public Aeroporto BuscaAeroportoPorNome(string nome)
+        {
+            foreach (Aeroporto a in aeroportos)
+            {
+                if (a.getNome() == nome) return a;
+            }
+            return null;
+        }
+
+        public CompanhiaAerea BuscaCompanhiaPorCodigo(string codigo)
+        {
+            foreach (CompanhiaAerea c in companhiasAereas)
+            {
+                if (c.getCodigo() == codigo) return c;
+            }
+            return null;
+        }
+        public Passagem EmitirPassagem(List<VooProgramado> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Dictionary<VooProgramado, string> assentos)
+        {
+            double valorTotal = 1000.0;
+            Moeda moeda = new Moeda("BRL", valorTotal);
+
+            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens, moeda, valorTotal);
+
+            foreach (var item in assentos)
+            {
+                VooProgramado vooProgramado = item.Key;
+                string assento = item.Value;
+                novaPassagem.ReservarAssento(vooProgramado, assento);
+            }
+
             passagens.Add(novaPassagem);
             return novaPassagem;
         }
-         public List<Passagem> BuscarPassagem(Passageiro passageiro)
+
+        public void ReservarAssento(Passagem passagem, VooProgramado vooProgramado, string assento)
+        {
+            passagem.ReservarAssento(vooProgramado, assento);
+        }
+
+        public void InstanciaVoosPorDiaDaSemana(Voo voo)
+        {
+            DateTime diaDeHoje = DateTime.Now;
+            for (int i = 0; i < voo.getFrequenciaSemanal().Count; i++)
+            {
+                switch (voo.getFrequenciaSemanal()[i])
+                {
+                    case "segunda":
+                        for (int j = 1; j <= 30; j++)
+                        {
+                            if ((int)diaDeHoje.DayOfWeek == 1)
+                            {
+                                Voo temp = voo.Clonar();
+                                temp.setDataHoraVoo(diaDeHoje);
+                                CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                CadastrarVoosProgramados(temp2);
+                            }
+                            diaDeHoje = diaDeHoje.AddDays(1);
+                        }
+                        diaDeHoje = DateTime.Now;
+                        break;
+                    case "terça":
+                        for (int j = 1; j <= 30; j++)
+                        {
+                            if ((int)diaDeHoje.DayOfWeek == 2)
+                            {
+                                Voo temp = voo.Clonar();
+                                temp.setDataHoraVoo(diaDeHoje);
+                                CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                CadastrarVoosProgramados(temp2);
+                            }
+                            diaDeHoje = diaDeHoje.AddDays(1);
+                        }
+                        diaDeHoje = DateTime.Now;
+                        break;
+                    case "quarta":
+                        for (int j = 1; j <= 30; j++)
+                        {
+                            if ((int)diaDeHoje.DayOfWeek == 3)
+                            {
+                                Voo temp = voo.Clonar();
+                                temp.setDataHoraVoo(diaDeHoje);
+                                CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                CadastrarVoosProgramados(temp2);
+                            }
+                            diaDeHoje = diaDeHoje.AddDays(1);
+                        }
+                        diaDeHoje = DateTime.Now;
+                        break;
+                    case "quinta":
+                        for (int j = 1; j <= 30; j++)
+                        {
+                            if ((int)diaDeHoje.DayOfWeek == 4)
+                            {
+                                Voo temp = voo.Clonar();
+                                temp.setDataHoraVoo(diaDeHoje);
+                                CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                CadastrarVoosProgramados(temp2);
+                            }
+                            diaDeHoje = diaDeHoje.AddDays(1);
+                        }
+                        diaDeHoje = DateTime.Now;
+                        break;
+                    case "sexta":
+                        for (int j = 1; j <= 30; j++)
+                        {
+                            if ((int)diaDeHoje.DayOfWeek == 5)
+                            {
+                                Voo temp = voo.Clonar();
+                                temp.setDataHoraVoo(diaDeHoje);
+                                CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                CadastrarVoosProgramados(temp2);
+                            }
+                            diaDeHoje = diaDeHoje.AddDays(1);
+                        }
+                        diaDeHoje = DateTime.Now;
+                        break;
+                    case "sabado":
+                        for (int j = 1; j <= 30; j++)
+                        {
+                            if ((int)diaDeHoje.DayOfWeek == 6)
+                            {
+                                Voo temp = voo.Clonar();
+                                temp.setDataHoraVoo(diaDeHoje);
+                                CadastrarVoo(temp);VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                CadastrarVoosProgramados(temp2);
+                            }
+                            diaDeHoje = diaDeHoje.AddDays(1);
+                        }
+                        break;
+                    case "domingo":
+                        for (int j = 1; j <= 30; j++)
+                        {
+                            if ((int)diaDeHoje.DayOfWeek == 0)
+                            {
+                                Voo temp = voo.Clonar();
+                                temp.setDataHoraVoo(diaDeHoje);
+                                CadastrarVoo(temp);
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                CadastrarVoosProgramados(temp2);
+                            }
+                            diaDeHoje = diaDeHoje.AddDays(1);
+                        }
+                        diaDeHoje = DateTime.Now;
+                        break;
+                }
+            }
+        }
+        public List<Passagem> BuscarPassagem(Passageiro passageiro)
         {
             List<Passagem> passagensDoPassageiro = new List<Passagem>();
 
             foreach (Passagem passagem in passagens)
             {
-
-                if (passagem.GetPassageiro() == passageiro)
-
                 if (passagem.GetPassageiro() == passageiro)
                 {
                     passagensDoPassageiro.Add(passagem);
@@ -198,17 +354,60 @@ namespace TrabalhoPOO
             return passageirosVIP.Contains(passageiro);
         }
 
-        public void AscenderPassageiroVIP(Passageiro passageiro)
+        public void AscenderPassageiroVIP(Passageiro passageiro, CompanhiaAerea companhia)
         {
             if (!EhVIP(passageiro))
             {
+                passageiro.SetFranquiaPassagemGratuita(1);
                 passageirosVIP.Add(passageiro);
-                Console.WriteLine($"{passageiro.getNome()} {passageiro.GetSobrenome()} foi ascendido a Passageiro VIP.");
+                Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} foi ascendido a Passageiro VIP na companhia aérea {companhia.getNome()}.");
             }
             else
             {
                 Console.WriteLine($"{passageiro.getNome()} {passageiro.GetSobrenome()} já é VIP.");
             }
+        }
+
+        public void CancelarVooPassageiroVIP(Passageiro passageiro, ICancelavel voo)
+        {
+            if (EhVIP(passageiro))
+            {
+                passageiro.CancelarVooSemCusto(voo);
+            }
+            else
+            {
+                Console.WriteLine($"{passageiro.getNome()} {passageiro.GetSobrenome()} não é VIP e o cancelamento terá custo.");
+            }
+        }
+
+        public void AlterarVooPassageiroVIP(Passageiro passageiro, VooProgramado voo) 
+        {
+            DateTime novaData = new DateTime(2024, 10, 01, 17, 00, 00);
+            if(EhVIP(passageiro)) 
+            {
+                voo.SetDataHoraPartida(novaData);
+                Console.WriteLine($"A data do voo do Passageiro {passageiro.getNome()} foi alterada para {novaData}");
+            }
+            else 
+            {
+                Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} não é VIP e terá um custo para alteração");
+            }
+        }
+
+        public double CalcularDescontoPassageiroVIP(Passageiro passageiro, CompanhiaAerea companhia)
+        {
+            double desconto = 0;
+            if(EhVIP(passageiro)) 
+            {
+                desconto = companhia.getValorBagagemAdicional() / 2;
+            }
+            else 
+            {
+                Console.WriteLine($"O passageiro {passageiro.getNome()} não é VIP, então não tem desconto");
+                
+            }
+            return desconto;
+            
         }
     }
 }

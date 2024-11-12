@@ -1,14 +1,15 @@
 public class Passagem : ICancelavel
 {
-    private List<Voo> voos;
+    private List<VooProgramado> voosProgramados;
     private TipoTarifa tipoTarifa;
     private Passageiro passageiro;
     private int numeroBagagens;
     private Moeda moeda;
     private double valorTotal;
     private static double TAXAFIXA = 0.10;
-    private List<VooProgramado> voosProgramados;
     private bool statusPassagem;
+    private Dictionary<VooProgramado, string> assentosReservados;
+
     public Passagem(List<VooProgramado> voosProgramados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
     {
         this.voosProgramados = voosProgramados;
@@ -18,14 +19,7 @@ public class Passagem : ICancelavel
         this.moeda = moeda;
         this.valorTotal = valorTotal;
         this.statusPassagem = true;
-    }
-
-    public Passagem(List<Voo> voos, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
-    {
-        this.voos = voos;
-        this.tipoTarifa = tipoTarifa;
-        this.passageiro = passageiro;
-        this.numeroBagagens = numeroBagagens;
+        this.assentosReservados = new Dictionary<VooProgramado, string>();
     }
 
     public double CalcularRemuneracao()
@@ -46,13 +40,13 @@ public class Passagem : ICancelavel
             this.statusPassagem = false;
             foreach (var voo in this.voosProgramados)
             {
-                voo.Cancelar();  // Cancela cada voo associado á passagem
+                voo.Cancelar();
             }
-            Console.WriteLine($"Passagem e todos os voos associados do passageiro {passageiro.getNome()} foi cancelado.");
+            Console.WriteLine($"Passagem e todos os voos associados do passageiro {passageiro.getNome()} foram cancelados.");
         }
     }
 
-    public List<VooProgramado> GetVooProgramado()
+    public List<VooProgramado> GetVoosProgramados()
     {
         return this.voosProgramados;
     }
@@ -60,11 +54,6 @@ public class Passagem : ICancelavel
     public bool GetStatusPassagem()
     {
         return this.statusPassagem;
-    }
-
-    public List<Voo> getVoos()
-    {
-        return this.voos;
     }
 
     public TipoTarifa GetTipoTarifa()
@@ -90,5 +79,23 @@ public class Passagem : ICancelavel
     public double getValorTotal()
     {
         return this.valorTotal;
+    }
+
+    public void ReservarAssento(VooProgramado vooProgramado, string assento)
+    {
+        if (vooProgramado.ReservarAssento(assento))
+        {
+            assentosReservados[vooProgramado] = assento;
+            Console.WriteLine($"Assento {assento} reservado no voo programado {vooProgramado.GetVoo().getCodigoVoo()}");
+        }
+        else
+        {
+            Console.WriteLine($"Assento {assento} não está disponível no voo programado {vooProgramado.GetVoo().getCodigoVoo()}");
+        }
+    }
+
+    public Dictionary<VooProgramado, string> GetAssentosReservados()
+    {
+        return assentosReservados;
     }
 }
