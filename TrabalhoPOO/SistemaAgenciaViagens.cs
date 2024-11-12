@@ -14,6 +14,7 @@ namespace TrabalhoPOO
         private List<Voo> voos;
         private List<Passagem> passagens;
         private List<VooProgramado> voosProgramados;
+        private List<Passageiro> passageirosVIP;
         // Métodos getters e setters para as listas
         public SistemaAgenciaViagens()
         {
@@ -24,6 +25,7 @@ namespace TrabalhoPOO
             this.voos = new List<Voo>();
             this.passagens = new List<Passagem>();
             this.voosProgramados = new List<VooProgramado>();
+            this.passageirosVIP =  new List<Passageiro>();
         }
         public void CadastrarFuncionario(Funcionario funcionario)
         {
@@ -189,6 +191,24 @@ namespace TrabalhoPOO
         public void Cancelar(ICancelavel item)
         {
             item.Cancelar();
+        }
+
+        public bool EhVIP(Passageiro passageiro)
+        {
+            return passageirosVIP.Contains(passageiro);
+        }
+
+        public void AscenderPassageiroVIP(Passageiro passageiro)
+        {
+            if (!EhVIP(passageiro))
+            {
+                passageirosVIP.Add(passageiro);
+                Console.WriteLine($"{passageiro.getNome()} {passageiro.GetSobrenome()} foi ascendido a Passageiro VIP.");
+            }
+            else
+            {
+                Console.WriteLine($"{passageiro.getNome()} {passageiro.GetSobrenome()} já é VIP.");
+            }
         }
     }
 }

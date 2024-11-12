@@ -19,7 +19,7 @@ internal class Program
         CompanhiaAerea companhia = new CompanhiaAerea("Companhia Aérea GOL", "GOL", "GOL Linhas Aéreas S/A", "00.000.000/0001-00", 50.0, 80.0);
         Voo voo = new Voo(aeroporto1, aeroporto2, dataIda, "1234567", companhia, tarifa, moeda);
         TipoDocumento tipoDocumento = new TipoDocumento("MG-123-123-123", "123.123.123-123", "12345678");
-        Passageiro passageiro = new Passageiro("Vinicius", "Almeida", tipoDocumento, "12345");
+        Passageiro passageiro = new Passageiro("Vinicius", "Almeida", tipoDocumento, "12345", "vinicius@email.com");
         Aeronave aeronave = new Aeronave();
         VooProgramado vooProgramado = new VooProgramado(voo, dataIda, aeronave);
         Passagem passagem = new Passagem(system.GetVoosProgramados(), tarifa, passageiro, 4, moeda, 4000);

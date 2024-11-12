@@ -1,34 +1,49 @@
-public class Passageiro
+public class Passageiro : IPassageiroVIP
 {
     private string nome;
     private string sobrenome;
     private TipoDocumento tipoDocumento;
     private string numeroDocumento;
-    public Passageiro(string nome, string sobrenome, TipoDocumento tipoDocumento, string numeroDocumento) 
+    private string email;
+    private static int FranquiaPassagemGratuita = 0;
+    public Passageiro(string nome, string sobrenome, TipoDocumento tipoDocumento, string numeroDocumento, string email) 
     {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.tipoDocumento = tipoDocumento;
         this.numeroDocumento = numeroDocumento;
+        this.email = email;
     }
 
-    public string getNome() 
+    public void CancelarVooSemCusto(ICancelavel voo)
     {
-        return this.nome;
+        voo.Cancelar();
+        Console.WriteLine($"O passageiro {this.nome} cancelou um voo sem custo adicional");
     }
 
-    public string getSobrenome() 
+    public void AlterarVooSemCusto(DateTime novaDataVoo)
     {
-        return this.sobrenome;
+        Console.WriteLine($"Alteração de voo sem custo para nova data: {novaDataVoo}");
     }
 
-    public TipoDocumento GetTipoDocumento() 
+    public double CalcularFranquiaBagagem(double valorBaseFranquia)
     {
-        return this.tipoDocumento;
+        return valorBaseFranquia / 2;
     }
 
-    public string getNumeroDocumento() 
+    public int SetFranquiaPassagemGratuita(int franquia)
     {
-        return this.numeroDocumento;
+        return Passageiro.FranquiaPassagemGratuita = franquia;
     }
+
+    public int GetFranquiaPassagemGratuita()
+    {
+        return Passageiro.FranquiaPassagemGratuita;
+    }
+
+    public string getNome() => nome;
+    public string GetSobrenome() => sobrenome;
+    public TipoDocumento GetTipoDocumento() => tipoDocumento;
+    public string GetNumeroDocumento() => numeroDocumento;
+    public string GetEmail() => email;
 }
