@@ -8,7 +8,10 @@ public class Passagem : ICancelavel
     private double valorTotal;
     private static double TAXAFIXA = 0.10;
     private bool statusPassagem;
-    public bool Check_In {  get; set; }
+    public bool Check_In { get; set; }
+
+    private List<RegistroStatus> historicoStatus;
+
     public Passagem(List<VooProgramado> voosProgramados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
     {
         this.voosProgramados = voosProgramados;
@@ -18,14 +21,14 @@ public class Passagem : ICancelavel
         this.moeda = moeda;
         this.valorTotal = valorTotal;
         this.statusPassagem = true;
+
+        this.historicoStatus = new List<RegistroStatus> { new RegistroStatus("Passagem adquirida") };
         this.assentosReservados = new Dictionary<VooProgramado, string>();
     }
 
     public double CalcularRemuneracao()
     {
-        double remuneracao;
-        remuneracao = this.valorTotal * Passagem.TAXAFIXA / 100;
-        return remuneracao;
+        return this.valorTotal * Passagem.TAXAFIXA / 100;
     }
 
     public void Cancelar()
@@ -36,8 +39,10 @@ public class Passagem : ICancelavel
         }
         else
         {
-            this.statusPassagem = false;
-            foreach (var voo in this.voosProgramados)
+            statusPassagem = false;
+            historicoStatus.Add(new RegistroStatus("Passagem cancelada"));
+
+            foreach (var voo in voosProgramados)
             {
                 voo.Cancelar();
             }
@@ -45,39 +50,59 @@ public class Passagem : ICancelavel
         }
     }
 
+    public void RealizarCheckIn()
+    {
+        historicoStatus.Add(new RegistroStatus("Check-in realizado"));
+    }
+
+    public void RealizarEmbarque()
+    {
+        historicoStatus.Add(new RegistroStatus("Embarque realizado"));
+    }
+
+    public void RegistrarNoShow()
+    {
+        historicoStatus.Add(new RegistroStatus("No show"));
+    }
+
+    public List<RegistroStatus> GetHistoricoStatus()
+    {
+        return historicoStatus;
+    }
+
     public List<VooProgramado> GetVoosProgramados()
     {
-        return this.voosProgramados;
+        return voosProgramados;
     }
 
     public bool GetStatusPassagem()
     {
-        return this.statusPassagem;
+        return statusPassagem;
     }
 
     public TipoTarifa GetTipoTarifa()
     {
-        return this.tipoTarifa;
+        return tipoTarifa;
     }
 
     public Passageiro GetPassageiro()
     {
-        return this.passageiro;
+        return passageiro;
     }
 
     public int getNumeroBagagens()
     {
-        return this.numeroBagagens;
+        return numeroBagagens;
     }
 
     public Moeda GetMoeda()
     {
-        return this.moeda;
+        return moeda;
     }
 
     public double getValorTotal()
     {
-        return this.valorTotal;
+        return valorTotal;
     }
 
     public void ReservarAssento(VooProgramado vooProgramado, string assento)
