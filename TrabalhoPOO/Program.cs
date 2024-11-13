@@ -40,6 +40,7 @@ internal class Program
             Console.WriteLine("9)Buscar Passagens dos Passageiros");
             Console.WriteLine("10)Cancelar Voo");
             Console.WriteLine("11)Visualizar Bilhete");
+            Console.WriteLine("12)Realizar Check-in");
             Console.WriteLine("0)Sair\n");
             opt = int.Parse(Console.ReadLine());
 
@@ -215,6 +216,9 @@ internal class Program
                         Console.WriteLine(bilhete.ToString()); 
                         break;
                     }
+                case 12:
+                    system.RealizarCheckIn(passagem);
+                    break;
               }
            }
         while (opt != 0);

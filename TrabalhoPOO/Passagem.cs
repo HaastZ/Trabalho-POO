@@ -9,6 +9,7 @@ public class Passagem : ICancelavel
     private static double TAXAFIXA = 0.10;
     private List<VooProgramado> voosProgramados;
     private bool statusPassagem;
+    public bool Check_In {  get; set; }
     public Passagem(List<VooProgramado> voosProgramados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
     {
         this.voosProgramados = voosProgramados;

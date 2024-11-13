@@ -328,5 +328,20 @@ namespace TrabalhoPOO
         {
             item.Cancelar();
         }
+
+        public void RealizarCheckIn(Passagem passagem)
+        {
+            DateTime dataHoraAtual = DateTime.Now;
+            TimeSpan horasAteOVoo = passagem.getVoos()[0].getDataHoraVoo() - dataHoraAtual;
+            Console.WriteLine(horasAteOVoo.TotalMinutes);
+            if(horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 1440)
+            {
+                passagem.Check_In = true;
+            }
+            else
+            {
+                Console.WriteLine("Erro: O check-in deve ser realizado entre 48h e 30min até a hora do voo");
+            }
+        }
     }
 }
