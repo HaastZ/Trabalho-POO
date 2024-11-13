@@ -8,14 +8,13 @@ public class Bilhete
 
     public override string ToString()
     {
-        if (passagem == null || passagem.GetPassageiro() == null || passagem.getVoos() == null || passagem.getVoos().Count == 0)
-        {
+        if (passagem == null || passagem.GetPassageiro() == null || passagem.GetVoosProgramados() == null || passagem.GetVoosProgramados().Count == 0)
+        {   
             return "Não é possível exibir o bilhete: dados incompletos.";
         }
-
-        // Verificar se todos os voos têm origem e destino definidos
-        foreach (var voo in passagem.getVoos())
+        foreach (var vooProg in passagem.GetVoosProgramados())
         {
+            Voo voo = vooProg.GetVoo();
             if (voo.getAeroportoOrigem() == null || voo.getAeroportoDestino() == null)
             {
                 return "Não é possível exibir o bilhete: alguns voos não têm origem ou destino definidos.";
@@ -24,10 +23,11 @@ public class Bilhete
 
         var passageiro = passagem.GetPassageiro();
         var bilhete = $"-----------------------------------------------------\n";
-        bilhete += $"Nome: {passageiro.getNome()} {passageiro.getSobrenome()}     {passageiro.GetTipoDocumento()}: {passageiro.getNumeroDocumento()}\n\n";
+        bilhete += $"Nome: {passageiro.getNome()} {passageiro.getSobrenome()}     Tipo Documento: {passageiro.getNumeroDocumento()}\n\n";
 
-        foreach (var voo in passagem.getVoos())
+        foreach (var vooProg in passagem.GetVoosProgramados())
         {
+            Voo voo = vooProg.GetVoo();
             bilhete += $"Origem: {voo.getAeroportoOrigem().getNome()}   ";
             bilhete += $"Destino: {voo.getAeroportoDestino().getNome()}\n";
         }

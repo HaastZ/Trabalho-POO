@@ -187,27 +187,27 @@ namespace TrabalhoPOO
             }
             return null;
         }
-        public Passagem EmitirPassagem(List<Voo> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens)
+        public Passagem EmitirPassagem(List<VooProgramado> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Dictionary<VooProgramado, string> assentos)
         {
-            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens);
+            double valorTotal = 1000.0;
+            Moeda moeda = new Moeda("BRL", valorTotal);
+
+            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens, moeda, valorTotal);
+
+            foreach (var item in assentos)
+            {
+                VooProgramado vooProgramado = item.Key;
+                string assento = item.Value;
+                novaPassagem.ReservarAssento(vooProgramado, assento);
+            }
+
             passagens.Add(novaPassagem);
             return novaPassagem;
         }
-        public List<Passagem> BuscarPassagem(Passageiro passageiro)
+
+        public void ReservarAssento(Passagem passagem, VooProgramado vooProgramado, string assento)
         {
-            List<Passagem> passagensDoPassageiro = new List<Passagem>();
-
-            foreach (Passagem passagem in passagens)
-            {
-
-                if (passagem.GetPassageiro() == passageiro)
-
-                    if (passagem.GetPassageiro() == passageiro)
-                    {
-                        passagensDoPassageiro.Add(passagem);
-                    }
-            }
-            return passagensDoPassageiro;
+            passagem.ReservarAssento(vooProgramado, assento);
         }
 
         public void InstanciaVoosPorDiaDaSemana(Voo voo)
@@ -225,7 +225,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -240,7 +240,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -255,7 +255,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -270,7 +270,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -285,7 +285,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -299,8 +299,7 @@ namespace TrabalhoPOO
                             {
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp,temp.getDataHoraVoo(),new Aeronave());
+                                CadastrarVoo(temp);VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -314,7 +313,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave());
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -342,6 +341,19 @@ namespace TrabalhoPOO
             {
                 Console.WriteLine("Erro: O check-in deve ser realizado entre 48h e 30min até a hora do voo");
             }
+        }
+        public List<Passagem> BuscarPassagem(Passageiro passageiro)
+        {
+            List<Passagem> passagensDoPassageiro = new List<Passagem>();
+
+            foreach (Passagem passagem in passagens)
+            {
+                if (passagem.GetPassageiro() == passageiro)
+                {
+                    passagensDoPassageiro.Add(passagem);
+                }
+            }
+            return passagensDoPassageiro;
         }
     }
 }
