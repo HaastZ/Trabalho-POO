@@ -43,9 +43,9 @@ internal class Program
             Console.WriteLine("9)Buscar Passagens dos Passageiros");
             Console.WriteLine("10)Cancelar Voo");
             Console.WriteLine("11)Visualizar Bilhete");
-          
+
             Console.WriteLine("12) Reservar Assento em Passagem");
-              Console.WriteLine("13)Realizar Check-in");
+            Console.WriteLine("13)Realizar Check-in");
             Console.WriteLine("0)Sair\n");
             opt = int.Parse(Console.ReadLine());
 
@@ -141,7 +141,7 @@ internal class Program
                         foreach (var pass in system.GetPassagens())
                         {
                             Console.Write($"Passagem do passageiro: {pass.GetPassageiro().getNome()}, \nVoos da passagem: ");
-                            foreach(var voos in pass.GetVoosProgramados()) 
+                            foreach (var voos in pass.GetVoosProgramados())
                             {
                                 var v = vooProgramado.GetVoo();
                                 Console.WriteLine($"- Voo {v.getCodigoVoo()}: {v.getAeroportoOrigem().getNome()} para {v.getAeroportoDestino().getNome()}");
@@ -183,52 +183,52 @@ internal class Program
                     }
 
                 case 9:
-                {
-                    Console.WriteLine("\nBuscando passagens do passageiro\n");
-                    Console.WriteLine("Informe o nome do passageiro:");
-                    string nomePassageiro = Console.ReadLine();
-
-                    Passageiro passageiroEncontrado = null;
-                    if (passageiro.getNome() == nomePassageiro)
                     {
-                        passageiroEncontrado = passageiro;
-                    }
+                        Console.WriteLine("\nBuscando passagens do passageiro\n");
+                        Console.WriteLine("Informe o nome do passageiro:");
+                        string nomePassageiro = Console.ReadLine();
 
-                    if (passageiroEncontrado != null)
-                    {
-                        List<Passagem> passagensDoPassageiro = system.BuscarPassagem(passageiroEncontrado);
-                        if (passagensDoPassageiro.Count > 0)
+                        Passageiro passageiroEncontrado = null;
+                        if (passageiro.getNome() == nomePassageiro)
                         {
-                            foreach (var passagemEncontrada in passagensDoPassageiro)
-                            {
-                                Console.WriteLine($"Passagem de: {passagemEncontrada.GetPassageiro().getNome()}");
+                            passageiroEncontrado = passageiro;
+                        }
 
-                                var voos = passagemEncontrada.GetVoosProgramados();
-                                if (voos != null && voos.Count > 0)
+                        if (passageiroEncontrado != null)
+                        {
+                            List<Passagem> passagensDoPassageiro = system.BuscarPassagem(passageiroEncontrado);
+                            if (passagensDoPassageiro.Count > 0)
+                            {
+                                foreach (var passagemEncontrada in passagensDoPassageiro)
                                 {
-                                    foreach (var vooProg in voos)
+                                    Console.WriteLine($"Passagem de: {passagemEncontrada.GetPassageiro().getNome()}");
+
+                                    var voos = passagemEncontrada.GetVoosProgramados();
+                                    if (voos != null && voos.Count > 0)
                                     {
-                                        Console.WriteLine($"Voo: {vooProg.GetVoo().getCodigoVoo()} Data: {vooProg.dataHoraPartida}");
+                                        foreach (var vooProg in voos)
+                                        {
+                                            Console.WriteLine($"Voo: {vooProg.GetVoo().getCodigoVoo()} Data: {vooProg.dataHoraPartida}");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Nenhum voo programado para esta passagem.");
                                     }
                                 }
-                                else
-                                {
-                                    Console.WriteLine("Nenhum voo programado para esta passagem.");
-                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Nenhuma passagem encontrada para este passageiro.");
                             }
                         }
                         else
                         {
-                            Console.WriteLine("Nenhuma passagem encontrada para este passageiro.");
+                            Console.WriteLine("Passageiro não encontrado.");
                         }
+                        break;
                     }
-                    else
-                    {
-                        Console.WriteLine("Passageiro não encontrado.");
-                    }
-                    break;
-                }
-                    
+
                 case 10:
                     {
                         Console.WriteLine("Cancelamento de Voo e Passagens");
@@ -240,77 +240,78 @@ internal class Program
                         Console.WriteLine($"Status da passagem após cancelamento: {passagem.GetStatusPassagem()}");
                         break;
                     }
-                    
+
                 case 11:
-                {
-                    Bilhete bilhete = new Bilhete(passagem);
-                    Console.WriteLine(bilhete.ToString()); 
-                    break;
-                }
-
-                    case 12:
-                {
-                    Console.WriteLine("Reservar Assento em Aeronave");
-
-                    string nomePassageiro = "Vinicius";
-                    Console.WriteLine($"Informe o nome do passageiro: {nomePassageiro}");
-
-                    Passageiro passageiroEncontrado = null;
-                    if (passageiro.getNome() == nomePassageiro)
                     {
-                        passageiroEncontrado = passageiro;
+                        Bilhete bilhete = new Bilhete(passagem);
+                        Console.WriteLine(bilhete.ToString());
+                        break;
                     }
+
                 case 12:
-                    
-
-                    if (passageiroEncontrado != null)
                     {
-                        List<Passagem> passagensDoPassageiro = system.BuscarPassagem(passageiroEncontrado);
-                        if (passagensDoPassageiro.Count > 0)
+                        Console.WriteLine("Reservar Assento em Aeronave");
+
+                        string nomePassageiro = "Vinicius";
+                        Console.WriteLine($"Informe o nome do passageiro: {nomePassageiro}");
+
+                        Passageiro passageiroEncontrado = null;
+                        if (passageiro.getNome() == nomePassageiro)
                         {
-                            Passagem passagemSelecionada = passagensDoPassageiro[0];
+                            passageiroEncontrado = passageiro;
+                        }
 
-                            Console.WriteLine("Voos na passagem:");
-                            int index = 1;
-                            foreach (var vooProg in passagemSelecionada.GetVoosProgramados())
+
+                        if (passageiroEncontrado != null)
+                        {
+                            List<Passagem> passagensDoPassageiro = system.BuscarPassagem(passageiroEncontrado);
+                            if (passagensDoPassageiro.Count > 0)
                             {
-                                Console.WriteLine($"{index}) Voo: {vooProg.GetVoo().getCodigoVoo()} Data: {vooProg.dataHoraPartida}");
-                                index++;
+                                Passagem passagemSelecionada = passagensDoPassageiro[0];
+
+                                Console.WriteLine("Voos na passagem:");
+                                int index = 1;
+                                foreach (var vooProg in passagemSelecionada.GetVoosProgramados())
+                                {
+                                    Console.WriteLine($"{index}) Voo: {vooProg.GetVoo().getCodigoVoo()} Data: {vooProg.dataHoraPartida}");
+                                    index++;
+                                }
+
+                                int vooIndex = 1;
+                                Console.WriteLine($"Informe o número do voo para reservar assento: {vooIndex}");
+                                VooProgramado vooProgramadoSelecionado = passagemSelecionada.GetVoosProgramados()[vooIndex - 1];
+
+
+                                List<string> assentosDisponiveis = vooProgramadoSelecionado.GetAssentosDisponiveis();
+                                Console.WriteLine("Assentos disponíveis:");
+                                foreach (var assento in assentosDisponiveis)
+                                {
+                                    Console.Write(assento + " ");
+                                }
+                                Console.WriteLine();
+
+                                string assentoEscolhido = assentosDisponiveis[0];
+                                Console.WriteLine($"Informe o assento desejado: {assentoEscolhido}");
+                                system.ReservarAssento(passagemSelecionada, vooProgramadoSelecionado, assentoEscolhido);
                             }
-
-                            int vooIndex = 1;
-                            Console.WriteLine($"Informe o número do voo para reservar assento: {vooIndex}");
-                            VooProgramado vooProgramadoSelecionado = passagemSelecionada.GetVoosProgramados()[vooIndex - 1];
-
-
-                            List<string> assentosDisponiveis = vooProgramadoSelecionado.GetAssentosDisponiveis();
-                            Console.WriteLine("Assentos disponíveis:");
-                            foreach (var assento in assentosDisponiveis)
+                            else
                             {
-                                Console.Write(assento + " ");
+                                Console.WriteLine("Nenhuma passagem encontrada para este passageiro.");
                             }
-                            Console.WriteLine();
-
-                            string assentoEscolhido = assentosDisponiveis[0];
-                            Console.WriteLine($"Informe o assento desejado: {assentoEscolhido}");
-                            system.ReservarAssento(passagemSelecionada, vooProgramadoSelecionado, assentoEscolhido);
                         }
                         else
                         {
-                            Console.WriteLine("Nenhuma passagem encontrada para este passageiro.");
+                            Console.WriteLine("Passageiro não encontrado.");
                         }
+                        break;
                     }
-                    else
-                    {
-                        Console.WriteLine("Passageiro não encontrado.");
-                    }
-                    break;
-                    case 13:
-system.RealizarCheckIn(passagem);
-                    break;
-                }
-              }
-           }
-        while (opt != 0);
-    }
+                        case 13:
+                            {
+                                system.RealizarCheckIn(passagem);
+                                break;
+                            }
+                        }                    
+            }
+            while (opt != 0) ;
+        }
 }
