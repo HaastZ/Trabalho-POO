@@ -231,7 +231,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635,180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -246,7 +246,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -261,7 +261,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -276,7 +276,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -291,7 +291,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -305,7 +305,7 @@ namespace TrabalhoPOO
                             {
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                CadastrarVoo(temp);VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -319,7 +319,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(180, 2000.0, 30, 6));
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
