@@ -326,11 +326,12 @@ internal class Program
                 case 14:
                     {
                         system.CancelarVooPassageiroVIP(passageiro1, vooProgramado);
+                        system.CancelarVooPassageiroVIP(passageiro6, vooProgramado);
                         break;
                     }
                 case 15:
                     {
-                        system.AlterarVooPassageiroVIP(passageiro1, vooProgramado);
+                        system.AlterarVooPassageiroVIP(passageiro7, vooProgramado);
                         break;
                     }
                 case 16:
