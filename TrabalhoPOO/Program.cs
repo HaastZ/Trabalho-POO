@@ -331,6 +331,7 @@ internal class Program
                     }
                 case 15:
                     {
+                        system.AlterarVooPassageiroVIP(passageiro4, vooProgramado);
                         system.AlterarVooPassageiroVIP(passageiro7, vooProgramado);
                         break;
                     }
