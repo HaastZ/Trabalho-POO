@@ -237,14 +237,14 @@ internal class Program
                 case 10:
                     {
                         Console.WriteLine("Cancelamento de Voo e Passagens");
-                        Console.WriteLine($"Status do voo: {vooProgramado.GetStatusVoo()} (false - cancelado, true - ativo)");
+                        Console.WriteLine($"Status do voo: {vooProgramado.GetStatusVoo()}");
                         system.Cancelar(vooProgramado);
                         Console.WriteLine($"Status do voo após cancelamento: {vooProgramado.GetStatusVoo()}");
-                        Console.WriteLine($"Status da passagem: {passagem.GetStatusPassagem()} (false - cancelada, true - ativa)");
+                        Console.WriteLine($"Status da passagem: {passagem.GetStatusPassagem()}");
                         system.Cancelar(passagem);
                         Console.WriteLine($"Status da passagem após cancelamento: {passagem.GetStatusPassagem()}");
                         break;
-                    }
+                    } 
 
                 case 11:
                     {
