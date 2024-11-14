@@ -1,6 +1,8 @@
 public class Passagem : ICancelavel
 {
     private List<VooProgramado> voosProgramados;
+    private List<CartaoEmbarque> cartoesEmbarque;
+
     private TipoTarifa tipoTarifa;
     private Passageiro passageiro;
     private int numeroBagagens;
@@ -20,6 +22,7 @@ public class Passagem : ICancelavel
         this.valorTotal = valorTotal;
         this.statusPassagem = true;
         this.assentosReservados = new Dictionary<VooProgramado, string>();
+        this.cartoesEmbarque = new List<CartaoEmbarque>();
     }
 
     public double CalcularRemuneracao()
@@ -98,4 +101,14 @@ public class Passagem : ICancelavel
     {
         return assentosReservados;
     }
+    public void AdicionarCartaoEmbarque(CartaoEmbarque cartao)
+    {
+        this.cartoesEmbarque.Add(cartao);
+    }
+
+    public List<CartaoEmbarque> GetCartoesEmbarque()
+    {
+        return this.cartoesEmbarque;
+    }
+
 }

@@ -339,16 +339,33 @@ namespace TrabalhoPOO
         {
             DateTime dataHoraAtual = DateTime.Now;
             TimeSpan horasAteOVoo = passagem.GetVoosProgramados()[0].GetDataHoraPartida() - dataHoraAtual;
-            Console.WriteLine(horasAteOVoo.TotalMinutes);
-            if(horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 1440)
+
+            if (horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 2880) // Entre 48h e 30min
             {
                 passagem.Check_In = true;
+
+                foreach (var vooProgramado in passagem.GetVoosProgramados())
+                {
+                    string assento;
+                    if (passagem.GetAssentosReservados().TryGetValue(vooProgramado, out assento))
+                    {
+                        CartaoEmbarque cartao = new CartaoEmbarque(passagem.GetPassageiro(), vooProgramado, assento);
+                        passagem.AdicionarCartaoEmbarque(cartao);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Assento não reservado para o voo {vooProgramado.GetVoo().getCodigoVoo()}");
+                    }
+                }
+
+                Console.WriteLine("Check-in realizado com sucesso. Cartões de embarque gerados.");
             }
             else
             {
                 Console.WriteLine("Erro: O check-in deve ser realizado entre 48h e 30min até a hora do voo");
             }
         }
+
         public List<Passagem> BuscarPassagem(Passageiro passageiro)
         {
             List<Passagem> passagensDoPassageiro = new List<Passagem>();

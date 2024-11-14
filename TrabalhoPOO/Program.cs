@@ -345,11 +345,18 @@ internal class Program
                         }
                         break;
                     }
-                    case 17:
+                   case 17:
                     {
                         system.RealizarCheckIn(passagem);
+                        
+                        Console.WriteLine("\nCartões de Embarque:");
+                        foreach (var cartao in passagem.GetCartoesEmbarque())
+                        {
+                            Console.WriteLine(cartao.ToString());
+                        }
                         break;
                     }
+
             }
         }
         while (opt != 0);
