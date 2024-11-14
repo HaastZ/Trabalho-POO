@@ -16,12 +16,11 @@ internal class Program
         Aeroporto aeroporto4 = new Aeroporto("Aeroporto Internacional de Brasília", "BSB", "Brasília", "BSB", "Distrito Federal");
         DateTime dataIda = new DateTime(2024, 05, 07, 14, 30, 00);
         DateTime dataIdaVoo2 = new DateTime(2024, 10, 01, 19, 00, 00);
-        TipoTarifa tarifa = new TipoTarifa(10, 20, 30);
         Moeda moeda = new Moeda("BRL", 1000);
         CompanhiaAerea companhia = new CompanhiaAerea("Companhia Aérea GOL", "GOL", "GOL Linhas Aéreas S/A", "00.000.000/0001-00", 50.0, 80.0);
         List<string> frequenciaSemanal = ["segunda", "quarta", "sexta"];
-        Voo voo = new Voo(aeroporto1, aeroporto2, dataIda, "1234567", companhia, tarifa, moeda, frequenciaSemanal, "10:30", "10:00");
-        Voo voo2 = new Voo(aeroporto3, aeroporto4, dataIdaVoo2, "9876543", companhia, tarifa, moeda);
+        Voo voo = new Voo(aeroporto1, aeroporto2, dataIda, "1234567", companhia, TipoTarifa.Basica, moeda, frequenciaSemanal, "10:30", "10:00");
+        Voo voo2 = new Voo(aeroporto3, aeroporto4, dataIdaVoo2, "9876543", companhia, TipoTarifa.Executiva, moeda);
         Passageiro passageiro1 = new Passageiro("Vinicius", "Almeida", TipoDocumento.CPF, "12345", "vinicius@email.com");
         Passageiro passageiro2 = new Passageiro("Lucas", "Bryan", TipoDocumento.CPF, "12345678", "lucas@gmail.com");
         Passageiro passageiro3 = new Passageiro("Artur", "Moreira", TipoDocumento.RG, "MG9123863", "artur@gmail.com");
@@ -33,7 +32,7 @@ internal class Program
         VooProgramado vooProgramado = new VooProgramado(voo, dataIda, aeronave);
         VooProgramado vooProgramado2 = new VooProgramado(voo2, dataIdaVoo2, aeronave);
         system.InstanciaVoosPorDiaDaSemana(voo);
-        Passagem passagem = new Passagem(system.GetVoosProgramados(), tarifa, passageiro1, 4, moeda, 4000);
+        Passagem passagem = new Passagem(system.GetVoosProgramados(), TipoTarifa.Basica, passageiro1, 4, moeda, 4000);
 
         foreach (var a in system.GetVoosProgramados())
         {
@@ -136,7 +135,7 @@ internal class Program
                         Console.WriteLine("\nVoos cadastrados:\n");
                         foreach (var voos in system.GetVoos())
                         {
-                            Console.WriteLine($"Aeroporto de origem: {voos.getAeroportoOrigem().getNome()}, Aeroporto de destino: {voos.getAeroportoDestino().getNome()}, Data de ida: {voos.getDataHoraVoo()}, Tipo da Tarifa: {voos.GetTipoTarifa().getTarifaBasica()}, moeda do voo: {voos.getMoeda().GetTipoMoeda()}");
+                            Console.WriteLine($"Aeroporto de origem: {voos.getAeroportoOrigem().getNome()}, Aeroporto de destino: {voos.getAeroportoDestino().getNome()}, Data de ida: {voos.getDataHoraVoo()}, Tipo da Tarifa: {voos.GetTipoTarifa()}, moeda do voo: {voos.getMoeda().GetTipoMoeda()}");
                         }
                         break;
                     }
@@ -164,7 +163,7 @@ internal class Program
                             {
                                 Console.Write("Nenhum voo programado para esta passagem");
                             }
-                            Console.WriteLine($", Tipo da tarifa: {pass.GetTipoTarifa().getTarifaBasica()}, " + $"Numero de bagagens: {pass.getNumeroBagagens()}, " +
+                            Console.WriteLine($", Tipo da tarifa: {pass.GetTipoTarifa()}, " + $"Numero de bagagens: {pass.getNumeroBagagens()}, " +
                             $"Moeda da passagem: {pass.GetMoeda().GetTipoMoeda()}, " +
                             $"Valor total: {pass.getValorTotal()}");
                         }
