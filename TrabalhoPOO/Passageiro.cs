@@ -6,6 +6,7 @@ public class Passageiro : IPassageiroVIP
     private string numeroDocumento;
     private string email;
     private static int FranquiaPassagemGratuita = 0;
+    private List<Passagem> Passagens = new List<Passagem>();
     public Passageiro(string nome, string sobrenome, TipoDocumento tipoDocumento, string numeroDocumento, string email) 
     {
         this.nome = nome;
@@ -13,6 +14,32 @@ public class Passageiro : IPassageiroVIP
         this.tipoDocumento = tipoDocumento;
         this.numeroDocumento = numeroDocumento;
         this.email = email;
+    }
+
+    public void AdicionarPassagem(Passagem passagem)
+    {
+        Passagens.Add(passagem);
+    }
+
+    public List<VooProgramado> consultarHistoricoVoos()
+    {
+        List<VooProgramado> historicoVoos = new List<VooProgramado>();
+
+        foreach (var passagem in Passagens)
+        {
+            if (passagem.GetPassageiro() == this)
+            {
+                foreach (var voo in passagem.GetVoosProgramados())
+                {
+                    if (!historicoVoos.Contains(voo))
+                    {
+                        historicoVoos.Add(voo);
+                    }
+                }
+            }
+        }
+
+        return historicoVoos.OrderBy((v) => v.GetVoo().getDataHoraVoo()).ToList();
     }
 
     public void CancelarVooSemCusto(ICancelavel voo)
@@ -31,16 +58,8 @@ public class Passageiro : IPassageiroVIP
         return valorBaseFranquia / 2;
     }
 
-    public int SetFranquiaPassagemGratuita(int franquia)
-    {
-        return Passageiro.FranquiaPassagemGratuita = franquia;
-    }
-
-    public int GetFranquiaPassagemGratuita()
-    {
-        return Passageiro.FranquiaPassagemGratuita;
-    }
-
+    public int SetFranquiaPassagemGratuita(int franquia) => Passageiro.FranquiaPassagemGratuita = franquia;
+    public int GetFranquiaPassagemGratuita() => Passageiro.FranquiaPassagemGratuita;
     public string getNome() => nome;
     public string GetSobrenome() => sobrenome;
     public TipoDocumento GetTipoDocumento() => tipoDocumento;

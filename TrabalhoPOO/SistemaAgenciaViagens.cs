@@ -364,7 +364,7 @@ namespace TrabalhoPOO
             }
             else
             {
-                Console.WriteLine($"{passageiro.getNome()} {passageiro.GetSobrenome()} já é VIP.");
+                Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} já é VIP nesta companhia aérea.");
             }
         }
 
