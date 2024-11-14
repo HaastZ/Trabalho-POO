@@ -13,23 +13,9 @@ public class Aeronave
         this.assentosPorFileira = assentosPorFileira;
     }
 
-    public int GetCapacidadePassageiros()
-    {
-        return capacidadePassageiros;
-    }
+    public int GetCapacidadePassageiros() => capacidadePassageiros;
+    public double GetCapacidadeCarga() => capacidadeCarga;
+    public int GetNumeroFileiras() => numeroFileiras;
+    public int GetAssentosPorFileira() => assentosPorFileira;
 
-    public double GetCapacidadeCarga()
-    {
-        return capacidadeCarga;
-    }
-
-    public int GetNumeroFileiras()
-    {
-        return numeroFileiras;
-    }
-
-    public int GetAssentosPorFileira()
-    {
-        return assentosPorFileira;
-    }
 }

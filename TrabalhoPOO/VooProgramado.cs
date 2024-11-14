@@ -1,9 +1,9 @@
 public class VooProgramado : ICancelavel
 {
     private Voo voo;
-    public DateTime dataHoraPartida;
+    private DateTime dataHoraPartida;
     private Aeronave aeronave;
-    private bool statusVoo;
+    private StatusVoo statusVoo;
     private Dictionary<string, bool> assentosDisponiveis;
 
     public VooProgramado(Voo voo, DateTime dataHoraPartida, Aeronave aeronave)
@@ -11,7 +11,7 @@ public class VooProgramado : ICancelavel
         this.voo = voo;
         this.dataHoraPartida = dataHoraPartida;
         this.aeronave = aeronave;
-        this.statusVoo = true;
+        this.statusVoo = StatusVoo.Ativo;
         this.assentosDisponiveis = new Dictionary<string, bool>();
 
         int numeroFileiras = aeronave.GetNumeroFileiras();
@@ -30,18 +30,11 @@ public class VooProgramado : ICancelavel
 
     public void Cancelar()
     {
-        if (!statusVoo)
-        {
-            Console.WriteLine("O voo programado já está cancelado");
-        }
-        else
-        {
-            this.statusVoo = false;
+            this.statusVoo = StatusVoo.Cancelado;
             Console.WriteLine($"Voo programado para {this.dataHoraPartida} foi cancelado");
-        }
     }
 
-    public bool GetStatusVoo()
+    public StatusVoo GetStatusVoo()
     {
         return this.statusVoo;
     }
@@ -49,6 +42,16 @@ public class VooProgramado : ICancelavel
     public Voo GetVoo()
     {
         return this.voo;
+    }
+
+    public DateTime GetDataHoraPartida() 
+    {
+        return this.dataHoraPartida;
+    }
+
+    public void SetDataHoraPartida(DateTime data) 
+    {
+        this.dataHoraPartida = data;
     }
 
     public bool IsAssentoDisponivel(string assento)

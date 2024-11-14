@@ -7,10 +7,10 @@ public class Passagem : ICancelavel
     private Moeda moeda;
     private double valorTotal;
     private static double TAXAFIXA = 0.10;
-    private bool statusPassagem;
+    private StatusPassagem statusPassagem;
     public bool Check_In { get; set; }
-
-    private List<RegistroStatus> historicoStatus;
+    private Dictionary<VooProgramado, string> assentosReservados;
+    private List<StatusPassagem> historicoStatus;
 
     public Passagem(List<VooProgramado> voosProgramados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
     {
@@ -20,9 +20,9 @@ public class Passagem : ICancelavel
         this.numeroBagagens = numeroBagagens;
         this.moeda = moeda;
         this.valorTotal = valorTotal;
-        this.statusPassagem = true;
+        this.statusPassagem = StatusPassagem.Adquirida;
 
-        this.historicoStatus = new List<RegistroStatus> { new RegistroStatus("Passagem adquirida") };
+        this.historicoStatus = new List<StatusPassagem>();
         this.assentosReservados = new Dictionary<VooProgramado, string>();
     }
 
@@ -33,39 +33,30 @@ public class Passagem : ICancelavel
 
     public void Cancelar()
     {
-        if (!statusPassagem)
-        {
-            Console.WriteLine("A passagem já foi cancelada");
-        }
-        else
-        {
-            statusPassagem = false;
-            historicoStatus.Add(new RegistroStatus("Passagem cancelada"));
-
+            statusPassagem = StatusPassagem.Cancelada;
             foreach (var voo in voosProgramados)
             {
                 voo.Cancelar();
             }
             Console.WriteLine($"Passagem e todos os voos associados do passageiro {passageiro.getNome()} foram cancelados.");
-        }
     }
 
     public void RealizarCheckIn()
     {
-        historicoStatus.Add(new RegistroStatus("Check-in realizado"));
+        historicoStatus.Add(StatusPassagem.CheckinRealizado);
     }
 
     public void RealizarEmbarque()
     {
-        historicoStatus.Add(new RegistroStatus("Embarque realizado"));
+        historicoStatus.Add(StatusPassagem.EmbarqueRealizado);
     }
 
     public void RegistrarNoShow()
     {
-        historicoStatus.Add(new RegistroStatus("No show"));
+        historicoStatus.Add(StatusPassagem.NoShow);
     }
 
-    public List<RegistroStatus> GetHistoricoStatus()
+    public List<StatusPassagem> GetHistoricoStatus()
     {
         return historicoStatus;
     }
@@ -75,7 +66,7 @@ public class Passagem : ICancelavel
         return voosProgramados;
     }
 
-    public bool GetStatusPassagem()
+    public StatusPassagem GetStatusPassagem()
     {
         return statusPassagem;
     }

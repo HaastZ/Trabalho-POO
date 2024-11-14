@@ -23,7 +23,7 @@ public class Bilhete
 
         var passageiro = passagem.GetPassageiro();
         var bilhete = $"-----------------------------------------------------\n";
-        bilhete += $"Nome: {passageiro.getNome()} {passageiro.getSobrenome()}     Tipo Documento: {passageiro.getNumeroDocumento()}\n\n";
+        bilhete += $"Nome: {passageiro.getNome()} {passageiro.GetSobrenome()} Tipo Documento: {passageiro.GetTipoDocumento()}\n\n";
 
         foreach (var vooProg in passagem.GetVoosProgramados())
         {

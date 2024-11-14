@@ -12,6 +12,7 @@ namespace TrabalhoPOO
         private List<Voo> voos;
         private List<Passagem> passagens;
         private List<VooProgramado> voosProgramados;
+        private List<Passageiro> passageirosVIP;
         // Métodos getters e setters para as listas
         public SistemaAgenciaViagens()
         {
@@ -22,6 +23,7 @@ namespace TrabalhoPOO
             this.voos = new List<Voo>();
             this.passagens = new List<Passagem>();
             this.voosProgramados = new List<VooProgramado>();
+            this.passageirosVIP =  new List<Passageiro>();
         }
         public void CadastrarFuncionario(Funcionario funcionario)
         {
@@ -104,6 +106,11 @@ namespace TrabalhoPOO
         public List<Passagem> GetPassagens()
         {
             return passagens;
+        }
+
+        public List<Passageiro> GetPassageirosVIPs() 
+        {
+            return this.passageirosVIP;
         }
 
         // Método de login
@@ -323,15 +330,11 @@ namespace TrabalhoPOO
                 }
             }
         }
-        public void Cancelar(ICancelavel item)
-        {
-            item.Cancelar();
-        }
 
         public void RealizarCheckIn(Passagem passagem)
         {
             DateTime dataHoraAtual = DateTime.Now;
-            TimeSpan horasAteOVoo = passagem.getVoos()[0].getDataHoraVoo() - dataHoraAtual;
+            TimeSpan horasAteOVoo = passagem.GetVoosProgramados()[0].GetDataHoraPartida() - dataHoraAtual;
             Console.WriteLine(horasAteOVoo.TotalMinutes);
             if(horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 1440)
             {
@@ -354,6 +357,73 @@ namespace TrabalhoPOO
                 }
             }
             return passagensDoPassageiro;
+        }
+
+        public void Cancelar(ICancelavel item)
+        {
+            item.Cancelar();
+        }
+
+        public bool EhVIP(Passageiro passageiro)
+        {
+            return passageirosVIP.Contains(passageiro);
+        }
+
+        public void AscenderPassageiroVIP(Passageiro passageiro, CompanhiaAerea companhia)
+        {
+            if (!EhVIP(passageiro))
+            {
+                passageiro.SetFranquiaPassagemGratuita(1);
+                passageirosVIP.Add(passageiro);
+                Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} foi ascendido a Passageiro VIP na companhia aérea {companhia.getNome()}.");
+            }
+            else
+            {
+                Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} já é VIP nesta companhia aérea.");
+            }
+        }
+
+        public void CancelarVooPassageiroVIP(Passageiro passageiro, ICancelavel voo)
+        {
+            if (EhVIP(passageiro))
+            {
+                passageiro.CancelarVooSemCusto(voo);
+            }
+            else
+            {
+                Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} não é VIP e o cancelamento terá custo.");
+            }
+        }
+
+        public void AlterarVooPassageiroVIP(Passageiro passageiro, VooProgramado voo) 
+        {
+            DateTime novaData = new DateTime(2024, 10, 01, 17, 00, 00);
+            if(EhVIP(passageiro)) 
+            {
+                voo.SetDataHoraPartida(novaData);
+                Console.WriteLine($"A data do voo do Passageiro {passageiro.getNome()} foi alterada para {novaData}");
+            }
+            else 
+            {
+                Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} não é VIP e terá um custo para alteração");
+            }
+        }
+
+        public double CalcularDescontoPassageiroVIP(Passageiro passageiro, CompanhiaAerea companhia)
+        {
+            double desconto = 0;
+            if(EhVIP(passageiro)) 
+            {
+                desconto = companhia.getValorBagagemAdicional() / 2;
+                return desconto;
+            }
+            else 
+            {
+                Console.WriteLine($"O passageiro {passageiro.getNome()} não é VIP, então não tem desconto");
+                return desconto;
+            }
+            
+            
         }
     }
 }
