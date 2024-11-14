@@ -59,6 +59,7 @@ internal class Program
             Console.WriteLine("16) Visualizar Historico de voos dos Passageiros");
             Console.WriteLine("17) Realizar Check-in");
             Console.WriteLine("18) Registrar Embarque do passageiro");
+            Console.WriteLine("19) Registrar NO SHOW de passageiros");
 
             Console.WriteLine("0) Sair\n");
             opt = int.Parse(Console.ReadLine());
@@ -365,7 +366,71 @@ internal class Program
                     }
                     case 18:
                     {
+                        Console.WriteLine("Registrar Embarque do Passageiro");
+                        Console.Write("Informe o nome do passageiro: ");
+                        string nomePassageiro = Console.ReadLine();
 
+                        Passageiro passageiroEncontrado = null;
+                        foreach (var passagemAtual in system.GetPassagens())
+                        {
+                            if (passagemAtual.GetPassageiro().getNome().Equals(nomePassageiro, StringComparison.OrdinalIgnoreCase))
+                            {
+                                passageiroEncontrado = passagemAtual.GetPassageiro();
+                                break;
+                            }
+                        }
+
+                        if (passageiroEncontrado != null)
+                        {
+                            List<Passagem> passagensDoPassageiro = system.BuscarPassagem(passageiroEncontrado);
+                            if (passagensDoPassageiro.Count > 0)
+                            {
+                                // Exibir as passagens do passageiro
+                                Console.WriteLine($"Passagens encontradas para o passageiro {passageiroEncontrado.getNome()}:");
+                                for (int i = 0; i < passagensDoPassageiro.Count; i++)
+                                {
+                                    Console.WriteLine($"{i + 1}) Passagem com status {passagensDoPassageiro[i].GetStatusPassagem()}");
+                                    // Mostrar detalhes dos voos nesta passagem
+                                    foreach (var vooProg in passagensDoPassageiro[i].GetVoosProgramados())
+                                    {
+                                        Console.WriteLine($"   Voo: {vooProg.GetVoo().getCodigoVoo()} de {vooProg.GetVoo().getAeroportoOrigem().getNome()} para {vooProg.GetVoo().getAeroportoDestino().getNome()} em {vooProg.GetDataHoraPartida()}");
+                                    }
+                                }
+
+                                Console.Write("Informe o número da passagem para registrar o embarque: ");
+                                int indicePassagem;
+                                if (int.TryParse(Console.ReadLine(), out indicePassagem) && indicePassagem >= 1 && indicePassagem <= passagensDoPassageiro.Count)
+                                {
+                                    Passagem passagemSelecionada = passagensDoPassageiro[indicePassagem - 1];
+
+                                    passagemSelecionada.RealizarEmbarque();
+                                    Console.WriteLine($"Embarque realizado para o passageiro {passageiroEncontrado.getNome()} na passagem selecionada.");
+                                    Console.WriteLine($"Status da passagem: {passagemSelecionada.GetStatusPassagem()}");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Número de passagem inválido.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Nenhuma passagem encontrada para este passageiro.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Passageiro não encontrado.");
+                        }
+                        break;
+                    }
+                    case 19:
+                    {
+                        Console.WriteLine("Verificando passageiros que não embarcaram (NO SHOW)");
+
+                        foreach (var passagemAtual in system.GetPassagens())
+                        {
+                            passagemAtual.VerificarNoShowEmbarque();
+                        }
                         break;
                     }
             }

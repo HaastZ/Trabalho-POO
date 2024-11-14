@@ -62,6 +62,38 @@ public class Passagem : ICancelavel
         }
     }
 
+    public void VerificarNoShowEmbarque()
+    {
+        if (statusPassagem != StatusPassagem.Cancelada && statusPassagem != StatusPassagem.EmbarqueRealizado && statusPassagem != StatusPassagem.NoShow)
+        {
+            bool vooPartiu = true;
+
+            foreach (var vooProg in voosProgramados)
+            {
+                DateTime dataHoraAtual = DateTime.Now;
+                if (dataHoraAtual >= vooProg.GetDataHoraPartida())
+                {
+                    continue;
+                }
+                else
+                {
+                    vooPartiu = false;
+                    break;
+                }
+            }
+
+            if (vooPartiu)
+            {
+                RegistrarNoShow();
+                Console.WriteLine($"Passageiro {passageiro.getNome()} não embarcou e foi marcado como NO SHOW.");
+            }
+            else
+            {
+                Console.WriteLine($"Ainda há voos que não partiram para a passagem do passageiro {passageiro.getNome()}.");
+            }
+        }
+    }
+
     public Dictionary<VooProgramado, string> GetAssentosReservados() => assentosReservados;
     public void AdicionarCartaoEmbarque(CartaoEmbarque cartao) => this.cartoesEmbarque.Add(cartao);
     public List<CartaoEmbarque> GetCartoesEmbarque() => this.cartoesEmbarque;
