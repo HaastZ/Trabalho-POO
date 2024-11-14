@@ -27,7 +27,7 @@ internal class Program
         Passageiro passageiro5 = new Passageiro("Gabriel", "Marinho", TipoDocumento.PASSAPORTE, "0129384", "gabriel@email.com");
         Passageiro passageiro6 = new Passageiro("Felipe", "Henrique", TipoDocumento.CPF, "8239412", "felipe@email.com");
         Passageiro passageiro7 = new Passageiro("Tarsis", "Augustus", TipoDocumento.RG, "MG98127263", "tarsis@email.com");
-        Aeronave aeronave = new Aeronave(180, 2000.0, 30, 6);
+        Aeronave aeronave = new Aeronave(0098635, 180, 2000.0, 30, 6);
         VooProgramado vooProgramado = new VooProgramado(voo, dataIda, aeronave);
         VooProgramado vooProgramado2 = new VooProgramado(voo2, dataIdaVoo2, aeronave);
         system.InstanciaVoosPorDiaDaSemana(voo);
@@ -364,7 +364,7 @@ internal class Program
                     }
                     case 18:
                     {
-
+                        
                         break;
                     }
             }

@@ -1,12 +1,14 @@
 public class Aeronave
 {
+    private int IdAeronave;
     private int capacidadePassageiros;
     private double capacidadeCarga;
     private int numeroFileiras;
     private int assentosPorFileira;
 
-    public Aeronave(int capacidadePassageiros, double capacidadeCarga, int numeroFileiras, int assentosPorFileira)
+    public Aeronave(int id, int capacidadePassageiros, double capacidadeCarga, int numeroFileiras, int assentosPorFileira)
     {
+        this.IdAeronave = id;
         this.capacidadePassageiros = capacidadePassageiros;
         this.capacidadeCarga = capacidadeCarga;
         this.numeroFileiras = numeroFileiras;
