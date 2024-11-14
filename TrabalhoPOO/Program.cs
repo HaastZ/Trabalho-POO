@@ -385,12 +385,10 @@ internal class Program
                             List<Passagem> passagensDoPassageiro = system.BuscarPassagem(passageiroEncontrado);
                             if (passagensDoPassageiro.Count > 0)
                             {
-                                // Exibir as passagens do passageiro
                                 Console.WriteLine($"Passagens encontradas para o passageiro {passageiroEncontrado.getNome()}:");
                                 for (int i = 0; i < passagensDoPassageiro.Count; i++)
                                 {
                                     Console.WriteLine($"{i + 1}) Passagem com status {passagensDoPassageiro[i].GetStatusPassagem()}");
-                                    // Mostrar detalhes dos voos nesta passagem
                                     foreach (var vooProg in passagensDoPassageiro[i].GetVoosProgramados())
                                     {
                                         Console.WriteLine($"   Voo: {vooProg.GetVoo().getCodigoVoo()} de {vooProg.GetVoo().getAeroportoOrigem().getNome()} para {vooProg.GetVoo().getAeroportoDestino().getNome()} em {vooProg.GetDataHoraPartida()}");
