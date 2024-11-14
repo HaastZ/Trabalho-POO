@@ -10,18 +10,8 @@ public class Funcionario
         this.email = email;
     }
 
-    public string getNome() 
-    {
-        return this.nome;
-    }
+    public string getNome() => this.nome;
+    public string getCPF() => this.cpf;
+    public string getEmail() => this.email;
 
-    public string getCPF() 
-    {
-        return this.cpf;
-    }
-
-    public string getEmail() 
-    {
-        return this.email;
-    }
 }

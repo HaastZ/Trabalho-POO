@@ -34,58 +34,17 @@ public class Voo
         this.duracao = duracao;
     }
 
-    public List<string> getFrequenciaSemanal()
-    {
-        return frequenciaSemanal;
-    }
-    public string getHoraPartida()
-    {
-        return horaPartida;
-    }
-    public string getDuracao()
-    {
-        return duracao;
-    }
-
-    public Aeroporto getAeroportoOrigem()
-    {
-        return this.aeroportoOrigem;
-    }
-
-    public Aeroporto getAeroportoDestino()
-    {
-        return this.aeroportoDestino;
-    }
-
-    public DateTime getDataHoraVoo()
-    {
-        return this.dataHoraVoo;
-    }
-    public void setDataHoraVoo(DateTime dataHoraVoo)
-    {
-        this.dataHoraVoo = dataHoraVoo;
-    }
-    public string getCodigoVoo()
-    {
-        return this.codigoVoo;
-    }
-
-    public CompanhiaAerea getCompanhiaAerea()
-    {
-        return this.companhiaAerea;
-    }
-
-    public TipoTarifa GetTipoTarifa()
-    {
-        return this.tipoTarifa;
-    }
-
-    public Moeda getMoeda()
-    {
-        return this.moeda;
-    }
-    public Voo Clonar()
-    {
-        return (Voo)MemberwiseClone();
-    }
+    public List<string> getFrequenciaSemanal() => this.frequenciaSemanal;
+    public string getHoraPartida() => this.horaPartida;
+    public string getDuracao() => this.duracao;
+    public Aeroporto getAeroportoOrigem() => this.aeroportoOrigem;
+    public Aeroporto getAeroportoDestino() => this.aeroportoDestino;
+    public DateTime getDataHoraVoo() => this.dataHoraVoo;
+    public void setDataHoraVoo(DateTime dataHoraVoo) => this.dataHoraVoo = dataHoraVoo;
+    public string getCodigoVoo() => this.codigoVoo;
+    public CompanhiaAerea getCompanhiaAerea() => this.companhiaAerea;
+    public TipoTarifa GetTipoTarifa() => this.tipoTarifa;
+    public Moeda getMoeda() => this.moeda;
+    public Voo Clonar() => (Voo)MemberwiseClone();
+    
 }

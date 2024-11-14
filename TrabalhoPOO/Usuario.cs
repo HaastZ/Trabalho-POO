@@ -10,18 +10,8 @@ public class Usuario
         this.senha = senha;
     }
 
-    public string getLogin () 
-    {
-        return this.login;
-    }
-
-    public string getSenha() 
-    {
-        return this.senha;
-    }
-
-    public Funcionario getFuncionario() 
-    {
-        return this.funcionario;
-    }
+    public string getLogin () => this.login;
+    public string getSenha() => this.senha;
+    public Funcionario getFuncionario() => this.funcionario;
+    
 }

@@ -15,28 +15,10 @@ public class Aeroporto
         this.pais = pais;
     }
 
-    public string getNome()
-    {
-        return this.nome;
-    }
+    public string getNome() => this.nome;
+    public string getSigla() => this.sigla;
+    public string getCidade() => this.cidade;
+    public string getEstado() => this.estado;
+    public string getPais() => this.pais;
 
-    public string getSigla()
-    {
-        return this.sigla;
-    }
-
-    public string getCidade()
-    {
-        return this.cidade;
-    }
-
-    public string getEstado()
-    {
-        return this.estado;
-    }
-
-    public string getPais()
-    {
-        return this.pais;
-    }
 }

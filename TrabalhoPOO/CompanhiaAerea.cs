@@ -16,33 +16,10 @@ public class CompanhiaAerea
         this.valorBagagemAdicional = valorBagagemAdicional;
     }
 
-    public string getNome() 
-    {
-        return this.nome;
-    }
-
-    public string getCodigo() 
-    {
-        return this.codigo;
-    }
-
-    public string getRazaoSocial() 
-    {
-        return this.razaoSocial;
-    }
-
-    public string getCnpj() 
-    {
-        return this.cnpj;
-    }
-
-    public double getValorPrimeraBagagem() 
-    {
-        return this.valorPrimeiraBagagem;
-    }
-
-    public double getValorBagagemAdicional() 
-    {
-        return valorBagagemAdicional;
-    }
+    public string getNome() => this.nome;
+    public string getCodigo() => this.codigo;
+    public string getRazaoSocial() => this.razaoSocial;
+    public string getCnpj() => this.cnpj;
+    public double getValorPrimeraBagagem() => this.valorPrimeiraBagagem;
+    public double getValorBagagemAdicional() => valorBagagemAdicional;
 }

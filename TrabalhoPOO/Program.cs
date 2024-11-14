@@ -242,6 +242,7 @@ internal class Program
                         Console.WriteLine($"Status do voo após cancelamento: {vooProgramado.GetStatusVoo()}");
                         Console.WriteLine($"Status da passagem: {passagem.GetStatusPassagem()}");
                         system.Cancelar(passagem);
+                        Console.WriteLine($"Passagem e todos os voos associados do passageiro {passageiro1.getNome()} foram cancelados.");
                         Console.WriteLine($"Status da passagem após cancelamento: {passagem.GetStatusPassagem()}");
                         break;
                     } 
@@ -364,7 +365,7 @@ internal class Program
                     }
                     case 18:
                     {
-                        
+
                         break;
                     }
             }

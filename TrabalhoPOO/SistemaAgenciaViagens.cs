@@ -438,8 +438,6 @@ namespace TrabalhoPOO
                 Console.WriteLine($"O passageiro {passageiro.getNome()} não é VIP, então não tem desconto");
                 return desconto;
             }
-            
-            
         }
     }
 }

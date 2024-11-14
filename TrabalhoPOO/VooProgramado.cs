@@ -30,30 +30,15 @@ public class VooProgramado : ICancelavel
 
     public void Cancelar()
     {
-            this.statusVoo = StatusVoo.Cancelado;
-            Console.WriteLine($"Voo programado para {this.dataHoraPartida} foi cancelado");
+        this.statusVoo = StatusVoo.Cancelado;
+        Console.WriteLine($"Voo programado para {this.dataHoraPartida} foi cancelado");
     }
 
-    public StatusVoo GetStatusVoo()
-    {
-        return this.statusVoo;
-    }
-
-    public Voo GetVoo()
-    {
-        return this.voo;
-    }
-
-    public DateTime GetDataHoraPartida() 
-    {
-        return this.dataHoraPartida;
-    }
-
-    public void SetDataHoraPartida(DateTime data) 
-    {
-        this.dataHoraPartida = data;
-    }
-
+    public StatusVoo GetStatusVoo() => this.statusVoo;
+    public Voo GetVoo() => this.voo;
+    public DateTime GetDataHoraPartida() => this.dataHoraPartida;
+    public void SetDataHoraPartida(DateTime data) => this.dataHoraPartida = data;
+    
     public bool IsAssentoDisponivel(string assento)
     {
         if (assentosDisponiveis.ContainsKey(assento))

@@ -2,7 +2,6 @@ public class Passagem : ICancelavel
 {
     private List<VooProgramado> voosProgramados;
     private List<CartaoEmbarque> cartoesEmbarque;
-
     private TipoTarifa tipoTarifa;
     private Passageiro passageiro;
     private int numeroBagagens;
@@ -32,63 +31,23 @@ public class Passagem : ICancelavel
 
     public void Cancelar()
     {
-            statusPassagem = StatusPassagem.Cancelada;
-            foreach (var voo in voosProgramados)
-            {
-                voo.Cancelar();
-            }
-            Console.WriteLine($"Passagem e todos os voos associados do passageiro {passageiro.getNome()} foram cancelados.");
+        statusPassagem = StatusPassagem.Cancelada;
+        foreach (var voo in voosProgramados)
+        {
+            voo.Cancelar();
+        }
     }
 
-    public void RealizarCheckIn()
-    {
-        this.statusPassagem = StatusPassagem.CheckinRealizado;
-    }
-
-    public void RealizarEmbarque()
-    {
-        this.statusPassagem = StatusPassagem.EmbarqueRealizado;
-    }
-
-    public void RegistrarNoShow()
-    {
-        this.statusPassagem = StatusPassagem.NoShow;
-    }
-
-    public List<VooProgramado> GetVoosProgramados()
-    {
-        return voosProgramados;
-    }
-
-    public StatusPassagem GetStatusPassagem()
-    {
-        return statusPassagem;
-    }
-
-    public TipoTarifa GetTipoTarifa()
-    {
-        return tipoTarifa;
-    }
-
-    public Passageiro GetPassageiro()
-    {
-        return passageiro;
-    }
-
-    public int getNumeroBagagens()
-    {
-        return numeroBagagens;
-    }
-
-    public Moeda GetMoeda()
-    {
-        return moeda;
-    }
-
-    public double getValorTotal()
-    {
-        return valorTotal;
-    }
+    public void RealizarCheckIn() => this.statusPassagem = StatusPassagem.CheckinRealizado;
+    public void RealizarEmbarque() => this.statusPassagem = StatusPassagem.EmbarqueRealizado;
+    public void RegistrarNoShow() => this.statusPassagem = StatusPassagem.NoShow;
+    public List<VooProgramado> GetVoosProgramados() => voosProgramados;
+    public StatusPassagem GetStatusPassagem() => statusPassagem;
+    public TipoTarifa GetTipoTarifa() => this.tipoTarifa;
+    public Passageiro GetPassageiro() => this.passageiro; 
+    public int getNumeroBagagens() => numeroBagagens;
+    public Moeda GetMoeda() => moeda;
+    public double getValorTotal() => valorTotal;
 
     public void ReservarAssento(VooProgramado vooProgramado, string assento)
     {
@@ -103,18 +62,9 @@ public class Passagem : ICancelavel
         }
     }
 
-    public Dictionary<VooProgramado, string> GetAssentosReservados()
-    {
-        return assentosReservados;
-    }
-    public void AdicionarCartaoEmbarque(CartaoEmbarque cartao)
-    {
-        this.cartoesEmbarque.Add(cartao);
-    }
-
-    public List<CartaoEmbarque> GetCartoesEmbarque()
-    {
-        return this.cartoesEmbarque;
-    }
+    public Dictionary<VooProgramado, string> GetAssentosReservados() => assentosReservados;
+    public void AdicionarCartaoEmbarque(CartaoEmbarque cartao) => this.cartoesEmbarque.Add(cartao);
+    public List<CartaoEmbarque> GetCartoesEmbarque() => this.cartoesEmbarque;
+    
 
 }
