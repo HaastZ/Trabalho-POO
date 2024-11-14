@@ -197,9 +197,8 @@ namespace TrabalhoPOO
         public Passagem EmitirPassagem(List<VooProgramado> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Dictionary<VooProgramado, string> assentos)
         {
             double valorTotal = 1000.0;
-            Moeda moeda = new Moeda("BRL", valorTotal);
 
-            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens, moeda, valorTotal);
+            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens, Moeda.BRL, valorTotal);
 
             foreach (var item in assentos)
             {
