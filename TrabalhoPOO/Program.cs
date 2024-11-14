@@ -310,28 +310,38 @@ internal class Program
                 case 13:
                     {
                         system.AscenderPassageiroVIP(passageiro1, companhia);
+                        system.AscenderPassageiroVIP(passageiro1, companhia);
+                        Console.WriteLine("");
                         system.AscenderPassageiroVIP(passageiro2, companhia);
+                        system.AscenderPassageiroVIP(passageiro2, companhia);
+                        Console.WriteLine("");
                         system.AscenderPassageiroVIP(passageiro3, companhia);
+                        system.AscenderPassageiroVIP(passageiro3, companhia);
+                        Console.WriteLine("");
                         system.AscenderPassageiroVIP(passageiro4, companhia);
+                        system.AscenderPassageiroVIP(passageiro4, companhia);
+                        Console.WriteLine("");
+                        system.AscenderPassageiroVIP(passageiro5, companhia);
                         system.AscenderPassageiroVIP(passageiro5, companhia);
                         Console.WriteLine("---Lista de Passageiros VIPs---");
                         foreach (var passVIP in system.GetPassageirosVIPs())
                         {
                             Console.WriteLine($"O passageiro {passVIP.getNome()} {passVIP.GetSobrenome()} tem {passVIP.GetFranquiaPassagemGratuita()} franquia de passagem gratuita e suas Franquias adicionais gratuitas vão ficar R$ {system.CalcularDescontoPassageiroVIP(passageiro1, companhia)}");
                             Console.WriteLine("---------");
-            
                         }
                         break;
 
                     }
                 case 14:
                     {
-                        system.CancelarVooPassageiroVIP(passageiro1, vooProgramado);
+                        system.CancelarVooPassageiroVIP(passageiro4, vooProgramado);
+                        system.CancelarVooPassageiroVIP(passageiro6, vooProgramado);
                         break;
                     }
                 case 15:
                     {
-                        system.AlterarVooPassageiroVIP(passageiro1, vooProgramado);
+                        system.AlterarVooPassageiroVIP(passageiro4, vooProgramado);
+                        system.AlterarVooPassageiroVIP(passageiro7, vooProgramado);
                         break;
                     }
                 case 16:

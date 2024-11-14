@@ -376,7 +376,7 @@ namespace TrabalhoPOO
             }
             else
             {
-                Console.WriteLine($"{passageiro.getNome()} {passageiro.GetSobrenome()} não é VIP e o cancelamento terá custo.");
+                Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} não é VIP e o cancelamento terá custo.");
             }
         }
 
