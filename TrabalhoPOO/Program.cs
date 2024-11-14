@@ -1,4 +1,4 @@
-﻿﻿// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 using TrabalhoPOO;
 internal class Program
 {
@@ -346,21 +346,19 @@ internal class Program
                         }
                         break;
                     }
-                    case 17:
+                   case 17:
                     {
                         system.RealizarCheckIn(passagem);
+                        
+                        Console.WriteLine("\nCartões de Embarque:");
+                        foreach (var cartao in passagem.GetCartoesEmbarque())
+                        {
+                            Console.WriteLine(cartao);
+                        }
                         break;
                     }
             }
         }
         while (opt != 0);
     }
-
-    public void mostrarInfosPassageiroVIP(IPassageiroVIP passageiro) 
-    {
-        
-    }
-
-
-        
 }
