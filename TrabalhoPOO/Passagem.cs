@@ -1,6 +1,8 @@
 public class Passagem : ICancelavel
 {
     private List<VooProgramado> voosProgramados;
+    private List<CartaoEmbarque> cartoesEmbarque;
+
     private TipoTarifa tipoTarifa;
     private Passageiro passageiro;
     private int numeroBagagens;
@@ -10,8 +12,6 @@ public class Passagem : ICancelavel
     private StatusPassagem statusPassagem;
     public bool Check_In { get; set; }
     private Dictionary<VooProgramado, string> assentosReservados;
-    private List<StatusPassagem> historicoStatus;
-
     public Passagem(List<VooProgramado> voosProgramados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
     {
         this.voosProgramados = voosProgramados;
@@ -21,9 +21,8 @@ public class Passagem : ICancelavel
         this.moeda = moeda;
         this.valorTotal = valorTotal;
         this.statusPassagem = StatusPassagem.Adquirida;
-
-        this.historicoStatus = new List<StatusPassagem>();
         this.assentosReservados = new Dictionary<VooProgramado, string>();
+        this.cartoesEmbarque = new List<CartaoEmbarque>();
     }
 
     public double CalcularRemuneracao()
@@ -43,22 +42,17 @@ public class Passagem : ICancelavel
 
     public void RealizarCheckIn()
     {
-        historicoStatus.Add(StatusPassagem.CheckinRealizado);
+        this.statusPassagem = StatusPassagem.CheckinRealizado;
     }
 
     public void RealizarEmbarque()
     {
-        historicoStatus.Add(StatusPassagem.EmbarqueRealizado);
+        this.statusPassagem = StatusPassagem.EmbarqueRealizado;
     }
 
     public void RegistrarNoShow()
     {
-        historicoStatus.Add(StatusPassagem.NoShow);
-    }
-
-    public List<StatusPassagem> GetHistoricoStatus()
-    {
-        return historicoStatus;
+        this.statusPassagem = StatusPassagem.NoShow;
     }
 
     public List<VooProgramado> GetVoosProgramados()
@@ -113,4 +107,14 @@ public class Passagem : ICancelavel
     {
         return assentosReservados;
     }
+    public void AdicionarCartaoEmbarque(CartaoEmbarque cartao)
+    {
+        this.cartoesEmbarque.Add(cartao);
+    }
+
+    public List<CartaoEmbarque> GetCartoesEmbarque()
+    {
+        return this.cartoesEmbarque;
+    }
+
 }

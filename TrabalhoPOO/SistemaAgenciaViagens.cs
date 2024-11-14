@@ -197,9 +197,8 @@ namespace TrabalhoPOO
         public Passagem EmitirPassagem(List<VooProgramado> voosSelecionados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Dictionary<VooProgramado, string> assentos)
         {
             double valorTotal = 1000.0;
-            Moeda moeda = new Moeda("BRL", valorTotal);
 
-            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens, moeda, valorTotal);
+            Passagem novaPassagem = new Passagem(voosSelecionados, tipoTarifa, passageiro, numeroBagagens, Moeda.BRL, valorTotal);
 
             foreach (var item in assentos)
             {
@@ -330,15 +329,37 @@ namespace TrabalhoPOO
                 }
             }
         }
-
+        public void Cancelar(ICancelavel item)
+        {
+            item.Cancelar();
+        }
         public void RealizarCheckIn(Passagem passagem)
         {
             DateTime dataHoraAtual = DateTime.Now;
             TimeSpan horasAteOVoo = passagem.GetVoosProgramados()[0].GetDataHoraPartida() - dataHoraAtual;
+
             Console.WriteLine(horasAteOVoo.TotalMinutes);
             if(horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 1440)
+
+            if (horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 2880) // Entre 48h e 30min
             {
                 passagem.Check_In = true;
+
+                foreach (var vooProgramado in passagem.GetVoosProgramados())
+                {
+                    string assento;
+                    if (passagem.GetAssentosReservados().TryGetValue(vooProgramado, out assento))
+                    {
+                        CartaoEmbarque cartao = new CartaoEmbarque(passagem.GetPassageiro(), vooProgramado, assento);
+                        passagem.AdicionarCartaoEmbarque(cartao);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Assento não reservado para o voo {vooProgramado.GetVoo().getCodigoVoo()}");
+                    }
+                }
+
+                Console.WriteLine("Check-in realizado com sucesso. Cartões de embarque gerados.");
             }
             else
             {
@@ -357,11 +378,6 @@ namespace TrabalhoPOO
                 }
             }
             return passagensDoPassageiro;
-        }
-
-        public void Cancelar(ICancelavel item)
-        {
-            item.Cancelar();
         }
 
         public bool EhVIP(Passageiro passageiro)

@@ -8,7 +8,8 @@ public class Voo
     private string horaPartida;
     private string duracao;
     private CompanhiaAerea companhiaAerea;
-    private TipoTarifa tipoTarifa; private Moeda moeda;
+    private TipoTarifa tipoTarifa; 
+    private Moeda moeda;
     public Voo(Aeroporto origem, Aeroporto destino, DateTime dataHoraVoo, string codigoVoo, CompanhiaAerea companhiaAerea, TipoTarifa tipoTarifa, Moeda moeda)
     {
         this.aeroportoOrigem = origem;
