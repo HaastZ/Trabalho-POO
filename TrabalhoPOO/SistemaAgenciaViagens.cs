@@ -330,6 +330,25 @@ namespace TrabalhoPOO
                 }
             }
         }
+        public void Cancelar(ICancelavel item)
+        {
+            item.Cancelar();
+        }
+
+        public void RealizarCheckIn(Passagem passagem)
+        {
+            DateTime dataHoraAtual = DateTime.Now;
+            TimeSpan horasAteOVoo = passagem.GetVoosProgramados()[0].GetDataHoraPartida() - dataHoraAtual;
+            Console.WriteLine(horasAteOVoo.TotalMinutes);
+            if(horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 1440)
+            {
+                passagem.Check_In = true;
+            }
+            else
+            {
+                Console.WriteLine("Erro: O check-in deve ser realizado entre 48h e 30min até a hora do voo");
+            }
+        }
         public List<Passagem> BuscarPassagem(Passageiro passageiro)
         {
             List<Passagem> passagensDoPassageiro = new List<Passagem>();
@@ -342,11 +361,6 @@ namespace TrabalhoPOO
                 }
             }
             return passagensDoPassageiro;
-        }
-
-        public void Cancelar(ICancelavel item)
-        {
-            item.Cancelar();
         }
 
         public bool EhVIP(Passageiro passageiro)

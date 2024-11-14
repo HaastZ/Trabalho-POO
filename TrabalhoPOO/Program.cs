@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿﻿// See https://aka.ms/new-console-template for more information
 using TrabalhoPOO;
 internal class Program
 {
@@ -59,6 +59,7 @@ internal class Program
             Console.WriteLine("14) Cancelar Voo do PassageiroVIP");
             Console.WriteLine("15) Alterar Voo do PassageiroVIP");
             Console.WriteLine("16) Visualizar Historico de voos dos Passageiros");
+            Console.WriteLine("17) Realizar Check-in");
 
             Console.WriteLine("0) Sair\n");
             opt = int.Parse(Console.ReadLine());
@@ -310,38 +311,28 @@ internal class Program
                 case 13:
                     {
                         system.AscenderPassageiroVIP(passageiro1, companhia);
-                        system.AscenderPassageiroVIP(passageiro1, companhia);
-                        Console.WriteLine("");
                         system.AscenderPassageiroVIP(passageiro2, companhia);
-                        system.AscenderPassageiroVIP(passageiro2, companhia);
-                        Console.WriteLine("");
                         system.AscenderPassageiroVIP(passageiro3, companhia);
-                        system.AscenderPassageiroVIP(passageiro3, companhia);
-                        Console.WriteLine("");
                         system.AscenderPassageiroVIP(passageiro4, companhia);
-                        system.AscenderPassageiroVIP(passageiro4, companhia);
-                        Console.WriteLine("");
-                        system.AscenderPassageiroVIP(passageiro5, companhia);
                         system.AscenderPassageiroVIP(passageiro5, companhia);
                         Console.WriteLine("---Lista de Passageiros VIPs---");
                         foreach (var passVIP in system.GetPassageirosVIPs())
                         {
                             Console.WriteLine($"O passageiro {passVIP.getNome()} {passVIP.GetSobrenome()} tem {passVIP.GetFranquiaPassagemGratuita()} franquia de passagem gratuita e suas Franquias adicionais gratuitas vão ficar R$ {system.CalcularDescontoPassageiroVIP(passageiro1, companhia)}");
                             Console.WriteLine("---------");
+            
                         }
                         break;
 
                     }
                 case 14:
                     {
-                        system.CancelarVooPassageiroVIP(passageiro4, vooProgramado);
-                        system.CancelarVooPassageiroVIP(passageiro6, vooProgramado);
+                        system.CancelarVooPassageiroVIP(passageiro1, vooProgramado);
                         break;
                     }
                 case 15:
                     {
-                        system.AlterarVooPassageiroVIP(passageiro4, vooProgramado);
-                        system.AlterarVooPassageiroVIP(passageiro7, vooProgramado);
+                        system.AlterarVooPassageiroVIP(passageiro1, vooProgramado);
                         break;
                     }
                 case 16:
@@ -353,6 +344,11 @@ internal class Program
                         {
                             Console.WriteLine($"Voo de {voos.GetVoo().getAeroportoOrigem().getNome()} para {voos.GetVoo().getAeroportoDestino().getNome()}\nData de partida: {voos.GetVoo().getDataHoraVoo()}");
                         }
+                        break;
+                    }
+                    case 17:
+                    {
+                        system.RealizarCheckIn(passagem);
                         break;
                     }
             }
@@ -368,4 +364,3 @@ internal class Program
 
         
 }
-
