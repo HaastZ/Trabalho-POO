@@ -368,7 +368,7 @@ internal class Program
                     {
                         Console.WriteLine("Registrar Embarque do Passageiro");
                         Console.Write("Informe o nome do passageiro: ");
-                        string nomePassageiro = Console.ReadLine();
+                        string nomePassageiro = passageiro1.getNome();
 
                         Passageiro passageiroEncontrado = null;
                         foreach (var passagemAtual in system.GetPassagens())

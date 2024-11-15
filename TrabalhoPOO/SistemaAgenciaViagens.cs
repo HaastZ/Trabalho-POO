@@ -380,10 +380,7 @@ namespace TrabalhoPOO
             return passagensDoPassageiro;
         }
 
-        public bool EhVIP(Passageiro passageiro)
-        {
-            return passageirosVIP.Contains(passageiro);
-        }
+        public bool EhVIP(Passageiro passageiro) => passageirosVIP.Contains(passageiro);
 
         public void AscenderPassageiroVIP(Passageiro passageiro, CompanhiaAerea companhia)
         {
