@@ -33,11 +33,6 @@ internal class Program
         system.InstanciaVoosPorDiaDaSemana(voo);
         Passagem passagem = new Passagem(system.GetVoosProgramados(), TipoTarifa.Basica, passageiro1, 4, Moeda.BRL, 4000);
 
-        foreach (var a in system.GetVoosProgramados())
-        {
-            Console.WriteLine(a.GetVoo().getAeroportoOrigem().getNome(), a.GetVoo().getAeroportoDestino().getNome(), a.GetDataHoraPartida());
-        }
-
         do
         {
             Console.WriteLine("\n-------MENU-------\n");

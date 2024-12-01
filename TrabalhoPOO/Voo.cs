@@ -5,7 +5,7 @@ public class Voo
     private DateTime dataHoraVoo;
     private string codigoVoo;
     private List<string> frequenciaSemanal;
-    private string horaPartida;
+
     private string duracao;
     private CompanhiaAerea companhiaAerea;
     private TipoTarifa tipoTarifa; 
@@ -30,12 +30,10 @@ public class Voo
         this.tipoTarifa = tipoTarifa;
         this.moeda = moeda;
         this.frequenciaSemanal = frequenciaSemanal;
-        this.horaPartida = horaPartida;
         this.duracao = duracao;
     }
 
     public List<string> getFrequenciaSemanal() => this.frequenciaSemanal;
-    public string getHoraPartida() => this.horaPartida;
     public string getDuracao() => this.duracao;
     public Aeroporto getAeroportoOrigem() => this.aeroportoOrigem;
     public Aeroporto getAeroportoDestino() => this.aeroportoDestino;
