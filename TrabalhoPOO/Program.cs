@@ -32,7 +32,7 @@ internal class Program
         VooProgramado vooProgramado2 = new VooProgramado(voo2, dataIdaVoo2, aeronave);
         system.InstanciaVoosPorDiaDaSemana(voo);
         Passagem passagem = new Passagem(system.GetVoosProgramados(), TipoTarifa.Basica, passageiro1, 4, Moeda.BRL, 4000);
-
+        
         do
         {
             Console.WriteLine("\n-------MENU-------\n");
