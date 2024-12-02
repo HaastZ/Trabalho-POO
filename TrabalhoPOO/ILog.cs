@@ -1,3 +1,3 @@
 public interface ILog {
-    void RegistrarLog();
+    void RegistrarLog(string operacao);
 }
