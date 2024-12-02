@@ -101,7 +101,7 @@ public class VooProgramado : ICancelavel
     public override string ToString()
     {
         string str;
-        str = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Operação: Criação de voo programado. Número do voo: {voo.getCodigoVoo()}, Origem: {voo.getAeroportoOrigem().getNome()}, Destino: {voo.getAeroportoDestino().getNome()}, aeronave: {aeronave.GetIdAeronave()}, data e hora de partida: {dataHoraPartida}, status do voo: {statusVoo} ";
+        str = $"{DateTime.Now:dd/MM/yyyy HH:mm:ss} - Operação: Criação de voo programado. Número do voo: {voo.getCodigoVoo()}, Origem: {voo.getAeroportoOrigem().getNome()}, Destino: {voo.getAeroportoDestino().getNome()}, aeronave: {aeronave.GetIdAeronave()}, data e hora de partida: {dataHoraPartida}, status do voo: {statusVoo} ";
         return str;
     }
 
