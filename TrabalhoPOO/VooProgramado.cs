@@ -13,6 +13,8 @@ public class VooProgramado : ICancelavel
         this.aeronave = aeronave;
         this.statusVoo = StatusVoo.Ativo;
         this.assentosDisponiveis = new Dictionary<string, bool>();
+        RegistrarLog();
+
 
         int numeroFileiras = aeronave.GetNumeroFileiras();
         int assentosPorFileira = aeronave.GetAssentosPorFileira();
@@ -94,5 +96,19 @@ public class VooProgramado : ICancelavel
             }
         }
         return assentosLivres;
+    }
+
+    public override string ToString()
+    {
+        string str;
+        str = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Operação: Criação de voo programado. Número do voo: {voo.getCodigoVoo()}, Origem: {voo.getAeroportoOrigem().getNome()}, Destino: {voo.getAeroportoDestino().getNome()}, aeronave: {aeronave.GetIdAeronave()}, data e hora de partida: {dataHoraPartida}, status do voo: {statusVoo} ";
+        return str;
+    }
+
+    public void RegistrarLog() {
+        string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+        string projectRoot = Directory.GetParent(currentDirectory).Parent.Parent.Parent.FullName;
+        string filePath = Path.Combine(projectRoot, "log.txt");
+        File.AppendAllText(filePath, ToString() + Environment.NewLine);
     }
 }
