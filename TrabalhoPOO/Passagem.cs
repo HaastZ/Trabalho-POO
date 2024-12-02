@@ -1,4 +1,4 @@
-public class Passagem : ICancelavel
+public class Passagem : ICancelavel, ILog
 {
     private List<VooProgramado> voosProgramados;
     private List<CartaoEmbarque> cartoesEmbarque;
@@ -22,6 +22,7 @@ public class Passagem : ICancelavel
         this.statusPassagem = StatusPassagem.Adquirida;
         this.assentosReservados = new Dictionary<VooProgramado, string>();
         this.cartoesEmbarque = new List<CartaoEmbarque>();
+        RegistrarLog($"Passagem do passageiro {passageiro.getNome()} criada.");
     }
 
     public double CalcularRemuneracao()
@@ -35,12 +36,26 @@ public class Passagem : ICancelavel
         foreach (var voo in voosProgramados)
         {
             voo.Cancelar();
+            RegistrarLog($"Cancelamento de todos os voos associados á passagem do passageiro {passageiro.getNome()}");
         }
+        RegistrarLog($"Cancelamento da passagem do passageiro {passageiro.getNome()}");
     }
 
-    public void RealizarCheckIn() => this.statusPassagem = StatusPassagem.CheckinRealizado;
-    public void RealizarEmbarque() => this.statusPassagem = StatusPassagem.EmbarqueRealizado;
-    public void RegistrarNoShow() => this.statusPassagem = StatusPassagem.NoShow;
+    public void RealizarCheckIn() {
+        this.statusPassagem = StatusPassagem.CheckinRealizado;
+        RegistrarLog($"Checkin Realizado - Status da passagem: {this.statusPassagem}");
+    }
+
+    public void RealizarEmbarque(){
+        this.statusPassagem = StatusPassagem.EmbarqueRealizado;
+        RegistrarLog($"Embarque realizado - Status da passagem: {this.statusPassagem}");
+    }
+
+    public void RegistrarNoShow(){
+        this.statusPassagem = StatusPassagem.NoShow;
+        RegistrarLog($"Embarque não realizado - Status da passagem: {this.statusPassagem}");
+    }
+
     public List<VooProgramado> GetVoosProgramados() => voosProgramados;
     public StatusPassagem GetStatusPassagem() => statusPassagem;
     public TipoTarifa GetTipoTarifa() => this.tipoTarifa;
@@ -97,6 +112,19 @@ public class Passagem : ICancelavel
     public Dictionary<VooProgramado, string> GetAssentosReservados() => assentosReservados;
     public void AdicionarCartaoEmbarque(CartaoEmbarque cartao) => this.cartoesEmbarque.Add(cartao);
     public List<CartaoEmbarque> GetCartoesEmbarque() => this.cartoesEmbarque;
+
+    public void RegistrarLog(string operacao) {
+        try
+        {
+            string mensagem = $"{DateTime.Now:dd/MM/yyyy HH:mm:ss} - {operacao}";
+            File.AppendAllText(EncontrarArquivo.Localizar(), mensagem + Environment.NewLine);
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Ocorreu um erro ao registrar no log: {e}");
+            throw;
+        }
+    }
     
 
 }

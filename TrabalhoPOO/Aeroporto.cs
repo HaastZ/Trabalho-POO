@@ -1,4 +1,4 @@
-public class Aeroporto
+public class Aeroporto : ILog
 {
     private string nome;
     private string sigla;
@@ -13,6 +13,7 @@ public class Aeroporto
         this.cidade = cidade;
         this.estado = estado;
         this.pais = pais;
+        RegistrarLog($"Criação do aeroporto {this.nome} {this.sigla}");
     }
 
     public string getNome() => this.nome;
@@ -20,5 +21,18 @@ public class Aeroporto
     public string getCidade() => this.cidade;
     public string getEstado() => this.estado;
     public string getPais() => this.pais;
+    
+    public void RegistrarLog(string operacao) {
+        try
+        {
+            string mensagem = $"{DateTime.Now:dd/MM/yyyy HH:mm:ss} - {operacao}";
+            File.AppendAllText(EncontrarArquivo.Localizar(), mensagem + Environment.NewLine);
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Ocorreu um erro ao registrar no log: {e}");
+            throw;
+        }
+    }
 
 }

@@ -14,11 +14,13 @@ public class Passageiro : IPassageiroVIP
         this.tipoDocumento = tipoDocumento;
         this.numeroDocumento = numeroDocumento;
         this.email = email;
+        RegistrarLog($"Criação do passageiro {this.nome} {this.sobrenome}");
     }
 
     public void AdicionarPassagem(Passagem passagem)
     {
         Passagens.Add(passagem);
+        RegistrarLog($"Passagem adicionada para o passageiro {this.nome}");
     }
 
     public List<VooProgramado> consultarHistoricoVoos()
@@ -46,6 +48,7 @@ public class Passageiro : IPassageiroVIP
     {
         voo.Cancelar();
         Console.WriteLine($"O passageiro {this.nome} cancelou um voo sem custo adicional");
+        RegistrarLog($"Voo sem custo adicional do passageiro {this.nome} cancelado.");
     }
 
     public void AlterarVooSemCusto(DateTime novaDataVoo)
@@ -65,4 +68,17 @@ public class Passageiro : IPassageiroVIP
     public TipoDocumento GetTipoDocumento() => tipoDocumento;
     public string GetNumeroDocumento() => numeroDocumento;
     public string GetEmail() => email;
+
+    public void RegistrarLog(string operacao) {
+        try
+        {
+            string mensagem = $"{DateTime.Now:dd/MM/yyyy HH:mm:ss} - {operacao}";
+            File.AppendAllText(EncontrarArquivo.Localizar(), mensagem + Environment.NewLine);
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Ocorreu um erro ao registrar no log: {e}");
+            throw;
+        }
+    }
 }

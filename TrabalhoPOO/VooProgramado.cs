@@ -1,4 +1,4 @@
-public class VooProgramado : ICancelavel
+public class VooProgramado : ICancelavel, ILog
 {
     private Voo voo;
     private DateTime dataHoraPartida;
@@ -13,7 +13,7 @@ public class VooProgramado : ICancelavel
         this.aeronave = aeronave;
         this.statusVoo = StatusVoo.Ativo;
         this.assentosDisponiveis = new Dictionary<string, bool>();
-        RegistrarLog("Criação de voo Programado");
+        RegistrarLog("Criação de vooProgramado");
 
 
         int numeroFileiras = aeronave.GetNumeroFileiras();

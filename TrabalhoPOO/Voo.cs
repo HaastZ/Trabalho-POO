@@ -1,4 +1,4 @@
-public class Voo
+public class Voo : ILog
 {
     private Aeroporto aeroportoOrigem;
     private Aeroporto aeroportoDestino;
@@ -19,6 +19,7 @@ public class Voo
         this.companhiaAerea = companhiaAerea;
         this.tipoTarifa = tipoTarifa;
         this.moeda = moeda;
+        RegistrarLog($"Criação do voo {this.codigoVoo}");
     }
     public Voo(Aeroporto origem, Aeroporto destino, DateTime dataHoraVoo, string codigoVoo, CompanhiaAerea companhiaAerea, TipoTarifa tipoTarifa, Moeda moeda, List<string> frequenciaSemanal, string horaPartida, string duracao)
     {
@@ -31,6 +32,7 @@ public class Voo
         this.moeda = moeda;
         this.frequenciaSemanal = frequenciaSemanal;
         this.duracao = duracao;
+        RegistrarLog($"Criação do voo {this.codigoVoo}");
     }
 
     public List<string> getFrequenciaSemanal() => this.frequenciaSemanal;
@@ -44,5 +46,19 @@ public class Voo
     public TipoTarifa GetTipoTarifa() => this.tipoTarifa;
     public Moeda getMoeda() => this.moeda;
     public Voo Clonar() => (Voo)MemberwiseClone();
+
+    public void RegistrarLog(string operacao)
+    {
+        try
+        {
+            string mensagem = $"{DateTime.Now:dd/MM/yyyy HH:mm:ss} - {operacao}";
+            File.AppendAllText(EncontrarArquivo.Localizar(), mensagem + Environment.NewLine);
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Ocorreu um erro ao registrar no log: {e}");
+            throw;
+        }
+    }
     
 }

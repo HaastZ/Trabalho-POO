@@ -1,6 +1,6 @@
 namespace TrabalhoPOO
 {
-    internal class SistemaAgenciaViagens
+    internal class SistemaAgenciaViagens : ILog
     {
         /// <summary>
         /// Classe responsável por gerenciar os cadastros e login do sistema
@@ -24,10 +24,12 @@ namespace TrabalhoPOO
             this.passagens = new List<Passagem>();
             this.voosProgramados = new List<VooProgramado>();
             this.passageirosVIP =  new List<Passageiro>();
+            RegistrarLog("Criação de SistemaAgenciaViagens");
         }
         public void CadastrarFuncionario(Funcionario funcionario)
         {
             funcionarios.Add(funcionario);
+            RegistrarLog($"Funcionario {funcionario.getNome()} Cadastrado.");
         }
         public List<Funcionario> GetFuncionarios()
         {
@@ -51,6 +53,7 @@ namespace TrabalhoPOO
         public void CadastrarUsuario(Usuario usuario)
         {
             usuarios.Add(usuario);
+            RegistrarLog($"Usuario do Funcionario {usuario.getFuncionario().getNome()} Cadastrado.");
         }
 
         public List<Usuario> GetUsuarios()
@@ -61,6 +64,7 @@ namespace TrabalhoPOO
         public void CadastrarCompanhia(CompanhiaAerea companhia)
         {
             companhiasAereas.Add(companhia);
+            RegistrarLog($"Companhia {companhia.getNome()} cadastrada.");
         }
 
         public List<CompanhiaAerea> GetCompanhias()
@@ -71,6 +75,7 @@ namespace TrabalhoPOO
         public void CadastrarAeroporto(Aeroporto aeroporto)
         {
             aeroportos.Add(aeroporto);
+            RegistrarLog($"Aeroporto {aeroporto.getNome()} cadastrado.");
         }
 
         public List<Aeroporto> GetAeroportos()
@@ -80,6 +85,7 @@ namespace TrabalhoPOO
         public void CadastrarVoo(Voo voo)
         {
             voos.Add(voo);
+            RegistrarLog($"Voo {voo.getAeroportoOrigem().getNome()} para {voo.getAeroportoDestino().getNome()} cadastrado.");
         }
 
         public List<Voo> GetVoos()
@@ -90,6 +96,7 @@ namespace TrabalhoPOO
         public void CadastrarVoosProgramados(VooProgramado voos) 
         {
             voosProgramados.Add(voos);
+            RegistrarLog($"Voo Programado {voos.GetVoo().getCodigoVoo()} cadastrado.");
         }
 
         public List<VooProgramado> GetVoosProgramados() 
@@ -101,6 +108,7 @@ namespace TrabalhoPOO
         public void CadastrarPassagem(Passagem passagem)
         {
             passagens.Add(passagem);
+            RegistrarLog($"Passagem de {passagem.GetPassageiro().getNome()} cadastrada");
         }
 
         public List<Passagem> GetPassagens()
@@ -387,6 +395,7 @@ namespace TrabalhoPOO
             if (!EhVIP(passageiro))
             {
                 passageiro.SetFranquiaPassagemGratuita(1);
+                RegistrarLog($"Franquia de passagem gratuita do passageiro {passageiro.getNome()} alterada para {passageiro.GetFranquiaPassagemGratuita()}");
                 passageirosVIP.Add(passageiro);
                 Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} foi ascendido a Passageiro VIP na companhia aérea {companhia.getNome()}.");
             }
@@ -401,6 +410,7 @@ namespace TrabalhoPOO
             if (EhVIP(passageiro))
             {
                 passageiro.CancelarVooSemCusto(voo);
+                RegistrarLog($"Voo do passageiro VIP {passageiro.getNome()} cancelado.");
             }
             else
             {
@@ -415,6 +425,7 @@ namespace TrabalhoPOO
             {
                 voo.SetDataHoraPartida(novaData);
                 Console.WriteLine($"A data do voo do Passageiro {passageiro.getNome()} foi alterada para {novaData}");
+                RegistrarLog($"Data do voo do Pasageiro VIP {passageiro.getNome()} alterado para {novaData}");
             }
             else 
             {
@@ -434,6 +445,20 @@ namespace TrabalhoPOO
             {
                 Console.WriteLine($"O passageiro {passageiro.getNome()} não é VIP, então não tem desconto");
                 return desconto;
+            }
+        }
+
+        public void RegistrarLog(string operacao) 
+        {
+            try
+            {
+                string mensagem = $"{DateTime.Now:dd/MM/yyyy HH:mm:ss} - {operacao}";
+                File.AppendAllText(EncontrarArquivo.Localizar(), mensagem + Environment.NewLine);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Ocorreu um erro ao registrar no log: {e}");
+                throw;
             }
         }
     }
