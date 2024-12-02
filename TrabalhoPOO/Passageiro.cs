@@ -1,4 +1,4 @@
-public class Passageiro : IPassageiroVIP
+public class Passageiro : IPassageiroVIP, ILog
 {
     private string nome;
     private string sobrenome;
