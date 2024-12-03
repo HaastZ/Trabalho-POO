@@ -10,16 +10,17 @@ internal class Program
         // Instanciando os objetos para teste
         Funcionario Vinicius = new Funcionario("Vinicius", "123.123.123-123", "email@email.com");
         Funcionario Lucas = new Funcionario("Lucas", "123.123.123-123", "lucas@email.com");
-        Aeroporto aeroporto1 = new Aeroporto("Aeroporto Internacional de São Paulo", "GRU", "São Paulo", "SP", "Brasil");
-        Aeroporto aeroporto2 = new Aeroporto("Aeroporto Internacional John F. Kennedy", "JFK", "Nova York", "NY", "Estados Unidos");
-        Aeroporto aeroporto3 = new Aeroporto("Aeroporto Internacional de Belo Horizonte", "CNF", "Belo Horizonte", "MG", "Brasil");
-        Aeroporto aeroporto4 = new Aeroporto("Aeroporto Internacional de Brasília", "BSB", "Brasília", "BSB", "Distrito Federal");
+        Aeroporto aeroportoGuarulhos = new Aeroporto("Aeroporto Internacional de São Paulo", "GRU", "São Paulo", "SP", "Brasil", -23.428008, -46.4922292);
+        Aeroporto aeroportoJFK = new Aeroporto("Aeroporto Internacional John F. Kennedy", "JFK", "Nova York", "NY", "Estados Unidos", 40.642923, -73.805145);
+        Aeroporto aeroportoConfins = new Aeroporto("Aeroporto Internacional de Belo Horizonte", "CNF", "Belo Horizonte", "MG", "Brasil", -19.6355567, -43.966558);
+        Aeroporto aeroportoBrasilia = new Aeroporto("Aeroporto Internacional de Brasília", "BSB", "Brasília", "BSB", "Distrito Federal", -15.8706905, -47.9219233);
         DateTime dataIda = new DateTime(2024, 05, 07, 14, 30, 00);
         DateTime dataIdaVoo2 = new DateTime(2024, 10, 01, 19, 00, 00);
         CompanhiaAerea companhia = new CompanhiaAerea("Companhia Aérea GOL", "GOL", "GOL Linhas Aéreas S/A", "00.000.000/0001-00", 50.0, 80.0);
         List<string> frequenciaSemanal = ["segunda", "quarta", "sexta"];
-        Voo voo = new Voo(aeroporto1, aeroporto2, dataIda, "1234567", companhia, TipoTarifa.Basica, Moeda.BRL, frequenciaSemanal, "10:30", "10:00");
-        Voo voo2 = new Voo(aeroporto3, aeroporto4, dataIdaVoo2, "9876543", companhia, TipoTarifa.Executiva, Moeda.BRL);
+        Voo voo = new Voo(aeroportoGuarulhos, aeroportoJFK, dataIda, "1234567", companhia, TipoTarifa.Basica, Moeda.BRL, frequenciaSemanal, "10:30", "10:00",250);
+        Console.WriteLine("Chegada do Voo de Guarulhos até Nova York:" + voo.CalcularHorarioPrevistoChegada().ToString());
+        Voo voo2 = new Voo(aeroportoConfins, aeroportoBrasilia, dataIdaVoo2, "9876543", companhia, TipoTarifa.Executiva, Moeda.BRL,280);
         Passageiro passageiro1 = new Passageiro("Vinicius", "Almeida", TipoDocumento.CPF, "12345", "vinicius@email.com");
         Passageiro passageiro2 = new Passageiro("Lucas", "Bryan", TipoDocumento.CPF, "12345678", "lucas@gmail.com");
         Passageiro passageiro3 = new Passageiro("Artur", "Moreira", TipoDocumento.RG, "MG9123863", "artur@gmail.com");
@@ -110,8 +111,8 @@ internal class Program
                 case 4:// Cadastro de Aeroportos
                     {
                         Console.WriteLine("\nCadastro de Aeroporto");
-                        system.CadastrarAeroporto(aeroporto1);
-                        system.CadastrarAeroporto(aeroporto2);
+                        system.CadastrarAeroporto(aeroportoGuarulhos);
+                        system.CadastrarAeroporto(aeroportoJFK);
 
                         // Aeroportos Cadastrados
                         Console.WriteLine("\nAeroportos Cadastrados:\n");
@@ -172,7 +173,7 @@ internal class Program
                     {
                         Console.WriteLine("\nBuscando um voo por data de ida e data de volta\n");
                         DateTime dataVolta = new DateTime(2024, 09, 10, 20, 00, 00);
-                        List<Voo> voosEncontrados = system.BuscarVoos(aeroporto1, aeroporto2, dataIda, dataVolta);
+                        List<Voo> voosEncontrados = system.BuscarVoos(aeroportoGuarulhos, aeroportoJFK, dataIda, dataVolta);
 
                         if (voosEncontrados.Count == 0)
                         {
@@ -192,7 +193,7 @@ internal class Program
                 case 8:// Busca Voo com Conexão
                     {
                         Console.WriteLine("\nBuscando voo com conexão:\n");
-                        List<Voo> voosComConexao = system.BuscarVoosComConexao(aeroporto1, aeroporto2, dataIda);
+                        List<Voo> voosComConexao = system.BuscarVoosComConexao(aeroportoGuarulhos, aeroportoJFK, dataIda);
                         if (voosComConexao.Count == 0)
                         {
                             Console.WriteLine("Nenhum voo com conexão encontrado");

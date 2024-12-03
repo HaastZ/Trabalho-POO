@@ -5,14 +5,19 @@ public class Aeroporto : ILog
     private string cidade;
     private string estado;
     private string pais;
+    public double Latitude { get; set; }
+    public double Longitude { get; set; }
 
-    public Aeroporto(string nome, string sigla, string cidade, string estado, string pais)
+
+    public Aeroporto(string nome, string sigla, string cidade, string estado, string pais, double latitude, double longitude)
     {
         this.nome = nome;
         this.sigla = sigla;
         this.cidade = cidade;
         this.estado = estado;
-        this.pais = pais;
+        this.pais = pais;      
+        Latitude = latitude;
+        Longitude = longitude;
         RegistrarLog($"Criação do aeroporto {this.nome} {this.sigla}");
     }
 
