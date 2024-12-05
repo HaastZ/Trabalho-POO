@@ -255,7 +255,7 @@ internal class Program
                     {
                         Console.WriteLine("Reservar Assento em Aeronave");
 
-                        string nomePassageiro = "Vinicius";
+                        string nomePassageiro = passageiro1.getNome();
                         Console.WriteLine($"Informe o nome do passageiro: {nomePassageiro}");
 
                         Passageiro passageiroEncontrado = null;

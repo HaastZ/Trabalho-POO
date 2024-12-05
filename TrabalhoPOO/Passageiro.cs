@@ -53,7 +53,15 @@ public class Passageiro : IPassageiroVIP, ILog
 
     public void AlterarVooSemCusto(DateTime novaDataVoo)
     {
+        foreach(var pass in Passagens) 
+        {
+            foreach(var voos in pass.GetVoosProgramados()) 
+            {
+                voos.SetDataHoraPartida(novaDataVoo);
+            }
+        }
         Console.WriteLine($"Alteração de voo sem custo para nova data: {novaDataVoo}");
+        RegistrarLog($"Alteração da data do voo do passageiro {this.nome} para {novaDataVoo}");
     }
 
     public double CalcularFranquiaBagagem(double valorBaseFranquia)
