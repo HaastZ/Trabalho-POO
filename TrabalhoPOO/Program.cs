@@ -365,7 +365,7 @@ internal class Program
                         Console.WriteLine("Registrar Embarque do Passageiro");
                         Console.Write("Informe o nome do passageiro: ");
                         string nomePassageiro = passageiro1.getNome();
-
+                        
                         Passageiro passageiroEncontrado = null;
                         foreach (var passagemAtual in system.GetPassagens())
                         {
@@ -392,8 +392,8 @@ internal class Program
                                 }
 
                                 Console.Write("Informe o número da passagem para registrar o embarque: ");
-                                int indicePassagem;
-                                if (int.TryParse(Console.ReadLine(), out indicePassagem) && indicePassagem >= 1 && indicePassagem <= passagensDoPassageiro.Count)
+                                int indicePassagem = 1;
+                                if (indicePassagem >= 1 && indicePassagem <= passagensDoPassageiro.Count)
                                 {
                                     Passagem passagemSelecionada = passagensDoPassageiro[indicePassagem - 1];
 
