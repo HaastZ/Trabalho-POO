@@ -296,6 +296,17 @@ internal class Program
                         passagem2.Cancelar();
                         break;
                     }
+                case 13:
+                    {
+                        Console.WriteLine("Mostrando arquivo de log");
+                        string caminho = EncontrarArquivo.Localizar();
+                        string[] linhas = File.ReadAllLines(caminho);
+                        foreach(string linha in linhas) 
+                        {
+                            Console.WriteLine(linha);
+                        }
+                    }
+                    break;
             }
         }
         while (opt != 0);
