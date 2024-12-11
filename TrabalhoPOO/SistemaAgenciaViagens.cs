@@ -23,13 +23,21 @@ namespace TrabalhoPOO
             this.voos = new List<Voo>();
             this.passagens = new List<Passagem>();
             this.voosProgramados = new List<VooProgramado>();
-            this.passageirosVIP =  new List<Passageiro>();
+            this.passageirosVIP = new List<Passageiro>();
             RegistrarLog("Criação de SistemaAgenciaViagens");
         }
         public void CadastrarFuncionario(Funcionario funcionario)
         {
-            funcionarios.Add(funcionario);
-            RegistrarLog($"Funcionario {funcionario.getNome()} Cadastrado.");
+            if (!funcionarios.Contains(funcionario)) // Verifica se o funcionário já está na lista
+            {
+                funcionarios.Add(funcionario);
+                RegistrarLog($"Funcionario {funcionario.getNome()} Cadastrado.");
+            }
+            else
+            {
+                Console.WriteLine($"Funcionário {funcionario.getNome()} já cadastrado.");
+            }
+
         }
         public List<Funcionario> GetFuncionarios()
         {
@@ -84,7 +92,18 @@ namespace TrabalhoPOO
         }
         public void CadastrarVoo(Voo voo)
         {
+            // Percorre a lista de voos de trás para frente
+            for (int i = voos.Count - 1; i >= 0; i--)
+            {
+                // Verifica se o voo com o mesmo código já existe
+                if (voo.getCodigoVoo() == voos[i].getCodigoVoo())
+                {
+                    // Remove o voo duplicado
+                    voos.RemoveAt(i);
+                }
+            }
             voos.Add(voo);
+
             RegistrarLog($"Voo {voo.getAeroportoOrigem().getNome()} para {voo.getAeroportoDestino().getNome()} cadastrado.");
         }
 
@@ -93,13 +112,23 @@ namespace TrabalhoPOO
             return voos;
         }
 
-        public void CadastrarVoosProgramados(VooProgramado voos) 
+        public void CadastrarVoosProgramados(VooProgramado vooProgramado)
         {
-            voosProgramados.Add(voos);
-            RegistrarLog($"Voo Programado {voos.GetVoo().getCodigoVoo()} cadastrado.");
+            // Percorre a lista de voos de trás para frente
+            for (int i = voosProgramados.Count - 1; i >= 0; i--)
+            {
+                // Verifica se o voo com o mesmo código já existe
+                if (vooProgramado.GetVoo().getCodigoVoo() == voosProgramados[i].GetVoo().getCodigoVoo())
+                {
+                    // Remove o voo duplicado
+                    voosProgramados.RemoveAt(i);
+                }
+            }
+            voosProgramados.Add(vooProgramado);
+            RegistrarLog($"Voo Programado {vooProgramado.GetVoo().getCodigoVoo()} cadastrado.");
         }
 
-        public List<VooProgramado> GetVoosProgramados() 
+        public List<VooProgramado> GetVoosProgramados()
         {
             return voosProgramados;
         }
@@ -107,8 +136,16 @@ namespace TrabalhoPOO
         //Eu gosto assim, amostradinho, vou logo fazer sua passagem
         public void CadastrarPassagem(Passagem passagem)
         {
-            passagens.Add(passagem);
-            RegistrarLog($"Passagem de {passagem.GetPassageiro().getNome()} cadastrada");
+            // Percorre a lista de voos de trás para frente
+            if (!passagens.Contains(passagem)) // Verifica se o funcionário já está na lista
+            {
+                passagens.Add(passagem);
+                RegistrarLog($"Passagem do passageiro {passagem.GetPassageiro().getNome()} cadastrada");
+            }
+            else
+            {
+                Console.WriteLine($"Passagem do passageiro {passagem.GetPassageiro().getNome()} já cadastrada.");
+            }
         }
 
         public List<Passagem> GetPassagens()
@@ -116,7 +153,7 @@ namespace TrabalhoPOO
             return passagens;
         }
 
-        public List<Passageiro> GetPassageirosVIPs() 
+        public List<Passageiro> GetPassageirosVIPs()
         {
             return this.passageirosVIP;
         }
@@ -145,30 +182,44 @@ namespace TrabalhoPOO
         /// <param name="dataSaida">Data de saída</param>
         /// <param name="dataVolta">Data da volta</param>
         /// <returns>Lista contendo todos os voos</returns>
-        public List<Voo> BuscarVoos(Aeroporto origem, Aeroporto destino, DateTime dataSaida, DateTime dataVolta)
+        public List<Voo> BuscarVoos(Aeroporto origem, Aeroporto destino, DateTime dataSaida, DateTime? dataVolta)
         {
             List<Voo> resp = new List<Voo>();
+
             foreach (Voo v in voos)
             {
-                if (v.getAeroportoOrigem() == origem && v.getAeroportoDestino() == destino && v.getDataHoraVoo() == dataSaida) resp.Add(v);
-                else if (v.getAeroportoOrigem() == destino && v.getAeroportoDestino() == origem && v.getDataHoraVoo() == dataVolta) resp.Add(v);
+                if (v.getAeroportoOrigem().Equals(origem) &&
+                    v.getAeroportoDestino().Equals(destino) &&
+                    v.getDataHoraVoo().Date == dataSaida.Date)
+                {
+                    resp.Add(v);
+                }
             }
+
             return resp;
         }
-        public List<Voo> BuscarVoosComConexao(Aeroporto origem, Aeroporto destino, DateTime data)
+        public List<(Voo, Voo)> BuscarVoosComConexao(Aeroporto origem, Aeroporto destino, DateTime data)
         {
-            List<Voo> voosComConexao = new List<Voo>();
+            List<(Voo, Voo)> voosComConexao = new List<(Voo, Voo)>();
 
             foreach (Voo vooOrigem in voos)
             {
-                if (vooOrigem.getAeroportoOrigem() == origem && vooOrigem.getDataHoraVoo() == data)
+                if (vooOrigem.getAeroportoOrigem() == origem && vooOrigem.getDataHoraVoo().Date == data)
                 {
                     foreach (Voo vooConexao in voos)
                     {
+                        // Verificar se o vooConexao parte do destino do vooOrigem e chega ao destino final
                         if (vooConexao.getAeroportoOrigem() == vooOrigem.getAeroportoDestino() &&
                             vooConexao.getAeroportoDestino() == destino)
                         {
-                            voosComConexao.Add(vooConexao);
+                            // Verificar se o horário do vooConexao é depois do horário de chegada do vooOrigem
+                            DateTime horarioChegadaOrigem = vooOrigem.CalcularHorarioPrevistoChegada();
+                            if (vooConexao.getDataHoraVoo() > horarioChegadaOrigem &&
+                                (vooConexao.getDataHoraVoo() - horarioChegadaOrigem).TotalHours >= 1) // Conexão de pelo menos 1 hora
+                            {
+                                // Adicionar o par de voos (vooOrigem, vooConexao) à lista
+                                voosComConexao.Add((vooOrigem, vooConexao));
+                            }
                         }
                     }
                 }
@@ -176,6 +227,7 @@ namespace TrabalhoPOO
 
             return voosComConexao;
         }
+
 
         public Voo BuscaVooPorCodigo(string codigo)
         {
@@ -239,7 +291,7 @@ namespace TrabalhoPOO
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
                                 CadastrarVoo(temp);
-                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635,180, 2000.0, 30, 6));
+                                VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -313,7 +365,7 @@ namespace TrabalhoPOO
                             {
                                 Voo temp = voo.Clonar();
                                 temp.setDataHoraVoo(diaDeHoje);
-                                CadastrarVoo(temp);VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
+                                CadastrarVoo(temp); VooProgramado temp2 = new VooProgramado(temp, temp.getDataHoraVoo(), new Aeronave(0098635, 180, 2000.0, 30, 6));
                                 CadastrarVoosProgramados(temp2);
                             }
                             diaDeHoje = diaDeHoje.AddDays(1);
@@ -343,35 +395,46 @@ namespace TrabalhoPOO
         }
         public void RealizarCheckIn(Passagem passagem)
         {
-            DateTime dataHoraAtual = DateTime.Now;
-            TimeSpan horasAteOVoo = passagem.GetVoosProgramados()[0].GetDataHoraPartida() - dataHoraAtual;
-
-            Console.WriteLine(horasAteOVoo.TotalMinutes);
-            if(horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 1440)
-
-            if (horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 2880) // Entre 48h e 30min
+            // Validar se a passagem ou os voos programados são nulos
+            if (passagem == null || passagem.GetVoosProgramados() == null || passagem.GetVoosProgramados().Count == 0)
             {
-                passagem.Check_In = true;
+                Console.WriteLine("Erro: Passagem inválida ou sem voos programados.");
+                return;
+            }
 
-                foreach (var vooProgramado in passagem.GetVoosProgramados())
+            DateTime dataHoraAtual = DateTime.Now.AddDays(10);
+            VooProgramado vooProgramado = passagem.GetVoosProgramados()[0];
+            DateTime dataHoraPartida = passagem.GetVoosProgramados()[0].GetDataHoraPartida();
+
+            // Calcular o intervalo de tempo até o voo
+            TimeSpan horasAteOVoo = dataHoraPartida - dataHoraAtual;
+
+            Console.WriteLine($"Tempo até o voo: {horasAteOVoo.TotalMinutes} minutos.");
+
+            // Verificar se o check-in está dentro do intervalo permitido (30min a 48h)
+            if (horasAteOVoo.TotalMinutes >= 30 && horasAteOVoo.TotalMinutes <= 2880)
+            {
+                // Atualizar status de check-in da passagem
+                passagem.SetStatusPassagem(StatusPassagem.CheckinRealizado);
+
+                // Gerar cartões de embarque para cada voo programado
+                passagem.ReservarAssento(vooProgramado, "1A");
+                if (passagem.GetAssentosReservados().TryGetValue(vooProgramado, out string? assento))
                 {
-                    string assento;
-                    if (passagem.GetAssentosReservados().TryGetValue(vooProgramado, out assento))
-                    {
-                        CartaoEmbarque cartao = new CartaoEmbarque(passagem.GetPassageiro(), vooProgramado, assento);
-                        passagem.AdicionarCartaoEmbarque(cartao);
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Assento não reservado para o voo {vooProgramado.GetVoo().getCodigoVoo()}");
-                    }
+                    CartaoEmbarque cartao = new CartaoEmbarque(passagem.GetPassageiro(), vooProgramado, assento);
+                    passagem.AdicionarCartaoEmbarque(cartao);
+                    Console.WriteLine($"Cartão de embarque gerado para o voo {vooProgramado.GetVoo().getCodigoVoo()} com assento {assento}.");
+                }
+                else
+                {
+                    Console.WriteLine($"Erro: Assento não reservado para o voo {vooProgramado.GetVoo().getCodigoVoo()}.");
                 }
 
-                Console.WriteLine("Check-in realizado com sucesso. Cartões de embarque gerados.");
+                Console.WriteLine("Check-in realizado com sucesso.");
             }
             else
             {
-                Console.WriteLine("Erro: O check-in deve ser realizado entre 48h e 30min até a hora do voo");
+                Console.WriteLine("Erro: O check-in deve ser realizado entre 48 horas (2880 minutos) e 30 minutos antes do voo.");
             }
         }
         public List<Passagem> BuscarPassagem(Passageiro passageiro)
@@ -419,16 +482,16 @@ namespace TrabalhoPOO
             }
         }
 
-        public void AlterarVooPassageiroVIP(Passageiro passageiro, VooProgramado voo) 
+        public void AlterarVooPassageiroVIP(Passageiro passageiro, VooProgramado voo)
         {
             DateTime novaData = new DateTime(2024, 10, 01, 17, 00, 00);
-            if(EhVIP(passageiro)) 
+            if (EhVIP(passageiro))
             {
                 voo.SetDataHoraPartida(novaData);
                 Console.WriteLine($"A data do voo do Passageiro {passageiro.getNome()} foi alterada para {novaData}");
                 RegistrarLog($"Data do voo do Pasageiro VIP {passageiro.getNome()} alterado para {novaData}");
             }
-            else 
+            else
             {
                 Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} não é VIP e terá um custo para alteração");
             }
@@ -437,19 +500,19 @@ namespace TrabalhoPOO
         public double CalcularDescontoPassageiroVIP(Passageiro passageiro, CompanhiaAerea companhia)
         {
             double desconto = 0;
-            if(EhVIP(passageiro)) 
+            if (EhVIP(passageiro))
             {
                 desconto = companhia.getValorBagagemAdicional() / 2;
                 return desconto;
             }
-            else 
+            else
             {
                 Console.WriteLine($"O passageiro {passageiro.getNome()} não é VIP, então não tem desconto");
                 return desconto;
             }
         }
 
-        public void RegistrarLog(string operacao) 
+        public void RegistrarLog(string operacao)
         {
             try
             {

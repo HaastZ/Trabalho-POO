@@ -13,21 +13,6 @@ public class Voo : ILog
     public TimeSpan TempoViagem { get; set; }
     public double VelocidadeMedia { get; set; }
     public DateTime HorarioPrevistoChegada { get; set; }
-
-    public Voo(Aeroporto origem, Aeroporto destino, DateTime dataHoraVoo, string codigoVoo, CompanhiaAerea companhiaAerea, TipoTarifa tipoTarifa, Moeda moeda, double velocidadeMedia)
-    {
-        this.aeroportoOrigem = origem;
-        this.aeroportoDestino = destino;
-        this.dataHoraVoo = dataHoraVoo;
-        this.codigoVoo = codigoVoo;
-        this.companhiaAerea = companhiaAerea;
-        this.tipoTarifa = tipoTarifa;
-        this.moeda = moeda;
-        VelocidadeMedia = velocidadeMedia;
-        TempoViagem = CalcularTempoViagem();
-        HorarioPrevistoChegada = CalcularHorarioPrevistoChegada();
-        RegistrarLog($"Criação do voo {this.codigoVoo}");
-    }
     public Voo(Aeroporto origem, Aeroporto destino, DateTime dataHoraVoo, string codigoVoo, CompanhiaAerea companhiaAerea, TipoTarifa tipoTarifa, Moeda moeda, List<string> frequenciaSemanal, string horaPartida, string duracao, double velocidadeMedia)
     {
         this.aeroportoOrigem = origem;
@@ -50,7 +35,7 @@ public class Voo : ILog
     public Aeroporto getAeroportoOrigem() => this.aeroportoOrigem;
     public Aeroporto getAeroportoDestino() => this.aeroportoDestino;
     public DateTime getDataHoraVoo() => this.dataHoraVoo;
-    public void setDataHoraVoo(DateTime dataHoraVoo) => this.dataHoraVoo = dataHoraVoo;
+    public DateTime setDataHoraVoo(DateTime dataHoraVoo) => this.dataHoraVoo = dataHoraVoo;
     public string getCodigoVoo() => this.codigoVoo;
     public CompanhiaAerea getCompanhiaAerea() => this.companhiaAerea;
     public TipoTarifa GetTipoTarifa() => this.tipoTarifa;
@@ -87,7 +72,4 @@ public class Voo : ILog
             throw;
         }
     }
-
-
-
 }

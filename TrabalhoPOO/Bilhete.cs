@@ -8,32 +8,23 @@ public class Bilhete
 
     public override string ToString()
     {
-        if (passagem == null || passagem.GetPassageiro() == null || passagem.GetVoosProgramados() == null || passagem.GetVoosProgramados().Count == 0)
-        {   
-            return "Não é possível exibir o bilhete: dados incompletos.";
-        }
-        foreach (var vooProg in passagem.GetVoosProgramados())
+        try
         {
-            Voo voo = vooProg.GetVoo();
-            if (voo.getAeroportoOrigem() == null || voo.getAeroportoDestino() == null)
-            {
-                return "Não é possível exibir o bilhete: alguns voos não têm origem ou destino definidos.";
-            }
+            var passageiro = passagem.GetPassageiro();
+            var bilhete = $"-----------------------------------------------------\n";
+            bilhete += $"Nome do passageiro: {passageiro.getNome()} {passageiro.GetSobrenome()} | Tipo do Documento: {passageiro.GetTipoDocumento()}\n\n";
+            bilhete += $"Origem: {passagem.GetVoosProgramados()[0].GetVoo().getAeroportoOrigem().getNome()}\n";
+            bilhete += $"Destino: {passagem.GetVoosProgramados()[0].GetVoo().getAeroportoDestino().getNome()}\n";
+            bilhete += $"Código do voo: {passagem.GetVoosProgramados()[0].GetVoo().getCodigoVoo()}\n";
+            bilhete += $"Valor da passagem: {passagem.getValorTotal()} {passagem.GetMoeda()}\n";
+            bilhete += $"Data da viagem: {passagem.GetVoosProgramados()[0].GetDataHoraPartida()}\n";
+            bilhete += $"-----------------------------------------------------";
+
+            return bilhete;
         }
-
-        var passageiro = passagem.GetPassageiro();
-        var bilhete = $"-----------------------------------------------------\n";
-        bilhete += $"Nome: {passageiro.getNome()} {passageiro.GetSobrenome()} Tipo Documento: {passageiro.GetTipoDocumento()}\n\n";
-
-        foreach (var vooProg in passagem.GetVoosProgramados())
+        catch (Exception e)
         {
-            Voo voo = vooProg.GetVoo();
-            bilhete += $"Origem: {voo.getAeroportoOrigem().getNome()}   ";
-            bilhete += $"Destino: {voo.getAeroportoDestino().getNome()}\n";
+            throw new Exception($"Ocorreu algum erro ao gerar o bilhete, tente novamente: {e}");
         }
-
-        bilhete += $"-----------------------------------------------------";
-
-        return bilhete;
     }
 }

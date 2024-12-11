@@ -9,7 +9,6 @@ public class Passagem : ICancelavel, ILog
     private double valorTotal;
     private static double TAXAFIXA = 0.10;
     private StatusPassagem statusPassagem;
-    public bool Check_In { get; set; }
     private Dictionary<VooProgramado, string> assentosReservados;
     public Passagem(List<VooProgramado> voosProgramados, TipoTarifa tipoTarifa, Passageiro passageiro, int numeroBagagens, Moeda moeda, double valorTotal)
     {
@@ -58,6 +57,7 @@ public class Passagem : ICancelavel, ILog
 
     public List<VooProgramado> GetVoosProgramados() => voosProgramados;
     public StatusPassagem GetStatusPassagem() => statusPassagem;
+    public StatusPassagem SetStatusPassagem(StatusPassagem status) => this.statusPassagem = status;
     public TipoTarifa GetTipoTarifa() => this.tipoTarifa;
     public Passageiro GetPassageiro() => this.passageiro; 
     public int getNumeroBagagens() => numeroBagagens;
