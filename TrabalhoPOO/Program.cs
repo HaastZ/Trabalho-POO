@@ -199,10 +199,9 @@ internal class Program
                 case 7:// Busca de Voos por data específica
                     {
                         DateTime dataBusca = DateTime.Now.AddDays(10);
-                        DateTime? dataVolta = null;
-                        List<Voo> voosEncontrados = system.BuscarVoos(aeroportoGuarulhos, aeroportoJFK, dataBusca, dataVolta);
+                        List<Voo> voosEncontrados = system.BuscarVoos(aeroportoGuarulhos, aeroportoJFK, dataBusca);
                         Console.WriteLine("\nBuscando um voo por data específica");
-
+                        
                         if (voosEncontrados.Count == 0)
                         {
                             Console.WriteLine("Nenhum voo encontrado para a data fornecida!");

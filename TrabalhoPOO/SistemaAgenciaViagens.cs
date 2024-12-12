@@ -182,7 +182,7 @@ namespace TrabalhoPOO
         /// <param name="dataSaida">Data de saída</param>
         /// <param name="dataVolta">Data da volta</param>
         /// <returns>Lista contendo todos os voos</returns>
-        public List<Voo> BuscarVoos(Aeroporto origem, Aeroporto destino, DateTime dataSaida, DateTime? dataVolta)
+        public List<Voo> BuscarVoos(Aeroporto origem, Aeroporto destino, DateTime dataSaida)
         {
             List<Voo> resp = new List<Voo>();
 
