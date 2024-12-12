@@ -15,14 +15,22 @@ public class CartaoEmbarque
 
     public override string ToString()
     {
-        string cartao = "----------------------------------\n";
-        cartao += $"Nome: {passageiro.getNome()} {passageiro.GetSobrenome()}\n";
-        cartao += $"Origem: {vooProgramado.GetVoo().getAeroportoOrigem().getNome()}\n";
-        cartao += $"Destino: {vooProgramado.GetVoo().getAeroportoDestino().getNome()}\n";
-        cartao += $"Horário de embarque: {horarioEmbarque}\n";
-        cartao += $"Horário da viagem: {vooProgramado.GetDataHoraPartida()}\n";
-        cartao += $"Assento: {assento}\n";
-        cartao += "----------------------------------";
-        return cartao;
+        try
+        {
+            string cartao = "----------------------------------\n";
+            cartao += $"Nome: {passageiro.getNome()} {passageiro.GetSobrenome()}\n";
+            cartao += $"Origem: {vooProgramado.GetVoo().getAeroportoOrigem().getNome()}\n";
+            cartao += $"Destino: {vooProgramado.GetVoo().getAeroportoDestino().getNome()}\n";
+            cartao += $"Horário de embarque: {horarioEmbarque}\n";
+            cartao += $"Horário da viagem: {vooProgramado.GetDataHoraPartida()}\n";
+            cartao += $"Assento: {assento}\n";
+            cartao += "----------------------------------";
+            return cartao;
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Ocorreu um erro ao gerar o cartão de embarque: {e}");
+        }
+        
     }
 }

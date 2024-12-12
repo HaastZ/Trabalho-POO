@@ -5,9 +5,9 @@ public class Passageiro : IPassageiroVIP, ILog
     private TipoDocumento tipoDocumento;
     private string numeroDocumento;
     private string email;
-    private static int FranquiaPassagemGratuita = 0;
+    private static int FranquiaBagagemGratuita = 0;
     private List<Passagem> Passagens = new List<Passagem>();
-    public Passageiro(string nome, string sobrenome, TipoDocumento tipoDocumento, string numeroDocumento, string email) 
+    public Passageiro(string nome, string sobrenome, TipoDocumento tipoDocumento, string numeroDocumento, string email)
     {
         this.nome = nome;
         this.sobrenome = sobrenome;
@@ -25,23 +25,30 @@ public class Passageiro : IPassageiroVIP, ILog
 
     public List<VooProgramado> consultarHistoricoVoos()
     {
-        List<VooProgramado> historicoVoos = new List<VooProgramado>();
-
-        foreach (var passagem in Passagens)
+        try
         {
-            if (passagem.GetPassageiro() == this)
+            List<VooProgramado> historicoVoos = new List<VooProgramado>();
+
+            foreach (var passagem in Passagens)
             {
-                foreach (var voo in passagem.GetVoosProgramados())
+                if (passagem.GetPassageiro() == this)
                 {
-                    if (!historicoVoos.Contains(voo))
+                    foreach (var voo in passagem.GetVoosProgramados())
                     {
-                        historicoVoos.Add(voo);
+                        if (!historicoVoos.Contains(voo))
+                        {
+                            historicoVoos.Add(voo);
+                        }
                     }
                 }
             }
-        }
 
-        return historicoVoos.OrderBy((v) => v.GetVoo().getDataHoraVoo()).ToList();
+            return historicoVoos.OrderBy((v) => v.GetVoo().getDataHoraVoo()).ToList();
+        }
+        catch (Exception e)
+        {
+            throw new Exception("Falha ao consultar o historico dos voos: " + e);
+        }
     }
 
     public void CancelarVooSemCusto(ICancelavel voo)
@@ -53,9 +60,9 @@ public class Passageiro : IPassageiroVIP, ILog
 
     public void AlterarVooSemCusto(DateTime novaDataVoo)
     {
-        foreach(var pass in Passagens) 
+        foreach (var pass in Passagens)
         {
-            foreach(var voos in pass.GetVoosProgramados()) 
+            foreach (var voos in pass.GetVoosProgramados())
             {
                 voos.SetDataHoraPartida(novaDataVoo);
             }
@@ -69,15 +76,16 @@ public class Passageiro : IPassageiroVIP, ILog
         return valorBaseFranquia / 2;
     }
 
-    public int SetFranquiaPassagemGratuita(int franquia) => Passageiro.FranquiaPassagemGratuita = franquia;
-    public int GetFranquiaPassagemGratuita() => Passageiro.FranquiaPassagemGratuita;
+    public int SetFranquiaPassagemGratuita(int franquia) => Passageiro.FranquiaBagagemGratuita = franquia;
+    public int GetFranquiaPassagemGratuita() => Passageiro.FranquiaBagagemGratuita;
     public string getNome() => nome;
     public string GetSobrenome() => sobrenome;
     public TipoDocumento GetTipoDocumento() => tipoDocumento;
     public string GetNumeroDocumento() => numeroDocumento;
     public string GetEmail() => email;
 
-    public void RegistrarLog(string operacao) {
+    public void RegistrarLog(string operacao)
+    {
         try
         {
             string mensagem = $"{DateTime.Now:dd/MM/yyyy HH:mm:ss} - {operacao}";

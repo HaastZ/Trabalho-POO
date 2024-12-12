@@ -14,8 +14,6 @@ public class VooProgramado : ICancelavel, ILog
         this.statusVoo = StatusVoo.Ativo;
         this.assentosDisponiveis = new Dictionary<string, bool>();
         RegistrarLog("Criação de vooProgramado");
-
-
         int numeroFileiras = aeronave.GetNumeroFileiras();
         int assentosPorFileira = aeronave.GetAssentosPorFileira();
 
@@ -41,17 +39,21 @@ public class VooProgramado : ICancelavel, ILog
     public Voo GetVoo() => this.voo;
     public DateTime GetDataHoraPartida() => this.dataHoraPartida;
     public void SetDataHoraPartida(DateTime data) => this.dataHoraPartida = data;
-    
+
     public bool IsAssentoDisponivel(string assento)
     {
-        if (assentosDisponiveis.ContainsKey(assento))
+        try
         {
-            return assentosDisponiveis[assento];
+            if (assentosDisponiveis.ContainsKey(assento))
+            {
+                return assentosDisponiveis[assento];
+            }
         }
-        else
+        catch (Exception e)
         {
-            throw new Exception("Assento inválido.");
+            throw new Exception("Assento inválido. Erro: " + e);
         }
+        return assentosDisponiveis[assento];
     }
 
     public bool ReservarAssento(string assento)
@@ -99,7 +101,8 @@ public class VooProgramado : ICancelavel, ILog
         return assentosLivres;
     }
 
-    public void RegistrarLog(string operacao) {
+    public void RegistrarLog(string operacao)
+    {
         try
         {
             string mensagem = $"{DateTime.Now:dd/MM/yyyy HH:mm:ss} - {operacao}";

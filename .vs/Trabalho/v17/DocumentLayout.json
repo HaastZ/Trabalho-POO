@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\documents\\github\\trabalho-poo\\trabalhopoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\documents\\github\\trabalho-poo\\trabalhopoo\\voo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\voo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\documents\\github\\trabalho-poo\\trabalhopoo\\sistemaagenciaviagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\sistemaagenciaviagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\documents\\github\\trabalho-poo\\trabalhopoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\documents\\github\\trabalho-poo\\trabalhopoo\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\documents\\github\\trabalho-poo\\trabalhopoo\\passagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\passagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|c:\\users\\tarsis\\documents\\github\\trabalho-poo\\trabalhopoo\\voo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF15BEC5-3A7F-487A-AB85-9DAC02866114}|TrabalhoPOO\\TrabalhoPOO.csproj|solutionrelative:trabalhopoo\\voo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,53 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Passagem.cs",
+              "DocumentMoniker": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\Passagem.cs",
+              "RelativeDocumentMoniker": "TrabalhoPOO\\Passagem.cs",
+              "ToolTip": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\Passagem.cs",
+              "RelativeToolTip": "TrabalhoPOO\\Passagem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T23:41:16.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SistemaAgenciaViagens.cs",
+              "DocumentMoniker": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\SistemaAgenciaViagens.cs",
+              "RelativeDocumentMoniker": "TrabalhoPOO\\SistemaAgenciaViagens.cs",
+              "ToolTip": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\SistemaAgenciaViagens.cs",
+              "RelativeToolTip": "TrabalhoPOO\\SistemaAgenciaViagens.cs",
+              "ViewState": "AQIAANAAAAAAAAAAAAAMwNgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T22:53:32.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Voo.cs",
               "DocumentMoniker": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\Voo.cs",
               "RelativeDocumentMoniker": "TrabalhoPOO\\Voo.cs",
               "ToolTip": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\Voo.cs",
               "RelativeToolTip": "TrabalhoPOO\\Voo.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA7wBAAAAC1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T14:11:10.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\Funcionario.cs",
               "RelativeDocumentMoniker": "TrabalhoPOO\\Funcionario.cs",
               "ToolTip": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\Funcionario.cs",
               "RelativeToolTip": "TrabalhoPOO\\Funcionario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T21:52:31.843Z"
+              "WhenOpened": "2024-10-02T21:52:31.843Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\Program.cs",
               "RelativeDocumentMoniker": "TrabalhoPOO\\Program.cs",
               "ToolTip": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\Program.cs",
               "RelativeToolTip": "TrabalhoPOO\\Program.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAIwBYAAACGAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABkAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T21:42:41.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SistemaAgenciaViagens.cs",
-              "DocumentMoniker": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\SistemaAgenciaViagens.cs",
-              "RelativeDocumentMoniker": "TrabalhoPOO\\SistemaAgenciaViagens.cs",
-              "ToolTip": "C:\\Users\\Tarsis\\Documents\\GitHub\\Trabalho-POO\\TrabalhoPOO\\SistemaAgenciaViagens.cs",
-              "RelativeToolTip": "TrabalhoPOO\\SistemaAgenciaViagens.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAhwIQBAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T21:41:31.515Z",
               "EditorCaption": ""
             }
           ]

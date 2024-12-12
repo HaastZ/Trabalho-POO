@@ -44,16 +44,32 @@ public class Voo : ILog
 
     private double CalculaDistanciaEntreAeroportos()
     {
-        return 110.57 * Math.Sqrt(Math.Pow(aeroportoDestino.Longitude - aeroportoOrigem.Longitude, 2) + Math.Pow(aeroportoDestino.Latitude - aeroportoOrigem.Latitude, 2));
+        try
+        {
+            return 110.57 * Math.Sqrt(Math.Pow(aeroportoDestino.Longitude - aeroportoOrigem.Longitude, 2) + Math.Pow(aeroportoDestino.Latitude - aeroportoOrigem.Latitude, 2));
+        }
+        catch (Exception e)
+        {
+            throw new Exception("Erro: " + e);
+        }
+
     }
     public TimeSpan CalcularTempoViagem()
     {
-        double distancia = CalculaDistanciaEntreAeroportos();
-        double tempo = distancia / VelocidadeMedia;
-        int horas = (int)tempo; // A quantidade de horas é a parte inteira do número tempo;
-        tempo = tempo - horas; // Agora vamos olhar apenas a parte decimal
-        int minutos = (int)(tempo * 60); // Os minutos são a parte decimal multiplicada por 60
-        return new TimeSpan(horas, minutos, 0);  // Novo TimeSpan com as horas e os minutos e 0 segundos;        
+        try
+        {
+            double distancia = CalculaDistanciaEntreAeroportos();
+            double tempo = distancia / VelocidadeMedia;
+            int horas = (int)tempo; // A quantidade de horas é a parte inteira do número tempo;
+            tempo = tempo - horas; // Agora vamos olhar apenas a parte decimal
+            int minutos = (int)(tempo * 60); // Os minutos são a parte decimal multiplicada por 60
+            return new TimeSpan(horas, minutos, 0);  // Novo TimeSpan com as horas e os minutos e 0 segundos;   
+        }
+        catch (Exception e)
+        {
+            throw new Exception("Erro ao calcular o tempo da viagem: " + e);
+        }
+
     }
     public DateTime CalcularHorarioPrevistoChegada()
     {

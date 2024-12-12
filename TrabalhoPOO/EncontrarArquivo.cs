@@ -9,7 +9,7 @@ public static class EncontrarArquivo
             string filePath = Path.Combine(projectRoot, "RegistroLog", "log.txt");
             return filePath;
         }
-        catch (Exception e)
+        catch (FileNotFoundException e)
         {
             throw new Exception($"Arquivo não encontrado: {e}");
         }

@@ -19,11 +19,11 @@ internal class Program
         List<string> frequenciaSemanal = ["segunda", "quarta", "sexta"];
         Voo voo = new Voo(aeroportoGuarulhos, aeroportoJFK, DateTime.Now.AddDays(10), "1234567", companhia, TipoTarifa.Basica, Moeda.BRL, frequenciaSemanal, "10:30", "10:00", 250);
         Console.WriteLine("Chegada do Voo de Guarulhos até Nova York:" + voo.CalcularHorarioPrevistoChegada().ToString());
-        Voo voo2 = new Voo(aeroportoJFK, aeroportoGuarulhos, DateTime.Now.AddDays(10).AddHours(2), "9876543", companhia, TipoTarifa.Executiva, Moeda.BRL, frequenciaSemanal, "12:00", "11:00", 280);
-        Voo voo3 = new Voo(aeroportoConfins, aeroportoJFK, DateTime.Now.AddDays(10).AddHours(4), "0043212", companhia, TipoTarifa.Basica, Moeda.USD, frequenciaSemanal, "09:00", "08:00", 580);
-        Voo voo4 = new Voo(aeroportoJFK, aeroportoConfins, DateTime.Now.AddDays(10).AddHours(6), "9954300", azul, TipoTarifa.Premium, Moeda.BRL, frequenciaSemanal, "15:00", "14:00", 740);
-        Voo voo5 = new Voo(aeroportoGuarulhos, aeroportoJFK, DateTime.Now.AddDays(10).AddHours(8), "000987", azul, TipoTarifa.Executiva, Moeda.USD, frequenciaSemanal, "07:30", "06:00", 250);
-        Voo voo6 = new Voo(aeroportoJFK, aeroportoGuarulhos, DateTime.Now.AddDays(10).AddHours(10), "11735400", azul, TipoTarifa.Basica, Moeda.BRL, frequenciaSemanal, "09:00", "10:00", 540);
+        Voo voo2 = new Voo(aeroportoJFK, aeroportoGuarulhos, DateTime.Now.AddDays(10).AddHours(1), "9876543", companhia, TipoTarifa.Executiva, Moeda.BRL, frequenciaSemanal, "12:00", "11:00", 280);
+        Voo voo3 = new Voo(aeroportoConfins, aeroportoJFK, DateTime.Now.AddDays(10).AddHours(2), "0043212", companhia, TipoTarifa.Basica, Moeda.USD, frequenciaSemanal, "09:00", "08:00", 580);
+        Voo voo4 = new Voo(aeroportoJFK, aeroportoConfins, DateTime.Now.AddDays(10).AddHours(3), "9954300", azul, TipoTarifa.Premium, Moeda.BRL, frequenciaSemanal, "15:00", "14:00", 740);
+        Voo voo5 = new Voo(aeroportoGuarulhos, aeroportoJFK, DateTime.Now.AddDays(10).AddHours(4), "000987", azul, TipoTarifa.Executiva, Moeda.USD, frequenciaSemanal, "07:30", "06:00", 250);
+        Voo voo6 = new Voo(aeroportoJFK, aeroportoConfins, DateTime.Now.AddDays(12).AddHours(5), "11735400", azul, TipoTarifa.Basica, Moeda.BRL, frequenciaSemanal, "09:00", "10:00", 540);
         Passageiro passageiro1 = new Passageiro("Vinicius", "Almeida", TipoDocumento.CPF, "12345", "vinicius@email.com");
         Passageiro passageiro2 = new Passageiro("Lucas", "Bryan", TipoDocumento.CPF, "12345678", "lucas@gmail.com");
         Passageiro passageiro3 = new Passageiro("Artur", "Moreira", TipoDocumento.RG, "MG9123863", "artur@gmail.com");
@@ -240,7 +240,6 @@ internal class Program
                         {
                             Console.WriteLine(cartao);
                         }
-                        passagem2.RealizarCheckIn();
                         Console.WriteLine($"Status da Passagem: {passagem2.GetStatusPassagem()}");
                         break;
                     }
@@ -249,8 +248,8 @@ internal class Program
                     {
                         // FAZER CORRETAMENTE O VOO COM CONEXÃO
                         Console.WriteLine("Buscando voos com conexão em uma data específica");
-                        DateTime dataBusca = new DateTime(2024, 21, 20);
-                        List<(Voo, Voo)> voosEncontrados = system.BuscarVoosComConexao(aeroportoGuarulhos, aeroportoJFK, dataBusca);
+                        DateTime dataBusca = DateTime.Now.AddDays(10).AddHours(6);
+                        List<(Voo, Voo)> voosEncontrados = system.BuscarVoosComConexao(aeroportoGuarulhos, aeroportoConfins, dataBusca.Date);
                         if (voosEncontrados.Count == 0)
                         {
                             Console.WriteLine("Nenhum voo encontrado para os critérios especificados.");
@@ -281,7 +280,7 @@ internal class Program
                         Console.WriteLine(bilhete);
                         foreach (var passVIP in system.GetPassageirosVIPs())
                         {
-                            Console.WriteLine($"O passageiro {passVIP.getNome()} {passVIP.GetSobrenome()} tem {passVIP.GetFranquiaPassagemGratuita()} franquia de bagagem gratuita e suas Franquias adicionais gratuitas vão ficar R$ {system.CalcularDescontoPassageiroVIP(passageiro2, companhia)}");
+                            Console.WriteLine($"O passageiro {passVIP.getNome()} {passVIP.GetSobrenome()} tem {passVIP.GetFranquiaPassagemGratuita()} franquia de bagagem gratuita e suas Franquias adicionais vão ficar R$ {system.CalcularDescontoPassageiroVIP(passageiro2, companhia)}");
                             Console.WriteLine("---------");
 
                         }
@@ -293,6 +292,7 @@ internal class Program
                         Console.WriteLine("Cancelando um voo do passageiro");
                         system.CancelarVooPassageiroVIP(passageiro2, vooProgramado2);
                         passagem2.Cancelar();
+                        passagem2.GetStatusPassagem();
                         break;
                     }
                 case 13:
