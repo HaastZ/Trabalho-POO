@@ -2066,3 +2066,1343 @@
 11/12/2024 17:02:11 - Passagem do passageiro Vinicius criada.
 11/12/2024 17:02:11 - Passagem do passageiro Lucas criada.
 11/12/2024 17:02:11 - Passagem do passageiro Artur criada.
+11/12/2024 19:59:51 - Criação de SistemaAgenciaViagens
+11/12/2024 19:59:51 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 19:59:51 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 19:59:51 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 19:59:51 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 19:59:51 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 19:59:51 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 19:59:51 - Criação do voo 1234567
+11/12/2024 19:59:51 - Criação do voo 9876543
+11/12/2024 19:59:51 - Criação do voo 0043212
+11/12/2024 19:59:51 - Criação do voo 9954300
+11/12/2024 19:59:51 - Criação do voo 000987
+11/12/2024 19:59:51 - Criação do voo 11735400
+11/12/2024 19:59:51 - Criação do passageiro Vinicius Almeida
+11/12/2024 19:59:51 - Criação do passageiro Lucas Bryan
+11/12/2024 19:59:51 - Criação do passageiro Artur Moreira
+11/12/2024 19:59:51 - Criação do passageiro Ricardo Alencar
+11/12/2024 19:59:51 - Criação do passageiro Gabriel Marinho
+11/12/2024 19:59:51 - Criação do passageiro Felipe Henrique
+11/12/2024 19:59:51 - Criação do passageiro Tarsis Augustus
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Voo Programado 1234567 cadastrado.
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Criação de vooProgramado
+11/12/2024 19:59:51 - Passagem do passageiro Vinicius criada.
+11/12/2024 19:59:51 - Passagem do passageiro Lucas criada.
+11/12/2024 19:59:51 - Passagem do passageiro Artur criada.
+11/12/2024 20:02:39 - Criação de SistemaAgenciaViagens
+11/12/2024 20:02:39 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:02:39 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:02:39 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:02:39 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:02:39 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:02:39 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:02:39 - Criação do voo 1234567
+11/12/2024 20:02:39 - Criação do voo 9876543
+11/12/2024 20:02:39 - Criação do voo 0043212
+11/12/2024 20:02:39 - Criação do voo 9954300
+11/12/2024 20:02:39 - Criação do voo 000987
+11/12/2024 20:02:39 - Criação do voo 11735400
+11/12/2024 20:02:39 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:02:39 - Criação do passageiro Lucas Bryan
+11/12/2024 20:02:39 - Criação do passageiro Artur Moreira
+11/12/2024 20:02:39 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:02:39 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:02:39 - Criação do passageiro Felipe Henrique
+11/12/2024 20:02:39 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Criação de vooProgramado
+11/12/2024 20:02:39 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:02:39 - Passagem do passageiro Lucas criada.
+11/12/2024 20:02:39 - Passagem do passageiro Artur criada.
+11/12/2024 20:05:04 - Criação de SistemaAgenciaViagens
+11/12/2024 20:05:04 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:05:04 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:05:04 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:05:04 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:05:04 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:05:04 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:05:04 - Criação do voo 1234567
+11/12/2024 20:05:04 - Criação do voo 9876543
+11/12/2024 20:05:04 - Criação do voo 0043212
+11/12/2024 20:05:04 - Criação do voo 9954300
+11/12/2024 20:05:04 - Criação do voo 000987
+11/12/2024 20:05:04 - Criação do voo 11735400
+11/12/2024 20:05:04 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:05:04 - Criação do passageiro Lucas Bryan
+11/12/2024 20:05:04 - Criação do passageiro Artur Moreira
+11/12/2024 20:05:04 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:05:04 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:05:04 - Criação do passageiro Felipe Henrique
+11/12/2024 20:05:04 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Criação de vooProgramado
+11/12/2024 20:05:04 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:05:04 - Passagem do passageiro Lucas criada.
+11/12/2024 20:05:04 - Passagem do passageiro Artur criada.
+11/12/2024 20:05:56 - Criação de SistemaAgenciaViagens
+11/12/2024 20:05:56 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:05:56 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:05:56 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:05:56 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:05:56 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:05:56 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:05:56 - Criação do voo 1234567
+11/12/2024 20:05:56 - Criação do voo 9876543
+11/12/2024 20:05:56 - Criação do voo 0043212
+11/12/2024 20:05:56 - Criação do voo 9954300
+11/12/2024 20:05:56 - Criação do voo 000987
+11/12/2024 20:05:56 - Criação do voo 11735400
+11/12/2024 20:05:56 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:05:56 - Criação do passageiro Lucas Bryan
+11/12/2024 20:05:56 - Criação do passageiro Artur Moreira
+11/12/2024 20:05:56 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:05:56 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:05:56 - Criação do passageiro Felipe Henrique
+11/12/2024 20:05:56 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Criação de vooProgramado
+11/12/2024 20:05:56 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:05:56 - Passagem do passageiro Lucas criada.
+11/12/2024 20:05:56 - Passagem do passageiro Artur criada.
+11/12/2024 20:05:58 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:58 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:05:58 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:58 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 20:05:58 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:05:58 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:05:58 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:05:58 - Voo Programado 9876543 cadastrado.
+11/12/2024 20:05:58 - Voo Programado 0043212 cadastrado.
+11/12/2024 20:05:58 - Voo Programado 9954300 cadastrado.
+11/12/2024 20:05:58 - Voo Programado 000987 cadastrado.
+11/12/2024 20:05:58 - Voo Programado 11735400 cadastrado.
+11/12/2024 20:06:57 - Criação de SistemaAgenciaViagens
+11/12/2024 20:06:57 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:06:57 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:06:57 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:06:57 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:06:57 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:06:57 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:06:57 - Criação do voo 1234567
+11/12/2024 20:06:57 - Criação do voo 9876543
+11/12/2024 20:06:57 - Criação do voo 0043212
+11/12/2024 20:06:57 - Criação do voo 9954300
+11/12/2024 20:06:57 - Criação do voo 000987
+11/12/2024 20:06:57 - Criação do voo 11735400
+11/12/2024 20:06:57 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:06:57 - Criação do passageiro Lucas Bryan
+11/12/2024 20:06:57 - Criação do passageiro Artur Moreira
+11/12/2024 20:06:57 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:06:57 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:06:57 - Criação do passageiro Felipe Henrique
+11/12/2024 20:06:57 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Criação de vooProgramado
+11/12/2024 20:06:57 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:06:57 - Passagem do passageiro Lucas criada.
+11/12/2024 20:06:57 - Passagem do passageiro Artur criada.
+11/12/2024 20:07:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:07:04 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:07:04 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:07:04 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 20:07:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:07:04 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:07:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:07:04 - Voo Programado 9876543 cadastrado.
+11/12/2024 20:07:04 - Voo Programado 0043212 cadastrado.
+11/12/2024 20:07:04 - Voo Programado 9954300 cadastrado.
+11/12/2024 20:07:04 - Voo Programado 000987 cadastrado.
+11/12/2024 20:07:04 - Voo Programado 11735400 cadastrado.
+11/12/2024 20:11:01 - Criação de SistemaAgenciaViagens
+11/12/2024 20:11:01 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:11:01 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:11:01 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:11:01 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:11:01 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:11:01 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:11:01 - Criação do voo 1234567
+11/12/2024 20:11:01 - Criação do voo 9876543
+11/12/2024 20:11:01 - Criação do voo 0043212
+11/12/2024 20:11:01 - Criação do voo 9954300
+11/12/2024 20:11:01 - Criação do voo 000987
+11/12/2024 20:11:01 - Criação do voo 11735400
+11/12/2024 20:11:01 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:11:01 - Criação do passageiro Lucas Bryan
+11/12/2024 20:11:01 - Criação do passageiro Artur Moreira
+11/12/2024 20:11:01 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:11:01 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:11:01 - Criação do passageiro Felipe Henrique
+11/12/2024 20:11:01 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Criação de vooProgramado
+11/12/2024 20:11:01 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:11:01 - Passagem do passageiro Lucas criada.
+11/12/2024 20:11:01 - Passagem do passageiro Artur criada.
+11/12/2024 20:11:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:04 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:11:04 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:04 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 20:11:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:11:04 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:11:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:11:04 - Voo Programado 9876543 cadastrado.
+11/12/2024 20:11:04 - Voo Programado 0043212 cadastrado.
+11/12/2024 20:11:04 - Voo Programado 9954300 cadastrado.
+11/12/2024 20:11:04 - Voo Programado 000987 cadastrado.
+11/12/2024 20:11:04 - Voo Programado 11735400 cadastrado.
+11/12/2024 20:15:04 - Criação de SistemaAgenciaViagens
+11/12/2024 20:15:04 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:15:04 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:15:04 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:15:04 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:15:04 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:15:04 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:15:04 - Criação do voo 1234567
+11/12/2024 20:15:04 - Criação do voo 9876543
+11/12/2024 20:15:04 - Criação do voo 0043212
+11/12/2024 20:15:04 - Criação do voo 9954300
+11/12/2024 20:15:04 - Criação do voo 000987
+11/12/2024 20:15:04 - Criação do voo 11735400
+11/12/2024 20:15:04 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:15:04 - Criação do passageiro Lucas Bryan
+11/12/2024 20:15:04 - Criação do passageiro Artur Moreira
+11/12/2024 20:15:04 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:15:04 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:15:04 - Criação do passageiro Felipe Henrique
+11/12/2024 20:15:04 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Criação de vooProgramado
+11/12/2024 20:15:04 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:15:04 - Passagem do passageiro Lucas criada.
+11/12/2024 20:15:04 - Passagem do passageiro Artur criada.
+11/12/2024 20:15:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:06 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:15:06 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:06 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 20:15:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:15:06 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:15:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:15:06 - Voo Programado 9876543 cadastrado.
+11/12/2024 20:15:06 - Voo Programado 0043212 cadastrado.
+11/12/2024 20:15:06 - Voo Programado 9954300 cadastrado.
+11/12/2024 20:15:06 - Voo Programado 000987 cadastrado.
+11/12/2024 20:15:06 - Voo Programado 11735400 cadastrado.
+11/12/2024 20:16:09 - Criação de SistemaAgenciaViagens
+11/12/2024 20:16:09 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:16:09 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:16:09 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:16:09 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:16:09 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:16:09 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:16:09 - Criação do voo 1234567
+11/12/2024 20:16:09 - Criação do voo 9876543
+11/12/2024 20:16:09 - Criação do voo 0043212
+11/12/2024 20:16:09 - Criação do voo 9954300
+11/12/2024 20:16:09 - Criação do voo 000987
+11/12/2024 20:16:09 - Criação do voo 11735400
+11/12/2024 20:16:09 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:16:09 - Criação do passageiro Lucas Bryan
+11/12/2024 20:16:09 - Criação do passageiro Artur Moreira
+11/12/2024 20:16:09 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:16:09 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:16:09 - Criação do passageiro Felipe Henrique
+11/12/2024 20:16:09 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Criação de vooProgramado
+11/12/2024 20:16:09 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:16:09 - Passagem do passageiro Lucas criada.
+11/12/2024 20:16:09 - Passagem do passageiro Artur criada.
+11/12/2024 20:16:11 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:11 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:16:11 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:11 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 20:16:11 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:16:11 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:16:11 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:16:11 - Voo Programado 9876543 cadastrado.
+11/12/2024 20:16:11 - Voo Programado 0043212 cadastrado.
+11/12/2024 20:16:11 - Voo Programado 9954300 cadastrado.
+11/12/2024 20:16:11 - Voo Programado 000987 cadastrado.
+11/12/2024 20:16:11 - Voo Programado 11735400 cadastrado.
+11/12/2024 20:21:46 - Criação de SistemaAgenciaViagens
+11/12/2024 20:21:46 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:21:46 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:21:46 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:21:46 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:21:46 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:21:46 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:21:46 - Criação do voo 1234567
+11/12/2024 20:21:46 - Criação do voo 9876543
+11/12/2024 20:21:46 - Criação do voo 0043212
+11/12/2024 20:21:46 - Criação do voo 9954300
+11/12/2024 20:22:05 - Criação do voo 000987
+11/12/2024 20:22:39 - Criação do voo 11735400
+11/12/2024 20:22:39 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:22:39 - Criação do passageiro Lucas Bryan
+11/12/2024 20:22:39 - Criação do passageiro Artur Moreira
+11/12/2024 20:22:39 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:22:39 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:22:39 - Criação do passageiro Felipe Henrique
+11/12/2024 20:22:39 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Criação de vooProgramado
+11/12/2024 20:22:39 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:22:39 - Passagem do passageiro Lucas criada.
+11/12/2024 20:22:39 - Passagem do passageiro Artur criada.
+11/12/2024 20:22:44 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:44 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:22:44 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:44 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 20:22:44 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:22:44 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:22:44 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:22:44 - Voo Programado 9876543 cadastrado.
+11/12/2024 20:22:44 - Voo Programado 0043212 cadastrado.
+11/12/2024 20:22:44 - Voo Programado 9954300 cadastrado.
+11/12/2024 20:22:44 - Voo Programado 000987 cadastrado.
+11/12/2024 20:22:44 - Voo Programado 11735400 cadastrado.
+11/12/2024 20:35:12 - Criação de SistemaAgenciaViagens
+11/12/2024 20:35:12 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 20:35:12 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 20:35:12 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 20:35:12 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 20:35:12 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 20:35:12 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 20:35:12 - Criação do voo 1234567
+11/12/2024 20:35:34 - Criação do voo 9876543
+11/12/2024 20:35:34 - Criação do voo 0043212
+11/12/2024 20:35:34 - Criação do voo 9954300
+11/12/2024 20:35:34 - Criação do voo 000987
+11/12/2024 20:36:56 - Criação do voo 11735400
+11/12/2024 20:36:56 - Criação do passageiro Vinicius Almeida
+11/12/2024 20:36:56 - Criação do passageiro Lucas Bryan
+11/12/2024 20:36:56 - Criação do passageiro Artur Moreira
+11/12/2024 20:36:56 - Criação do passageiro Ricardo Alencar
+11/12/2024 20:36:56 - Criação do passageiro Gabriel Marinho
+11/12/2024 20:36:56 - Criação do passageiro Felipe Henrique
+11/12/2024 20:36:56 - Criação do passageiro Tarsis Augustus
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Criação de vooProgramado
+11/12/2024 20:36:56 - Passagem do passageiro Vinicius criada.
+11/12/2024 20:36:56 - Passagem do passageiro Lucas criada.
+11/12/2024 20:36:56 - Passagem do passageiro Artur criada.
+11/12/2024 20:37:03 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:37:03 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:37:03 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:37:03 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 20:37:03 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 20:37:03 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 20:37:03 - Voo Programado 1234567 cadastrado.
+11/12/2024 20:37:03 - Voo Programado 9876543 cadastrado.
+11/12/2024 20:37:03 - Voo Programado 0043212 cadastrado.
+11/12/2024 20:37:03 - Voo Programado 9954300 cadastrado.
+11/12/2024 20:37:03 - Voo Programado 000987 cadastrado.
+11/12/2024 20:37:03 - Voo Programado 11735400 cadastrado.
+11/12/2024 21:24:06 - Criação de SistemaAgenciaViagens
+11/12/2024 21:24:06 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 21:24:06 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 21:24:06 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 21:24:06 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 21:24:06 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 21:24:06 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 21:24:06 - Criação do voo 1234567
+11/12/2024 21:24:06 - Criação do voo 9876543
+11/12/2024 21:24:06 - Criação do voo 0043212
+11/12/2024 21:24:06 - Criação do voo 9954300
+11/12/2024 21:24:06 - Criação do voo 000987
+11/12/2024 21:24:06 - Criação do voo 11735400
+11/12/2024 21:24:06 - Criação do passageiro Vinicius Almeida
+11/12/2024 21:24:06 - Criação do passageiro Lucas Bryan
+11/12/2024 21:24:06 - Criação do passageiro Artur Moreira
+11/12/2024 21:24:06 - Criação do passageiro Ricardo Alencar
+11/12/2024 21:24:06 - Criação do passageiro Gabriel Marinho
+11/12/2024 21:24:06 - Criação do passageiro Felipe Henrique
+11/12/2024 21:24:06 - Criação do passageiro Tarsis Augustus
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Criação de vooProgramado
+11/12/2024 21:24:06 - Passagem do passageiro Vinicius criada.
+11/12/2024 21:24:06 - Passagem do passageiro Lucas criada.
+11/12/2024 21:24:06 - Passagem do passageiro Artur criada.
+11/12/2024 21:24:08 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:08 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 21:24:08 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:08 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:24:08 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:08 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 21:24:08 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:08 - Voo Programado 9876543 cadastrado.
+11/12/2024 21:24:08 - Voo Programado 0043212 cadastrado.
+11/12/2024 21:24:08 - Voo Programado 9954300 cadastrado.
+11/12/2024 21:24:08 - Voo Programado 000987 cadastrado.
+11/12/2024 21:24:08 - Voo Programado 11735400 cadastrado.
+11/12/2024 21:24:35 - Criação de SistemaAgenciaViagens
+11/12/2024 21:24:35 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 21:24:35 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 21:24:35 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 21:24:35 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 21:24:35 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 21:24:35 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 21:24:35 - Criação do voo 1234567
+11/12/2024 21:24:35 - Criação do voo 9876543
+11/12/2024 21:24:35 - Criação do voo 0043212
+11/12/2024 21:24:35 - Criação do voo 9954300
+11/12/2024 21:24:35 - Criação do voo 000987
+11/12/2024 21:24:35 - Criação do voo 11735400
+11/12/2024 21:24:35 - Criação do passageiro Vinicius Almeida
+11/12/2024 21:24:35 - Criação do passageiro Lucas Bryan
+11/12/2024 21:24:35 - Criação do passageiro Artur Moreira
+11/12/2024 21:24:35 - Criação do passageiro Ricardo Alencar
+11/12/2024 21:24:35 - Criação do passageiro Gabriel Marinho
+11/12/2024 21:24:35 - Criação do passageiro Felipe Henrique
+11/12/2024 21:24:35 - Criação do passageiro Tarsis Augustus
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Criação de vooProgramado
+11/12/2024 21:24:35 - Passagem do passageiro Vinicius criada.
+11/12/2024 21:24:35 - Passagem do passageiro Lucas criada.
+11/12/2024 21:24:35 - Passagem do passageiro Artur criada.
+11/12/2024 21:24:38 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:38 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 21:24:38 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:38 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:24:38 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:24:38 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 21:24:38 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:24:38 - Voo Programado 9876543 cadastrado.
+11/12/2024 21:24:38 - Voo Programado 0043212 cadastrado.
+11/12/2024 21:24:38 - Voo Programado 9954300 cadastrado.
+11/12/2024 21:24:38 - Voo Programado 000987 cadastrado.
+11/12/2024 21:24:38 - Voo Programado 11735400 cadastrado.
+11/12/2024 21:25:34 - Criação de SistemaAgenciaViagens
+11/12/2024 21:25:34 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 21:25:34 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 21:25:34 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 21:25:34 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 21:25:34 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 21:25:34 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 21:25:34 - Criação do voo 1234567
+11/12/2024 21:25:34 - Criação do voo 9876543
+11/12/2024 21:25:34 - Criação do voo 0043212
+11/12/2024 21:25:34 - Criação do voo 9954300
+11/12/2024 21:25:34 - Criação do voo 000987
+11/12/2024 21:25:34 - Criação do voo 11735400
+11/12/2024 21:25:34 - Criação do passageiro Vinicius Almeida
+11/12/2024 21:25:34 - Criação do passageiro Lucas Bryan
+11/12/2024 21:25:34 - Criação do passageiro Artur Moreira
+11/12/2024 21:25:34 - Criação do passageiro Ricardo Alencar
+11/12/2024 21:25:34 - Criação do passageiro Gabriel Marinho
+11/12/2024 21:25:34 - Criação do passageiro Felipe Henrique
+11/12/2024 21:25:34 - Criação do passageiro Tarsis Augustus
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Criação de vooProgramado
+11/12/2024 21:25:34 - Passagem do passageiro Vinicius criada.
+11/12/2024 21:25:34 - Passagem do passageiro Lucas criada.
+11/12/2024 21:25:34 - Passagem do passageiro Artur criada.
+11/12/2024 21:25:36 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:36 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 21:25:36 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:36 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:25:36 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:25:36 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:25:36 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:25:36 - Voo Programado 9876543 cadastrado.
+11/12/2024 21:25:36 - Voo Programado 0043212 cadastrado.
+11/12/2024 21:25:36 - Voo Programado 9954300 cadastrado.
+11/12/2024 21:25:36 - Voo Programado 000987 cadastrado.
+11/12/2024 21:25:36 - Voo Programado 11735400 cadastrado.
+11/12/2024 21:31:40 - Criação de SistemaAgenciaViagens
+11/12/2024 21:31:40 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 21:31:40 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 21:31:40 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 21:31:40 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 21:31:40 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 21:31:40 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 21:31:40 - Criação do voo 1234567
+11/12/2024 21:31:40 - Criação do voo 9876543
+11/12/2024 21:31:40 - Criação do voo 0043212
+11/12/2024 21:31:40 - Criação do voo 9954300
+11/12/2024 21:31:40 - Criação do voo 000987
+11/12/2024 21:31:40 - Criação do voo 11735400
+11/12/2024 21:31:40 - Criação do passageiro Vinicius Almeida
+11/12/2024 21:31:40 - Criação do passageiro Lucas Bryan
+11/12/2024 21:31:40 - Criação do passageiro Artur Moreira
+11/12/2024 21:31:40 - Criação do passageiro Ricardo Alencar
+11/12/2024 21:31:40 - Criação do passageiro Gabriel Marinho
+11/12/2024 21:31:40 - Criação do passageiro Felipe Henrique
+11/12/2024 21:31:40 - Criação do passageiro Tarsis Augustus
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Criação de vooProgramado
+11/12/2024 21:31:40 - Passagem do passageiro Vinicius criada.
+11/12/2024 21:31:40 - Passagem do passageiro Lucas criada.
+11/12/2024 21:31:40 - Passagem do passageiro Artur criada.
+11/12/2024 21:31:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:42 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 21:31:42 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:42 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:31:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:31:42 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:31:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:31:42 - Voo Programado 9876543 cadastrado.
+11/12/2024 21:31:42 - Voo Programado 0043212 cadastrado.
+11/12/2024 21:31:42 - Voo Programado 9954300 cadastrado.
+11/12/2024 21:31:42 - Voo Programado 000987 cadastrado.
+11/12/2024 21:31:42 - Voo Programado 11735400 cadastrado.
+11/12/2024 21:34:42 - Criação de SistemaAgenciaViagens
+11/12/2024 21:34:42 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 21:34:42 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 21:34:42 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 21:34:42 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 21:34:42 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 21:34:42 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 21:34:42 - Criação do voo 1234567
+11/12/2024 21:34:42 - Criação do voo 9876543
+11/12/2024 21:34:42 - Criação do voo 0043212
+11/12/2024 21:34:42 - Criação do voo 9954300
+11/12/2024 21:34:42 - Criação do voo 000987
+11/12/2024 21:34:42 - Criação do voo 11735400
+11/12/2024 21:34:42 - Criação do passageiro Vinicius Almeida
+11/12/2024 21:34:42 - Criação do passageiro Lucas Bryan
+11/12/2024 21:34:42 - Criação do passageiro Artur Moreira
+11/12/2024 21:34:42 - Criação do passageiro Ricardo Alencar
+11/12/2024 21:34:42 - Criação do passageiro Gabriel Marinho
+11/12/2024 21:34:42 - Criação do passageiro Felipe Henrique
+11/12/2024 21:34:42 - Criação do passageiro Tarsis Augustus
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Criação de vooProgramado
+11/12/2024 21:34:42 - Passagem do passageiro Vinicius criada.
+11/12/2024 21:34:42 - Passagem do passageiro Lucas criada.
+11/12/2024 21:34:42 - Passagem do passageiro Artur criada.
+11/12/2024 21:34:44 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:44 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 21:34:44 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:44 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:34:44 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:34:44 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:34:44 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:34:44 - Voo Programado 9876543 cadastrado.
+11/12/2024 21:34:44 - Voo Programado 0043212 cadastrado.
+11/12/2024 21:34:44 - Voo Programado 9954300 cadastrado.
+11/12/2024 21:34:44 - Voo Programado 000987 cadastrado.
+11/12/2024 21:34:44 - Voo Programado 11735400 cadastrado.
+11/12/2024 21:36:04 - Criação de SistemaAgenciaViagens
+11/12/2024 21:36:04 - Criação do aeroporto Aeroporto Internacional de São Paulo GRU
+11/12/2024 21:36:04 - Criação do aeroporto Aeroporto Internacional John F. Kennedy JFK
+11/12/2024 21:36:04 - Criação do aeroporto Aeroporto Internacional de Belo Horizonte CNF
+11/12/2024 21:36:04 - Criação do aeroporto Aeroporto Internacional de Brasília BSB
+11/12/2024 21:36:04 - Criação da companhia Aérea Companhia Aérea GOL
+11/12/2024 21:36:04 - Criação da companhia Aérea Azul Linhas Aéreas
+11/12/2024 21:36:04 - Criação do voo 1234567
+11/12/2024 21:36:04 - Criação do voo 9876543
+11/12/2024 21:36:04 - Criação do voo 0043212
+11/12/2024 21:36:04 - Criação do voo 9954300
+11/12/2024 21:36:04 - Criação do voo 000987
+11/12/2024 21:36:04 - Criação do voo 11735400
+11/12/2024 21:36:04 - Criação do passageiro Vinicius Almeida
+11/12/2024 21:36:04 - Criação do passageiro Lucas Bryan
+11/12/2024 21:36:04 - Criação do passageiro Artur Moreira
+11/12/2024 21:36:04 - Criação do passageiro Ricardo Alencar
+11/12/2024 21:36:04 - Criação do passageiro Gabriel Marinho
+11/12/2024 21:36:04 - Criação do passageiro Felipe Henrique
+11/12/2024 21:36:04 - Criação do passageiro Tarsis Augustus
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Criação de vooProgramado
+11/12/2024 21:36:04 - Passagem do passageiro Vinicius criada.
+11/12/2024 21:36:04 - Passagem do passageiro Lucas criada.
+11/12/2024 21:36:04 - Passagem do passageiro Artur criada.
+11/12/2024 21:36:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:06 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de São Paulo cadastrado.
+11/12/2024 21:36:06 - Voo Aeroporto Internacional de Belo Horizonte para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:06 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:36:06 - Voo Aeroporto Internacional de São Paulo para Aeroporto Internacional John F. Kennedy cadastrado.
+11/12/2024 21:36:06 - Voo Aeroporto Internacional John F. Kennedy para Aeroporto Internacional de Belo Horizonte cadastrado.
+11/12/2024 21:36:06 - Voo Programado 1234567 cadastrado.
+11/12/2024 21:36:06 - Voo Programado 9876543 cadastrado.
+11/12/2024 21:36:06 - Voo Programado 0043212 cadastrado.
+11/12/2024 21:36:06 - Voo Programado 9954300 cadastrado.
+11/12/2024 21:36:06 - Voo Programado 000987 cadastrado.
+11/12/2024 21:36:06 - Voo Programado 11735400 cadastrado.

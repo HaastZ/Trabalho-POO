@@ -23,7 +23,7 @@ internal class Program
         Voo voo3 = new Voo(aeroportoConfins, aeroportoJFK, DateTime.Now.AddDays(10).AddHours(4), "0043212", companhia, TipoTarifa.Basica, Moeda.USD, frequenciaSemanal, "09:00", "08:00", 580);
         Voo voo4 = new Voo(aeroportoJFK, aeroportoConfins, DateTime.Now.AddDays(10).AddHours(6), "9954300", azul, TipoTarifa.Premium, Moeda.BRL, frequenciaSemanal, "15:00", "14:00", 740);
         Voo voo5 = new Voo(aeroportoGuarulhos, aeroportoJFK, DateTime.Now.AddDays(10).AddHours(8), "000987", azul, TipoTarifa.Executiva, Moeda.USD, frequenciaSemanal, "07:30", "06:00", 250);
-        Voo voo6 = new Voo(aeroportoJFK, aeroportoGuarulhos, DateTime.Now.AddDays(10).AddHours(10), "11735400", azul, TipoTarifa.Basica, Moeda.BRL, frequenciaSemanal, "09:00", "10:00", 540);
+        Voo voo6 = new Voo(aeroportoJFK, aeroportoConfins, DateTime.Now.AddDays(12).AddHours(10), "11735400", azul, TipoTarifa.Basica, Moeda.BRL, frequenciaSemanal, "09:00", "10:00", 540);
         Passageiro passageiro1 = new Passageiro("Vinicius", "Almeida", TipoDocumento.CPF, "12345", "vinicius@email.com");
         Passageiro passageiro2 = new Passageiro("Lucas", "Bryan", TipoDocumento.CPF, "12345678", "lucas@gmail.com");
         Passageiro passageiro3 = new Passageiro("Artur", "Moreira", TipoDocumento.RG, "MG9123863", "artur@gmail.com");
@@ -250,8 +250,8 @@ internal class Program
                     {
                         // FAZER CORRETAMENTE O VOO COM CONEXÃO
                         Console.WriteLine("Buscando voos com conexão em uma data específica");
-                        DateTime dataBusca = new DateTime(2024, 21, 20);
-                        List<(Voo, Voo)> voosEncontrados = system.BuscarVoosComConexao(aeroportoGuarulhos, aeroportoJFK, dataBusca);
+                        DateTime dataBusca = DateTime.Now.AddDays(10).AddHours(6);
+                        List<(Voo, Voo)> voosEncontrados = system.BuscarVoosComConexao(aeroportoGuarulhos, aeroportoConfins, dataBusca.Date);
                         if (voosEncontrados.Count == 0)
                         {
                             Console.WriteLine("Nenhum voo encontrado para os critérios especificados.");
