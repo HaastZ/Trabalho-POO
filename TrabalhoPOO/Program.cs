@@ -8,8 +8,16 @@ internal class Program
         int opt = 0;
 
         // Instanciando os objetos para teste
-        Funcionario Vinicius = new Funcionario("Vinicius", "123.123.123-123", "email@email.com");
-        Funcionario Lucas = new Funcionario("Lucas", "123.123.123-123", "lucas@email.com");
+        Funcionario Vinicius = new Funcionario("Vinicius", "123.123.123-12", "email@email.com");
+        Funcionario Lucas = new Funcionario("Lucas", "123.123.123-12", "lucas@email.com");
+        Funcionario Tarsis = new Funcionario("Tarsis", "123.456.789-10", "tarsis@gmail.com");
+        Funcionario Ricardo = new Funcionario("Ricardo", "987.654.321-10", "ricardo@gmail.com");
+        Funcionario Gabriel = new Funcionario("Gabriel", "432.987.543-78", "gabriel@gmail.com");
+        Usuario vinicius = new Usuario(Vinicius, "vinicius.login", "senha123");
+        Usuario lucas = new Usuario(Lucas, "lucas.login", "lucas123");
+        Usuario tarsis = new Usuario(Tarsis, "tarsis.login", "tarsis12345");
+        Usuario ricardo = new Usuario(Ricardo, "ricardo.login", "@ricardo1234");
+        Usuario gabriel = new Usuario(Gabriel, "gabriel.login", "@gabriel@123");
         Aeroporto aeroportoGuarulhos = new Aeroporto("Aeroporto Internacional de São Paulo", "GRU", "São Paulo", "SP", "Brasil", -23.428008, -46.4922292);
         Aeroporto aeroportoJFK = new Aeroporto("Aeroporto Internacional John F. Kennedy", "JFK", "Nova York", "NY", "Estados Unidos", 40.642923, -73.805145);
         Aeroporto aeroportoConfins = new Aeroporto("Aeroporto Internacional de Belo Horizonte", "CNF", "Belo Horizonte", "MG", "Brasil", -19.6355567, -43.966558);
@@ -87,6 +95,9 @@ internal class Program
                         Console.WriteLine("\nCadastro de Funcionario");
                         system.CadastrarFuncionario(Vinicius);
                         system.CadastrarFuncionario(Lucas);
+                        system.CadastrarFuncionario(Tarsis);
+                        system.CadastrarFuncionario(Ricardo);
+                        system.CadastrarFuncionario(Gabriel);
 
                         // Listagem de Funcionários Cadastrados
                         Console.WriteLine("\nFuncionarios Cadastrados:\n");
@@ -100,10 +111,11 @@ internal class Program
                 case 2: // Cadastro Funcionario (na aplicação, como um usuário)
                     {
                         Console.WriteLine("\nCadastro de Usuarios de funcionarios");
-                        Usuario vinicius = new Usuario(Vinicius, "vinicius.login", "senha123");
-                        Usuario lucas = new Usuario(Lucas, "lucas.login", "lucas123");
                         system.CadastrarUsuario(vinicius);
                         system.CadastrarUsuario(lucas);
+                        system.CadastrarUsuario(tarsis);
+                        system.CadastrarUsuario(ricardo);
+                        system.CadastrarUsuario(gabriel);
 
                         //Listagem de Usuarios Cadastrados
                         Console.WriteLine("\nUsuarios Cadastrados:\n");
@@ -248,7 +260,7 @@ internal class Program
                     {
                         // FAZER CORRETAMENTE O VOO COM CONEXÃO
                         Console.WriteLine("Buscando voos com conexão em uma data específica");
-                        DateTime dataBusca = DateTime.Now.AddDays(10).AddHours(6);
+                        DateTime dataBusca = DateTime.Now.AddDays(10);
                         List<(Voo, Voo)> voosEncontrados = system.BuscarVoosComConexao(aeroportoGuarulhos, aeroportoConfins, dataBusca.Date);
                         if (voosEncontrados.Count == 0)
                         {
@@ -286,7 +298,6 @@ internal class Program
                         }
                         break;
                     }
-
                 case 12:
                     {
                         Console.WriteLine("Cancelando um voo do passageiro");

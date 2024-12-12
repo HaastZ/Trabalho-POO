@@ -457,7 +457,7 @@ namespace TrabalhoPOO
         {
             if (!EhVIP(passageiro))
             {
-                passageiro.SetFranquiaPassagemGratuita(1);
+                passageiro.SetFranquiaBagagemGratuita(1);
                 passageirosVIP.Add(passageiro);
                 Console.WriteLine($"O passageiro {passageiro.getNome()} {passageiro.GetSobrenome()} foi ascendido a Passageiro VIP na companhia aérea {companhia.getNome()}.");
                 RegistrarLog($"O passageiro {passageiro.getNome()} foi ascendido á Passageiro VIP");

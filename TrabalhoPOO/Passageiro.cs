@@ -76,7 +76,7 @@ public class Passageiro : IPassageiroVIP, ILog
         return valorBaseFranquia / 2;
     }
 
-    public int SetFranquiaPassagemGratuita(int franquia) => Passageiro.FranquiaBagagemGratuita = franquia;
+    public int SetFranquiaBagagemGratuita(int franquia) => Passageiro.FranquiaBagagemGratuita = franquia;
     public int GetFranquiaPassagemGratuita() => Passageiro.FranquiaBagagemGratuita;
     public string getNome() => nome;
     public string GetSobrenome() => sobrenome;
